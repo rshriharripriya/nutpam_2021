@@ -1730,8 +1730,8 @@ For devices with smaller width like mobile phone
                 font-family: poppins;
                 font-weight: 400;
                 color: whitesmoke;
-                padding: 20px;
-                padding-top: 3px;
+                /*padding: 20px;*/
+                /*padding-top: 3px;*/
                 align-self: center;
                 border-radius: 50px;
             }
@@ -2254,7 +2254,7 @@ for tabs and large phones
                 font-family: poppins;
                 font-weight: 400;
                 color: whitesmoke;
-                padding: 20px;
+                /*padding: 20px;*/
             }
             .contect-info-content-line{
                 height: auto;
