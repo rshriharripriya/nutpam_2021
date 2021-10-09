@@ -975,20 +975,26 @@ padding-bottom: 40px;
     justify-content: center;
 }
 .blogs{
-    height: 420px;
+    height: 200px;
     width: 40%;
     margin: 20px;
     border-radius: 8px;
+     background-color: #050505;
     position: relative;
     overflow: hidden;
+    align: center; !important;
+
 }
-.blogs .img{
-    height: 80%;
-    width: 100%;
-    overflow: hidden;
-    transition: all .65s ease;
-    position: relative;
-}
+/*.blogs .img{*/
+/*height: min-content; !important;*/
+/*   text-align: center;*/
+/*  font-family: poppins;*/
+/*  color: whitesmoke;*/
+/*  background-color: #050505;*/
+/*    height:100%;*/
+/*    align-self: center; !important;*/
+/*  !*transition: all .5s ease;*!*/
+/*}*/
 .blog-date{
     position: absolute;
     left: 0;
@@ -1000,24 +1006,35 @@ padding-bottom: 40px;
     font-weight: 400;
     font-family: poppins;
     padding: 3px;
-    transition: all .4s ease;
+    /*transition: all .4s ease;*/
     width: 25%;
     height: auto;
 }
-.blogs .img img{
-    height: 100%;
-    width: 100%;
-    transition: all .65s ease;
-}
+/*.blogs .img img{*/
+
+/*    width: 100%;*/
+/*    !*transition: all .65s ease;*!*/
+/*}*/
 .blog-text{
-  height: 80%;
+  height: 100%;
   width: 100%;
   text-align: center;
-  vertical-align: center;
+  /*vertical-align: center;*/
   font-family: poppins;
   color: whitesmoke;
   background-color: #050505;
-  transition: all .5s ease;
+  /*transition: all .5s ease;*/
+}
+.img{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+       align: center;!important;
+  /*vertical-align: center;*/
+  font-family: poppins;
+  color: whitesmoke;
+  background-color: #050505;
+  /*transition: all .5s ease;*/
 }
 .blog-text h3{
   font-size: 28px;
@@ -1026,19 +1043,28 @@ padding-bottom: 40px;
   padding: 20px;
   letter-spacing: 1px;
 }
+.img h3{
+  font-size: 28px;
+     align: center;!important;
+text-align: center;
+  font-weight: 500;
+  height: 100%;
+  padding: 20px;
+  letter-spacing: 1px;
+}
 .blog-text p{
     font-size: 18px;
     opacity: .9;
     font-weight: 400;
-    height: 80%;
+    height: 100%;
     padding: 30px;
     letter-spacing: 1px;
   }
 .blogs:hover .img{
-      transform: translateY(-70%);
+      transform: translateY(-100%);
   }
 .blogs:hover .blog-text{
-    transform: translateY(-70%);
+    transform: translateY(-100%);
 }
 .blogs a{
     text-decoration: none;
@@ -1595,70 +1621,6 @@ For devices with smaller width like mobile phone
                 transition: all .4s ease;
                 display: none;
             }
-            .blogs{
-                height: auto;
-                width: 90%;
-                margin: 10px;
-                margin-top: 20px;
-                margin-bottom: 20px;
-                position: relative;
-            }
-            .blogs .img{
-                height: 80%;
-                width: 100%;
-                overflow: hidden;
-                transition: all .65s ease;
-                position: relative;
-            }
-            .blog-date{
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                color: whitesmoke;
-                font-size: 18px;
-                text-align: center;
-                font-weight: 400;
-                font-family: poppins;
-                padding: 3px;
-                width: 35%;
-                height: auto;
-            }
-            .blogs .img img{
-                height: 100%;
-                width: 100%;
-                transition: all .65s ease;
-            }
-            .blog-text{
-              height: auto;
-              width: 100%;
-              text-align: center;
-              vertical-align: center;
-              font-family: poppins;
-              color: whitesmoke;
-              background-color: #000000;
-              transition: all .5s ease;
-            }
-            .blog-text h3{
-              font-size: 24px;
-              font-weight: 200;
-              height: 15%;
-              padding: 10px;
-              letter-spacing: 1px;
-            }
-            .blog-text p{
-                font-size: 15px;
-                opacity: .9;
-                font-weight: 200;
-                height: 85%;
-                padding: 20px;
-                letter-spacing: 1px;
-              }
-            .blogs:hover .img{
-                  transform: translateY(0%);
-              }
-            .blogs:hover .blog-text{
-                transform: translateY(0%);
-            }
             .contact-content{
                 width: 90%;
                 margin: auto;
@@ -2068,71 +2030,7 @@ for tabs and large phones
                 opacity: .8;
                 transition: all .4s ease;
             }
-            .blogs{
-                height: auto;
-                width: 75%;
-                margin: 10px;
-                margin-top: 20px;
-                margin-bottom: 20px;
-                position: relative;
-            }
-            .blogs .img{
-                height: 60%;
-                width: 100%;
-                overflow: hidden;
-                transition: all .65s ease;
-                position: relative;
-            }
-            .blog-date{
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                color: whitesmoke;
-                font-size: 18px;
-                text-align: center;
-                font-weight: 400;
-                font-family: poppins;
-                padding: 3px;
-                width: 35%;
-                height: auto;
-            }
-            .blogs .img img{
-                height: 100%;
-                width: 100%;
-                transition: all .65s ease;
-            }
-            .blog-text{
-              height: auto;
-              width: 100%;
-              text-align: center;
-              vertical-align: center;
-              font-family: poppins;
-              color: whitesmoke;
-              background-color: #050505;
-              padding: 10px;
-              transition: all .5s ease;
-            }
-            .blog-text h3{
-              font-size: 28px;
-              font-weight: 200;
-              height: 15%;
-              padding: 10px;
-              letter-spacing: 1px;
-            }
-            .blog-text p{
-                font-size: 17px;
-                opacity: .9;
-                font-weight: 200;
-                height: 85%;
-                padding: 20px;
-                letter-spacing: 1px;
-              }
-            .blogs:hover .img{
-                  transform: translateY(0%);
-              }
-            .blogs:hover .blog-text{
-                transform: translateY(0%);
-            }
+            /**/
             .contact-content{
                 width: 90%;
                 margin: auto;
@@ -2375,71 +2273,7 @@ for tabs and large phones
         font-size: 18px;
         opacity: .8;
     }
-    .blogs{
-        height: 420px;
-        width: 30%;
-        margin: auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        position: relative;
-        overflow: hidden;
-    }
-    .blogs .img{
-        height: 80%;
-        width: 100%;
-        overflow: hidden;
-        transition: all .65s ease;
-        position: relative;
-    }
-    .blog-date{
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        color: whitesmoke;
-        font-size: 18px;
-        text-align: center;
-        font-weight: 400;
-        font-family: poppins;
-        padding: 3px;
-        width: 25%;
-        height: auto;
-    }
-    .blogs .img img{
-        height: 100%;
-        width: 100%;
-        transition: all .65s ease;
-    }
-    .blog-text{
-      height: 80%;
-      width: 100%;
-      text-align: center;
-      vertical-align: center;
-      font-family: poppins;
-      color: whitesmoke;
-      background-color: #050505;
-      transition: all .5s ease;
-    }
-    .blog-text h3{
-      font-size: 28px;
-      font-weight: 500;
-      height: 20%;
-      padding: 20px;
-      letter-spacing: 1px;
-    }
-    .blog-text p{
-        font-size: 18px;
-        opacity: .9;
-        font-weight: 400;
-        height: 80%;
-        padding: 30px;
-        letter-spacing: 1px;
-      }
-    .blogs:hover .img{
-          transform: translateY(-70%);
-      }
-    .blogs:hover .blog-text{
-        transform: translateY(-70%);
-    }
+
     .contact-header{
         height: auto;
         width: 100%;
