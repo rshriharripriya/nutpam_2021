@@ -1779,8 +1779,8 @@ For devices with smaller width like mobile phone
         height: 150px;
         width: 80%;
         margin: auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 2%;
+        margin-bottom: 2%;
         position: relative;
         padding:2px;
         overflow: hidden;
