@@ -1434,7 +1434,7 @@ For devices with smaller width like mobile phone
         display: none;
     }
     #breaker{
-        height: 50vh;
+        height: 200vh;
         width: 200%;
         background-color: #481380;
         opacity: 1;
@@ -1893,7 +1893,7 @@ for tabs and large phones
         display: none;
     }
     #breaker{
-        height: 50vh;
+        height: 200vh;
         width: 200%;
         background-color: #481380;
         opacity: 1;
