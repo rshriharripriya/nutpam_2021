@@ -2,9 +2,9 @@ $(window).on('load',function(){
   gsap.to('#loader',1,{y:"-100%"});
   gsap.to('#loader',1,{opacity:0});
   gsap.to('#loader',0,{display:"block",delay:3});
-  // gsap.to('#header',0,{display:"block",delay:1});
+  gsap.to('#header',0,{display:"block",delay:1});
     gsap.to('#header',0,{display:"block",delay:.7});
-;
+
 // gsap.to('#breaker',0,{display:"block"});
 // gsap.to('#breaker-two',0,{display:"block",delay:.1});
 gsap.to('#breaker',0,{display:"none",delay:2});
