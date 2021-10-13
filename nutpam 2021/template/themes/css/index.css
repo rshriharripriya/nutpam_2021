@@ -14,11 +14,11 @@
 }
 ::-webkit-scrollbar{
     width: 4px;
-    color:#481380;
+    color:#7f09fd;
     transition: all .4s ease;
 }
 ::-webkit-scrollbar-thumb {
-    background: #481380;
+    background: #7f09fd;
     border-radius: 4px;
     width: 4px;
     transition: all .4s ease;
@@ -391,7 +391,7 @@ body{
 #breaker{
     height: 100vh;
     width: 200%;
-    background-color: #481380;
+    background-color: #7f09fd;
     opacity: 1;
     animation: breakeranimate 2s linear;
     display: none;
@@ -411,7 +411,7 @@ body{
     100%{ transform : translateX(100%) }
 }
 .color{
-    color: #481380;
+    color: #7f09fd;
     transition: all .4s ease;
 }
 #about{
@@ -520,7 +520,7 @@ body{
     font-family: aileron;
     font-weight: 400;
     font-size: 35px;
-    color: #481380;
+    color: #7f09fd;
     transition: all .4s ease;
 }
 .cv {
@@ -531,7 +531,7 @@ body{
     border:none;
     padding: 15px 30px;
     color: whitesmoke;
-    background-color: #481380;
+    background-color: #7f09fd;
     outline: none;
     font-size:20px;
     font-family: aileron;
@@ -607,14 +607,14 @@ body{
     margin: 20px;
     border-radius: 30%;
     padding: 10px;
-    border: 0px solid #481380;
-    background: #481380;
-    box-shadow:0px 0px 0px 0px #481380 ;
+    border: 0px solid #7f09fd;
+    background: #7f09fd;
+    box-shadow:0px 0px 0px 0px #7f09fd ;
     height:100px;
     transition: all .8s ease;
 }
 .service:hover .service-img img{
-    box-shadow:0px 0px 0px 400px #481380 ;
+    box-shadow:0px 0px 0px 400px #7f09fd ;
 }
 .service-description{
     font-family: poppins;
@@ -700,7 +700,7 @@ body{
     transition: all .4s ease;
     width:95%;
     border-radius: 10px;
-    background: #481380;
+    background: #7f09fd;
 }
 .js-progress{
     position: absolute;
@@ -714,7 +714,7 @@ body{
     transition: all .4s ease;
     width:90%;
     border-radius: 10px;
-    background: #481380;
+    background: #7f09fd;
 }
 .adobe-progress{
     position: absolute;
@@ -727,7 +727,7 @@ body{
     transition: all .4s ease;
     width:83%;
     border-radius: 10px;
-    background: #481380;
+    background: #7f09fd;
 }
 .php-progress{
     position: absolute;
@@ -739,7 +739,7 @@ body{
     justify-content: center;
     width:85%;
     border-radius: 10px;
-    background: #481380;
+    background: #7f09fd;
     transition: all .4s ease;
 }
 .jquery-progress{
@@ -753,7 +753,7 @@ body{
     transition: all .4s ease;
     width:94%;
     border-radius: 10px;
-    background: #481380;
+    background: #7f09fd;
 }
 .seo-progress{
     position: absolute;
@@ -766,7 +766,7 @@ body{
     width:84%;
     border-radius: 10px;
     transition: all .4s ease;
-    background: #481380;
+    background: #7f09fd;
 }
 .portfolio-header{
     height: auto;
@@ -825,7 +825,7 @@ padding-bottom: 40px;
     font-family: poppins;
     font-weight: 200;
     padding: 20px;
-    color: #481380;
+    color: #7f09fd;
     transition: all .4s ease;
 }
 .portfolio-text p{
@@ -842,11 +842,11 @@ padding-bottom: 40px;
     font-weight: 200;
     padding: 10px 20px;
     background:transparent;
-    color:#481380;
+    color:#7f09fd;
     transition: all .4s ease;
     outline: none;
     margin: 20px;
-    border: 1.5px solid #481380;
+    border: 1.5px solid #7f09fd;
     cursor: pointer;
     overflow: hidden;
     position: relative;
@@ -861,7 +861,7 @@ padding-bottom: 40px;
     top: 0;
     left: 0;
     z-index: 3;
-    background: #481380;
+    background: #7f09fd;
     transition: all .7s ease;
 }
 .portfolio-text button:hover{
@@ -892,7 +892,7 @@ padding-bottom: 40px;
     content: "";
     height: 100%;
     width: 100%;
-    background: #481380;
+    background: #7f09fd;
     opacity: .1;
     top: 0;
     left: 0;
@@ -975,15 +975,13 @@ padding-bottom: 40px;
     justify-content: center;
 }
 .blogs{
-    height: 200px;
-    width: 40%;
-    margin: 5%;
+    height: 80px;
+    width: 90%;
+    margin: 1%;
     border-radius: 8px;
-     background-color: #050505;
+    background-color: #050505;
     position: relative;
     overflow: hidden;
-    align: center; !important;
-
 }
 /*.blogs .img{*/
 /*height: min-content; !important;*/
@@ -999,7 +997,7 @@ padding-bottom: 40px;
     position: absolute;
     left: 0;
     bottom: 0;
-    background: #481380;
+    background: #7f09fd;
     color: whitesmoke;
     font-size: 18px;
     text-align: center;
@@ -1026,15 +1024,17 @@ padding-bottom: 40px;
   transition: all .5s ease;
 }
 .img{
-  height: 100%;
-  width: 100%;
-  text-align: center;
-       align: center;!important;
-  /*vertical-align: center;*/
-  font-family: poppins;
-  color: whitesmoke;
-  background-color: #050505;
-  transition: all .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    /*vertical-align: center;*/
+    font-family: poppins;
+    color: whitesmoke;
+    background-color: #050505;
+    transition: all .5s ease;
 }
 .blog-text h3{
   font-size: 28px;
@@ -1066,7 +1066,7 @@ text-align: center;
       transform: translateY(-100%);
   }
 .blogs:hover .blog-text{
-    transform: translateY(-100%);
+    transform: translateY(-126%);
 }
 .blogs a{
     text-decoration: none;
@@ -1332,7 +1332,7 @@ form button:hover{
     background: #c70039;
 }
 .color-purple{
-    background: #481380;
+    background: #7f09fd;
 }
 .color-green{
     background: #04A777;
@@ -1405,6 +1405,25 @@ For devices with smaller width like mobile phone
         letter-spacing: 2px;
         font-size: 40px;
     }
+    .navigation-links a::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: flex;
+        justify-content: center;
+        transform: translate(-49%,-50%);
+        align-items: center;
+        font-size: 3em;
+        font-weight: 400;
+        font-family: monoton;
+        color: rgb(255, 255, 255,.1);
+        z-index: 1;
+        pointer-events: none;
+        opacity: 0;
+        letter-spacing: 100px;
+        transition: all .4s ease;
+    }
     .contact{
         display: none;
     }
@@ -1436,7 +1455,7 @@ For devices with smaller width like mobile phone
     #breaker{
         height: 200vh;
         width: 200%;
-        background-color: #481380;
+        background-color: #7f09fd;
         opacity: 1;
         animation: breakeranimate 2s linear;
         display: none;
@@ -1604,7 +1623,7 @@ For devices with smaller width like mobile phone
                 display: none;
             }
             .service:hover .service-img img{
-                box-shadow:0px 0px 0px 0px #481380 ;
+                box-shadow:0px 0px 0px 0px #7f09fd ;
             }
             .portfolio-image img{
                 height: 300px;
@@ -1895,7 +1914,7 @@ for tabs and large phones
     #breaker{
         height: 200vh;
         width: 200%;
-        background-color: #481380;
+        background-color: #7f09fd;
         opacity: 1;
         animation: breakeranimate 2s linear;
         display: none;
@@ -2079,7 +2098,7 @@ for tabs and large phones
                 display: none;
             }
             .service:hover .service-img img{
-                box-shadow:0px 0px 0px 0px #481380 ;
+                box-shadow:0px 0px 0px 0px #7f09fd ;
             }
             .portfolio-image img{
                 height: 380px;
@@ -2274,7 +2293,7 @@ for tabs and large phones
     position: absolute;
     left: 0;
     bottom: 0;
-    background: #481380;
+    background: #7f09fd;
     color: whitesmoke;
     font-size: 18px;
     text-align: center;
@@ -2397,7 +2416,7 @@ text-align: center;
     position: absolute;
     left: 0;
     bottom: 0;
-    background: #481380;
+    background: #7f09fd;
     color: whitesmoke;
     font-size: 18px;
     text-align: center;
