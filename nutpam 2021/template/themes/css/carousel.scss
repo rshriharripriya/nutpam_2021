@@ -1,0 +1,117 @@
+
+
+.card-carousel {
+    color: white;
+
+  position: relative;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  //max-width: 220px;
+  max-width: 100%;
+  height: 400px;
+  perspective: 2000px;
+  perspective-origin: top;
+  .button-spin {
+    position: absolute;
+    top: 50%;
+    border: 0 none;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: "Open Sans";
+    font-weight: 800;
+    padding: 10px 16px;
+    text-shadow: 1px 1px 4px rgba(0, 54, 90, 0.5);
+    &:hover {
+      box-shadow: 0px 4px 4px 4px rgba(0, 54, 90, 0.15);
+    }
+    &:active {
+      box-shadow: none;
+    }
+  }
+  .button-spin.counterclockwise {
+    left: 0;
+  }
+  .button-spin.clockwise {
+    right: 0;
+  }
+  .inner-carousel {
+        color: white;
+
+    position: relative;
+    width: 225px;
+    margin: 0 auto;
+    top: 80px;
+    transform-style: preserve-3d;
+    //border: 1px solid blue;
+    > div {
+      position: absolute;
+      margin: 0 auto;
+      padding: 20px;
+      width: 220px;
+      height: 300px;
+      opacity: 1;
+      background-color: #fff;
+      color: #ffffff;
+      border-radius: 10px;
+      transition: all 0.5s ease-out;
+      z-index: 1;
+      box-shadow: 0px 10px 10px 10px rgba(0, 54, 90, 0.15);
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        opacity: 0.6;
+        background-color: #ddd;
+        z-index: 1;
+      }
+      &.counterclockwise:after,
+      &.clockwise:after {
+        opacity: 0.4;
+        cursor: pointer;
+      }
+      &.front:after {
+        content: none;
+      }
+      &.front {
+        background-color: #1c9577;
+        background-image: radial-gradient(
+          circle 200px at center right,
+          #2aba96,
+          #1c9577
+        );
+        color: #fff;
+        a {
+          box-shadow: 0px 5px 5px 5px rgba(0, 54, 90, 0.15);
+          &:hover,
+          &:focus {
+            border: 2px solid #48cfad;
+            padding: 5px 0;
+          }
+          &:active {
+            box-shadow: none;
+          }
+        }
+      }
+      a {
+        position: absolute;
+        text-align: center;
+        bottom: 30px;
+        display: block;
+        width: 180px;
+        border: 1px solid #c9c9c9;
+        border-radius: 16px;
+        padding: 6px 0;
+        font-size: 12px;
+        font-weight: 500;
+        color: #ffffff;
+        text-decoration: none;
+        background-color: #fff;
+        box-shadow: 0px 5px 8px 3px rgba(0, 54, 90, 0.1);
+      }
+    }
+  }
+}
