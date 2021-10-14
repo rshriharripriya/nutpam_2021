@@ -58,7 +58,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: #5C5EDC;
+	 /*color: #7f09fd;*/
 	outline: none;
 }
 
@@ -78,7 +78,7 @@ a:hover {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap; 
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
 
@@ -93,7 +93,7 @@ a:hover {
 	font-size: 50%;
 	display: block;
 	color: #4D4D5A;
-} 
+}
 
 .bp-header > span {
 	width: 100%;

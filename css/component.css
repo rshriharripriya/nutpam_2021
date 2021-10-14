@@ -7,6 +7,8 @@
 	width: 100%;
 	height: 100%;
 	-webkit-overflow-scrolling: touch;
+
+touch-action: auto;
 }
 
 .noscroll .container {
@@ -52,7 +54,7 @@
 	font-size: 1.75em;
 	font-weight: normal;
 	margin: 0 auto;
-	padding: 1em 0 0 0;
+	padding: 3px 0 0 0;
 }
 
 .slide__title span {
@@ -79,7 +81,7 @@
 	margin: 0 25px;
 	padding: 0;
 	cursor: pointer;
-	color: #5c5edc;
+	 color:#7f09fd;
 	border: none;
 	background: none;
 }
@@ -98,6 +100,7 @@
 }
 
 .button--close {
+	background: none;
 	font-size: 1.55em;
 	position: absolute;
 	top: 30px;
@@ -271,7 +274,7 @@
 	font-size: 1.95em;
 	font-weight: normal;
 	margin: 0.25em 0 0.5em;
-	color: #685884;
+		 /*color:#7f09fd;*/
 }
 
 .content p {
