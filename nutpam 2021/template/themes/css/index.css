@@ -482,10 +482,10 @@ body{
 .about-second-line{
     opacity: .8;
     /*font-weight: 200;*/
-    line-height: 150%; !important;
+    line-height: 150% !important;
     display: block;
     font-size: 17px;
-    font-family: poppins;!important;
+    font-family: poppins !important;
     padding: 8px;
     padding-top: 15px;
     color: whitesmoke;
@@ -2276,7 +2276,7 @@ for tabs and large phones
      background-color: #050505;
     position: relative;
     overflow: hidden;
-    align: center; !important;
+    align: center !important;
 
 }
 /*.blogs .img{*/
@@ -2323,7 +2323,7 @@ for tabs and large phones
   height: 100%;
   width: 100%;
   text-align: center;
-       align: center;!important;
+       align: center !important;
   /*vertical-align: center;*/
   font-family: poppins;
   color: whitesmoke;
@@ -2399,7 +2399,7 @@ text-align: center;
      background-color: #050505;
     position: relative;
     overflow: hidden;
-    align: center; !important;
+    align: center !important;
 
 }
 /*.blogs .img{*/
@@ -2446,7 +2446,7 @@ text-align: center;
   height: 100%;
   width: 100%;
   text-align: center;
-       align: center;!important;
+       align: center !important;
   /*vertical-align: center;*/
   font-family: poppins;
   color: whitesmoke;
