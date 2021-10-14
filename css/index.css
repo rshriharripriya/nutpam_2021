@@ -559,9 +559,9 @@ body{
     font-size: 45px;
     font-family: raleway;
     color: whitesmoke;
-    padding:10px;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    /*padding:10px;*/
+    /*padding-bottom: 30px;*/
+    /*padding-top: 30px;*/
     font-weight: 900;
 
 }
@@ -1391,6 +1391,7 @@ For devices with smaller width like mobile phone
 
 
 @media only screen and (max-width: 550px){
+
     .header-content{
         height: 100vh;
         width: 100%;
@@ -1427,6 +1428,7 @@ For devices with smaller width like mobile phone
     .contact{
         display: none;
     }
+
     .header-image{
         float: right;
         height: auto;
