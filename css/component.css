@@ -221,6 +221,7 @@ touch-action: auto;
 }
 /* Content */
 .content {
+	text-align: left;
 	position: fixed;
 	z-index: 1000;
 	top: 0;

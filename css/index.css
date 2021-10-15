@@ -114,7 +114,7 @@ padding-top: 2%;
 }
 
 .digit .segment {
-	background: #ffffff;
+	background: rgba(255, 255, 255, 0.78);
 /* 	border-radius: 5%; */
 	position: absolute;
 	opacity: 0.15;
@@ -123,12 +123,12 @@ padding-top: 2%;
 	-ms-transition: opacity 0.2s;
 	-moz-transition: opacity 0.2s;
 	-o-transition: opacity 0.2s;
-	box-shadow: inset -3px -1px 3px 0px rgb(255, 255, 255), inset 3px 1px 3px 0px rgb(255, 255, 255);
+	box-shadow: inset -3px -1px 3px 0px rgba(255, 255, 255, 0.78), inset 3px 1px 3px 0px rgba(255, 255, 255, 0.78);
 }
 
 .digit .segment.on, .separator {
 	opacity: 1;
-	box-shadow:0 0 50px rgb(255, 255, 255);
+	box-shadow:0 0 50px rgba(255, 255, 255, 0.78);
 	transition: opacity 0s;
 	-webkit-transition: opacity 0s;
 	-ms-transition: opacity 0s;
@@ -140,7 +140,7 @@ padding-top: 2%;
 .separator {
 	width: 1%;
 	height: 16px;
-	background: #ffffff;
+	background: rgba(255, 255, 255, 0.78);
 	border-radius: 100%;
 	display: inline-block;
 	position: relative;
