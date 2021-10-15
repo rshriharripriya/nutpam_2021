@@ -414,6 +414,13 @@ body{
     color: #7f07ff;
     transition: all .4s ease;
 }
+
+.color p.team-size {
+    display: inline;
+    color: #fff;
+    font-size: 1.7rem;
+}
+
 #about{
     background-color: #101010;
     display: none;

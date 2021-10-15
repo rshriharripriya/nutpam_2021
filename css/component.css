@@ -305,6 +305,20 @@ touch-action: auto;
 	transform: translate3d(0,50px,0);
 }
 
+.content__item-inner p {
+	font-size: 18px;
+	line-height: 2.1rem;
+}
+
+.content__item-inner .description {
+	font-size: 18px;
+	line-height: 2rem;
+} 
+
+.content__item-inner p.time-details {
+	font-size: 18px;
+}
+
 .content__item--current .content__item-inner {
 	opacity: 1;
 	-webkit-transform: translate3d(0,0,0);
