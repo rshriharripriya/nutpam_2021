@@ -412,6 +412,7 @@ body{
 }
 .color{
     color: #7f07ff;
+    font-weight: 500;
     transition: all .4s ease;
 }
 
