@@ -527,7 +527,10 @@ padding-top: 2%;
     100%{ transform : translateX(100%) }
 }
 .color{
+
+
     color: #7c24dc;
+
     transition: all .4s ease;
 }
 
@@ -681,6 +684,7 @@ padding-top: 2%;
     align-items: center;
     justify-content: center;
     font-size: 45px;
+    margin-bottom: 35px;
     font-family: raleway;
     color: whitesmoke;
     /*padding:10px;*/

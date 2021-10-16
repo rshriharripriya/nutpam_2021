@@ -317,6 +317,12 @@ touch-action: auto;
 	line-height: 2rem;
 }
 
+.content__item-inner .connectech-det {
+	font-size: 18px;
+	line-height: 2rem;
+	margin-left: 25px;
+} 
+
 .content__item-inner p.time-details {
 	font-size: 18px;
 }
