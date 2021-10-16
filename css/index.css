@@ -139,7 +139,7 @@ padding-top: 2%;
 
 .separator {
 	width: 1%;
-	height: 16px;
+	height: 10px;
 	background: rgba(255, 255, 255, 0.78);
 	border-radius: 100%;
 	display: inline-block;
@@ -1553,6 +1553,21 @@ For devices with smaller width like mobile phone
 
 @media only screen and (max-width: 550px){
 
+.clock {
+padding-top: 2%;
+     width: 100%;
+	text-align: center;
+}
+
+.digit {
+	width: 6%;
+	height: 100%;
+	/*margin: 0 0.1%;*/
+	position: relative;
+	display: inline-block;
+
+/* 	filter: blur(1px); */
+}
     .header-content{
         height: 100vh;
         width: 100%;
