@@ -39,11 +39,11 @@
 }
 @keyframes breakeranimatetwo{
    0%{ transform : translateX(-100%) translateY(100%) }
-   50%{ transform : translateX(0%) translateY(100%)}
+   50%{ transform : translateX(50%) translateY(100%)}
    100%{ transform : translateX(100%) translateY(100%)}
 }
 @-webkit-keyframes breakeranimatetwo{
     0%{ transform : translateX(-100%)  translateY(100%)}
-    50%{ transform : translateX(0%) translateY(100%)}
+    50%{ transform : translateX(50%) translateY(100%)}
     100%{ transform : translateX(100%) translateY(100%)}
 }

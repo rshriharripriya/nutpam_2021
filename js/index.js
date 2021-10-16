@@ -3,7 +3,7 @@ $(window).on('load',function(){
   gsap.to('#loader',1,{opacity:0});
   gsap.to('#loader',0,{display:"block",delay:3});
   gsap.to('#header',0,{display:"block",delay:1});
-    gsap.to('#header',0,{display:"block",delay:.7});
+  gsap.to('#header',0,{display:"block",delay:.7});
 
 // gsap.to('#breaker',0,{display:"block"});
 // gsap.to('#breaker-two',0,{display:"block",delay:.1});
@@ -115,20 +115,34 @@ gsap.to('#contact',0,{display:"block",delay:.7});
    gsap.to('#about',0,{display:"block",delay:.7});
    gsap.to('#navigation-content',0,{display:'flex',delay:2});
  })
- $('#contact-link').on('click',function(){
-   gsap.to('#navigation-content',0,{display:"none",delay:.7});
-   gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
-gsap.to('#header',0,{display:"block",delay:.7});
-gsap.to('#about',0,{display:"block",delay:.7});
+    $('#team-link').on('click',function(){
+      gsap.to('#navigation-content',0,{display:"none",delay:.7});
+      gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
+  gsap.to('#header',0,{display:"block",delay:.7});
 gsap.to('#blog',0,{display:"block",delay:.7});
 gsap.to('#portfolio',0,{display:"block",delay:.7});
-gsap.to('#breaker',0,{display:"block"});
-gsap.to('#breaker-two',0,{display:"block",delay:.1});
-gsap.to('#breaker',0,{display:"none",delay:2});
-gsap.to('#breaker-two',0,{display:"none",delay:2});
+   gsap.to('#breaker',0,{display:"block"});
+   gsap.to('#breaker-two',0,{display:"block",delay:.1});
 gsap.to('#contact',0,{display:"block",delay:.7});
-gsap.to('#navigation-content',0,{display:'flex',delay:2});
-})
+   gsap.to('#breaker',0,{display:"none",delay:2});
+   gsap.to('#breaker-two',0,{display:"none",delay:2});
+   gsap.to('#team',0,{display:"block",delay:.7});
+   gsap.to('#navigation-content',0,{display:'flex',delay:2});
+ })
+ $('#contact-link').on('click',function(){
+   gsap.to('#navigation-content',0,{display:"none",delay:.7});
+      gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
+  gsap.to('#header',0,{display:"block",delay:.7});
+gsap.to('#blog',0,{display:"block",delay:.7});
+gsap.to('#portfolio',0,{display:"block",delay:.7});
+   gsap.to('#breaker',0,{display:"block"});
+   gsap.to('#breaker-two',0,{display:"block",delay:.1});
+gsap.to('#contact',0,{display:"block",delay:.7});
+   gsap.to('#breaker',0,{display:"none",delay:2});
+   gsap.to('#breaker-two',0,{display:"none",delay:2});
+   gsap.to('#contact',0,{display:"block",delay:.7});
+   gsap.to('#navigation-content',0,{display:'flex',delay:2});
+ })
 $('#portfolio-link').on('click',function(){
   gsap.to('#navigation-content',0,{display:"none",delay:.7});
   gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
@@ -204,71 +218,128 @@ $(function(){
   $('.navigation-close').hover(cursorhover,cursor);
 
 })
-function cardCarousel3d(carousels){
-  var rotateHandler = function(evt) {
-    var carousel = this.parentElement;
-    if(carousel.classList.contains('card-carousel') === false){
-      var carousel = carousel.parentElement;
-    }
-    var rotate_int = parseInt(carousel.dataset.rotateInt || 0);
-    if(this.classList.contains('counterclockwise')){
-      rotate_int += 1;
-    } else if(this.classList.contains('clockwise')){
-      rotate_int -= 1;
-    }
-    carousel.dataset.rotateInt = rotate_int;
-    animate_slider(carousel);
-  }
-  for(var i = 0; i < carousels.length; i++) {
-    var carousel = carousels[i];
-    var inner = carousel.querySelector('.inner-carousel');
-    var cards = carousel.querySelectorAll('.inner-carousel > div');
-    var size = cards.length;
-    var panelSize = inner.clientWidth;
-    var translateZ = Math.round( ( panelSize / 2 ) / Math.tan( Math.PI / size ) ) * 1.7;
-    inner.style.transform = "rotateY(0deg) translateZ(-" + translateZ + "px)";
-    var btnLeft = carousel.querySelector('.button-spin.counterclockwise');
-    if(btnLeft !== null) {
-      btnLeft.addEventListener("click", rotateHandler, false);
-    }
-    var btnRight = carousel.querySelector('.button-spin.clockwise');
-    if(btnRight !== null) {
-      btnRight.addEventListener("click", rotateHandler, false);
-    }
-    animate_slider(carousel);
-  }
 
-  function animate_slider(carousel){
-    var rotate_int = parseInt(carousel.dataset.rotateInt || 0);
-    var inner = carousel.querySelector('.inner-carousel');
-    var cards = carousel.querySelectorAll('.inner-carousel > div');
-    var size = cards.length;
-    var panelSize = inner.clientWidth;
-    var translateZ = Math.round( ( panelSize / 2 ) / Math.tan( Math.PI / size ) ) * 1.7;
-    var rotateY = 0;
-    var ry =  360 / size;
-    rotateY = ry * rotate_int;
+$(function(){
+  var clock= document.querySelector('clock');
 
-    for(var i = 0; i < size; i++){
-      var z = (rotate_int * ry) + (i * ry);
-      var child = cards[i];
-      child.style.transform = "rotateY(" + z + "deg) translateZ(" + translateZ + "px) rotateY(" + (-z).toString() + "deg)";
-      child.classList.remove('clockwise');
-      child.classList.remove('front');
-      child.classList.remove('counterclockwise');
-      child.removeEventListener("click", rotateHandler, false);
-      var zz = z % 360;
-      if(zz === 0) {
-        child.classList.add('front');
-      } else if (zz === ry || zz === -360 + ry) {
-        child.classList.add('clockwise');
-        child.addEventListener("click", rotateHandler, false);
-      } else if (zz === 360 - ry || zz === 0 - ry) {
-        child.classList.add('counterclockwise');
-        child.addEventListener("click", rotateHandler, false);
+  // Grab the current date
+  var currentDate = new Date();
+
+  // Target future date/24 hour time/Timezone
+  var targetDate = moment.tz("2021-17-11 00:00", "Asia/Kolkata");
+
+  // Calculate the difference in seconds between the future and current date
+  var diff = targetDate / 1000 - currentDate.getTime() / 1000;
+
+  if (diff <= 0) {
+    // If remaining countdown is 0
+    clock = $(".clock").FlipClock(0, {
+      clockFace: "DailyCounter",
+      countdown: true,
+      autostart: false
+    });
+    console.log("Date has already passed!")
+
+  } else {
+    // Run countdown timer
+    clock = $(".clock").FlipClock(diff, {
+      clockFace: "DailyCounter",
+      countdown: true,
+      callbacks: {
+        stop: function() {
+          console.log("Timer has ended!")
+        }
       }
+    });
+
+    // Check when timer reaches 0, then stop at 0
+    setTimeout(function() {
+      checktime();
+    }, 1000);
+
+    function checktime() {
+      t = clock.getTime();
+      if (t <= 0) {
+        clock.setTime(0);
+      }
+      setTimeout(function() {
+        checktime();
+      }, 1000);
     }
   }
-}
+});
 
-cardCarousel3d(document.querySelectorAll('.card-carousel'));
+var countDownDate = new Date("Nov 17, 2021 12:00:00").getTime();
+// Demo date in a month
+var date = new Date();
+// var countDownDate = new Date(date.setMonth(date.getMonth()+1)).getTime();
+
+var digitSegments = [
+	[1, 2, 3, 4, 5, 6],
+	[2, 3],
+	[1, 2, 7, 5, 4],
+	[1, 2, 7, 3, 4],
+	[6, 7, 2, 3],
+	[1, 6, 7, 3, 4],
+	[1, 6, 5, 4, 3, 7],
+	[1, 2, 3],
+	[1, 2, 3, 4, 5, 6, 7],
+	[1, 2, 7, 3, 6]
+];
+
+document.addEventListener('DOMContentLoaded', function () {
+	var _days = document.querySelectorAll('.days');
+	var _hours = document.querySelectorAll('.hours');
+	var _minutes = document.querySelectorAll('.minutes');
+	var _seconds = document.querySelectorAll('.seconds');
+
+	setInterval(function () {
+		var now = new Date().getTime();
+		var distance = countDownDate - now;
+
+		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+		setNumber(_days[0], Math.floor(days / 10), 1);
+		setNumber(_days[1], days % 10, 1);
+
+		setNumber(_hours[0], Math.floor(hours / 10), 1);
+		setNumber(_hours[1], hours % 10, 1);
+
+		setNumber(_minutes[0], Math.floor(minutes / 10), 1);
+		setNumber(_minutes[1], minutes % 10, 1);
+
+		setNumber(_seconds[0], Math.floor(seconds / 10), 1);
+		setNumber(_seconds[1], seconds % 10, 1);
+	}, 1000);
+});
+
+var setNumber = function (digit, number, on) {
+	var segments = digit.querySelectorAll('.segment');
+	var current = parseInt(digit.getAttribute('data-value'));
+
+	// only switch if number has changed or wasn't set
+	if (!isNaN(current) && current != number) {
+		// unset previous number
+		digitSegments[current].forEach(function (digitSegment, index) {
+			setTimeout(function () {
+				segments[digitSegment - 1].classList.remove('on');
+			}, index * 45)
+		});
+	}
+
+	if (isNaN(current) || current != number) {
+		// set new number after
+		setTimeout(function () {
+			digitSegments[number].forEach(function (digitSegment, index) {
+				setTimeout(function () {
+					segments[digitSegment - 1].classList.add('on');
+				}, index * 45)
+			});
+		}, 250);
+		digit.setAttribute('data-value', number);
+	}
+};
+
