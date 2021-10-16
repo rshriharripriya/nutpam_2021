@@ -50,7 +50,7 @@ input[type=number] {
       height:100vh;
       position: fixed;
       z-index:100;
-      font-family: poppins;
+      font-family: poppins, ui-rounded;
       background-color: #171717;
       color: whitesmoke;
       font-size: 70px;
