@@ -1,7 +1,11 @@
+.content__item-inner img{
+	height: 50px;
+	/*width:60px;*/
+
+}
 
 
-
-.container {
+.carousel-container {
 	position: relative;
 	overflow: hidden;
 	overflow-y: scroll;
@@ -12,7 +16,7 @@
 touch-action: auto;
 }
 
-.noscroll .container {
+.noscroll .carousel-container {
 	overflow-y: hidden;
 }
 
@@ -267,7 +271,7 @@ touch-action: auto;
 }
 
 .content h2 {
-	font-size: 3.5em;
+	font-size: 3.3em;
 	font-weight: normal;
 	margin: 0;
 }
@@ -316,12 +320,6 @@ touch-action: auto;
 	font-size: 18px;
 	line-height: 2rem;
 }
-
-.content__item-inner .connectech-det {
-	font-size: 18px;
-	line-height: 2rem;
-	margin-left: 25px;
-} 
 
 .content__item-inner p.time-details {
 	font-size: 18px;
@@ -439,5 +437,8 @@ touch-action: auto;
 	.content__item-inner {
 		font-size: 82%;
 		padding: 4em 3em 2em;
+	}
+	.content__item-inner img {
+		height: 40px;
 	}
 }

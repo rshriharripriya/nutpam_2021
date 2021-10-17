@@ -37,7 +37,7 @@
 		win = {width: window.innerWidth, height: window.innerHeight},
 		// some helper vars to disallow scrolling
 		lockScroll = false, xscroll, yscroll,
-		scrollContainer = document.querySelector('.container'),
+		scrollContainer = document.querySelector('.carousel-container'),
 		// the main slider and its items
 		sliderEl = document.querySelector('.slider'),
 		items = [].slice.call(sliderEl.querySelectorAll('.slide')),
