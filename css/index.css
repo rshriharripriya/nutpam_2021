@@ -1593,11 +1593,12 @@ canvas {
     width: 25%;
     height: auto;
 }
-/*.blogs .img img{*/
+/* .blogs .img img{*/
 
 /*    width: 100%;*/
 /*    !*transition: all .65s ease;*!*/
 /*}*/
+/*
 .blog-text{
   height: 100%;
   width: 100%;
@@ -1616,7 +1617,7 @@ canvas {
     width: 100%;
     text-align: center;
     /*vertical-align: center;*/
-    font-family: poppins;
+   /* font-family: poppins;
     color: whitesmoke;
     background-color: #050505;
     transition: all .5s ease;
@@ -1631,7 +1632,7 @@ canvas {
 .img h3{
   font-size: 28px;
      /*align: center;!important;*/
-text-align: center;
+ /*text-align: center;
   font-weight: 500;
   height: 100%;
   padding: 20px;
@@ -1644,7 +1645,7 @@ text-align: center;
   font-weight: 500;
   height: 20%;
   /*padding: 20px;*/
-  letter-spacing: 1px;
+ /* letter-spacing: 1px;
 
   }
 .blogs:hover .img{
@@ -1656,7 +1657,68 @@ text-align: center;
 .blogs a{
     text-decoration: none;
     color: whitesmoke;
-}
+} */
+
+
+.blog-text{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    vertical-align: center;
+    font-family: poppins;
+    color: whitesmoke;
+    background-color: #050505;
+    transition: all .5s ease;
+  }
+  .img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      /*vertical-align: center;*/
+      font-family: poppins;
+      color: whitesmoke;
+      background-color: #050505;
+      transition: all .5s ease;
+  }
+  .blog-text h4{
+    font-size: 20px;
+    font-weight: 500;
+    height: 100%;
+    padding: 20px;
+    letter-spacing: 0.5px;
+  }
+  .img h3{
+    font-size: 28px;
+       /*align: center;!important;*/
+  text-align: center;
+    font-weight: 500;
+    height: 100%;
+    padding: 20px;
+    letter-spacing: 1px;
+  }
+  .blog-text p{
+      opacity: .9;
+      padding: 30px;
+      font-size: 18px;
+    font-weight: 500;
+    height: 30%;
+   /*padding: 10px;-->*/
+    letter-spacing: 1px;
+  
+    }
+  .blogs:hover .img{
+        transform: translateY(-100%);
+    }
+  .blogs:hover .blog-text{
+      transform: translateY(-126%);
+  }
+  .blogs a{
+      text-decoration: none;
+      color: whitesmoke;
+  }
 #contact{
     display: none;
     height: auto;
