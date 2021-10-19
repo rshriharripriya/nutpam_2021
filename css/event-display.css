@@ -19,7 +19,7 @@
  .services__box {
 	 position: relative;
 	 width: 250px;
-	 height: 270px;
+	 /*height: 270px;*/
 	 background: #240f40;
 	 border-radius: 20px;
 	 overflow: hidden;
