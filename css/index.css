@@ -1758,7 +1758,7 @@ canvas {
     justify-content: center;
 }
 .contact-info{
-    width: 40%;
+    width: 50%;
     height: 500px;
     background: url(../images/contact-back.jpg);
     background-position: center;
@@ -1818,8 +1818,9 @@ form{
     font-size: 24px;
     font-family: poppins;
     font-weight: 400;
-    color: whitesmoke;
-    padding: 28px;
+    color: whitesmoke; 
+    padding-bottom: 40px;
+
 }
 .input-subject{
     width: 84%;
@@ -1869,7 +1870,8 @@ form button:hover{
     font-family: poppins;
     font-weight: 400;
     color: whitesmoke;
-    padding: 30px;
+    padding-bottom : 20px;
+    padding-top: 5px;
 }
 .contect-info-content-line{
     height: auto;
