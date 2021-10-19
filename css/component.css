@@ -16,9 +16,9 @@
 touch-action: auto;
 }
 
-.noscroll .carousel-container {
-	overflow-y: hidden;
-}
+/*.noscroll .carousel-container {*/
+/*	overflow-y: hidden;*/
+/*}*/
 
 .slider {
 	position: relative;
