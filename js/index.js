@@ -440,7 +440,7 @@ window.addEventListener("load", event => {
         speed: 800,
         slidesPerView: 4,
         spaceBetween: 40,
-        threshold: 100,
+        threshold: 50,
 
 
         // If we need pagination
