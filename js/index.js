@@ -3,7 +3,7 @@ $(window).on('load',function(){
   gsap.to('#loader',1,{opacity:0});
   gsap.to('#loader',0,{display:"block",delay:3});
   gsap.to('#header',0,{display:"block",delay:1});
-  gsap.to('#header',0,{display:"block",delay:.7});
+
 
 // gsap.to('#breaker',0,{display:"block"});
 // gsap.to('#breaker-two',0,{display:"block",delay:.1});
@@ -413,7 +413,7 @@ window.addEventListener("load", event => {
                 <div class="card">
                     <span class="bg"></span>
                     <figure class="photo"><img src="${photo}"></figure>
-                        <article class="text">
+                        <article class="text pt-5">
                             <p class="name">${name}</p>
                             <p class="role">${role}</p> 
                           
