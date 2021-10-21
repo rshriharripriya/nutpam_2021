@@ -9,11 +9,11 @@
 }
 ::-webkit-scrollbar{
     width: 4px;
-    color: #7c24dc;
+    color: #79FE0C;
     transition: all .4s ease;
 }
 ::-webkit-scrollbar-thumb {
-    background: #7c24dc;
+    background: #79FE0C;
     border-radius: 4px;
     width: 4px;
     transition: all .4s ease;
@@ -133,9 +133,10 @@ padding-top: 2%;
 }
 
 .separator {
+        box-shadow:0 0 50px rgba(255, 255, 255, 0.78);
+
     width: 1%;
-    height: 10px;
-    background: rgba(255, 255, 255, 0.78);
+    height: 15px;
     border-radius: 100%;
     display: inline-block;
     position: relative;
@@ -276,7 +277,7 @@ padding-top: 2%;
 }
 .menubar:hover{
     opacity: 1;
-color: #7c24dc;
+color: #79FE0C;
 }
 .close-first , .close-second{
  height: 2px;
@@ -504,7 +505,7 @@ color: #7c24dc;
 #breaker{
     height: 100vh;
     width: 200%;
-    background-color: #7c24dc;
+    background-color: #79FE0C;
     opacity: 1;
     animation: breakeranimate 2s linear;
     display: none;
@@ -526,7 +527,7 @@ color: #7c24dc;
 .color{
 
 
-    color: #7c24dc;
+    color: #79FE0C;
 
     transition: all .4s ease;
 }
@@ -647,7 +648,7 @@ color: #7c24dc;
     /*font-family: aileron;*/
     font-weight: 400;
     font-size: 20px;
-    /*color: #7c24dc;*/
+    /*color: #79FE0C;*/
     transition: all .4s ease;
 }
 .cv {
@@ -658,7 +659,7 @@ color: #7c24dc;
     border:none;
     padding: 15px 30px;
     color: whitesmoke;
-    background-color: #7c24dc;
+    background-color: #79FE0C;
     outline: none;
     font-size:20px;
     font-family: aileron;
@@ -763,8 +764,8 @@ height: 600px;
     margin: 20px;
     border-radius: 30%;
     padding: 10px;
-    border: 0px solid #7c24dc;
-    background: #7c24dc;
+    border: 0px solid #79FE0C;
+    background: #79FE0C;
     box-shadow:0px 0px 0px 0px #7f07ff ;
     height:100px;
     transition: all .8s ease;
@@ -1101,7 +1102,7 @@ height: 600px;
     transition: all .4s ease;
     width:95%;
     border-radius: 10px;
-    background: #7c24dc;
+    background: #79FE0C;
 }
 .js-progress{
     position: absolute;
@@ -1115,7 +1116,7 @@ height: 600px;
     transition: all .4s ease;
     width:90%;
     border-radius: 10px;
-    background: #7c24dc;
+    background: #79FE0C;
 }
 .adobe-progress{
     position: absolute;
@@ -1128,7 +1129,7 @@ height: 600px;
     transition: all .4s ease;
     width:83%;
     border-radius: 10px;
-    background: #7c24dc;
+    background: #79FE0C;
 }
 .php-progress{
     position: absolute;
@@ -1140,7 +1141,7 @@ height: 600px;
     justify-content: center;
     width:85%;
     border-radius: 10px;
-    background: #7c24dc;
+    background: #79FE0C;
     transition: all .4s ease;
 }
 .jquery-progress{
@@ -1154,7 +1155,7 @@ height: 600px;
     transition: all .4s ease;
     width:94%;
     border-radius: 10px;
-    background: #7c24dc;
+    background: #79FE0C;
 }
 .seo-progress{
     position: absolute;
@@ -1167,7 +1168,7 @@ height: 600px;
     width:84%;
     border-radius: 10px;
     transition: all .4s ease;
-    background: #7c24dc;
+    background: #79FE0C;
 }
 .portfolio-header{
     height: auto;
@@ -1226,7 +1227,7 @@ padding-bottom: 40px;
     font-family: poppins;
     font-weight: 200;
     padding: 20px;
-    color: #7c24dc;
+    color: #79FE0C;
     transition: all .4s ease;
 }
 .portfolio-text p{
@@ -1243,11 +1244,11 @@ padding-bottom: 40px;
     font-weight: 200;
     padding: 10px 20px;
     background:transparent;
-    color:#7c24dc;
+    color:#79FE0C;
     transition: all .4s ease;
     outline: none;
     margin: 20px;
-    border: 1.5px solid #7c24dc;
+    border: 1.5px solid #79FE0C;
     cursor: pointer;
     overflow: hidden;
     position: relative;
@@ -1262,7 +1263,7 @@ padding-bottom: 40px;
     top: 0;
     left: 0;
     z-index: 3;
-    background: #7c24dc;
+    background: #79FE0C;
     transition: all .7s ease;
 }
 .portfolio-text button:hover{
@@ -1293,7 +1294,7 @@ padding-bottom: 40px;
     content: "";
     height: 100%;
     width: 100%;
-    background: #7c24dc;
+    background: #79FE0C;
     opacity: .1;
     top: 0;
     left: 0;
@@ -1509,7 +1510,7 @@ canvas {
     position: absolute;
     left: 0;
     bottom: 0;
-    background: #7c24dc;
+    background: #79FE0C;
     color: whitesmoke;
     font-size: 18px;
     text-align: center;
@@ -1842,7 +1843,7 @@ form button:hover{
     background: #c70039;
 }
 .color-purple{
-    background: #7c24dc;
+    background: #79FE0C;
 }
 .color-green{
     background: #04A777;
@@ -1995,7 +1996,7 @@ padding-top: 2%;
     #breaker{
         height: 200vh;
         width: 200%;
-        background-color: #7c24dc;
+        background-color: #79FE0C;
         opacity: 1;
         animation: breakeranimate 2s linear;
         display: none;
@@ -2457,7 +2458,7 @@ for tabs and large phones
     #breaker{
         height: 200vh;
         width: 200%;
-        background-color: #7c24dc;
+        background-color: #79FE0C;
         opacity: 1;
         animation: breakeranimate 2s linear;
         display: none;
@@ -2837,7 +2838,7 @@ for tabs and large phones
     position: absolute;
     left: 0;
     bottom: 0;
-    background: #7c24dc;
+    background: #79FE0C;
     color: whitesmoke;
     font-size: 18px;
     text-align: center;
@@ -2960,7 +2961,7 @@ text-align: center;
     position: absolute;
     left: 0;
     bottom: 0;
-    background: #7c24dc;
+    background: #79FE0C;
     color: whitesmoke;
     font-size: 18px;
     text-align: center;
