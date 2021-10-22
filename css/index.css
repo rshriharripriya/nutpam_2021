@@ -310,7 +310,7 @@ color: #79FE0C;
     transform: rotate(90deg);
 }
 .logo img{
-    height: 150px;
+    height: auto;
     position: absolute;
     top: 3%;
     left: 2.5%;
