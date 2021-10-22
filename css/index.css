@@ -45,7 +45,7 @@ input[type=number] {
       height:100vh;
       position: fixed;
       z-index:100;
-      font-family: poppins, ui-rounded;
+      /*font-family: poppins, ui-rounded;*/
       background-color: #171717;
       color: whitesmoke;
       font-size: 70px;
@@ -81,6 +81,7 @@ html, body {
     margin: 0;
     padding: 0;
     background: #171717;
+    background-color: #171717;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -375,8 +376,7 @@ color: #79FE0C;
 .header-content .firstline{
     z-index: 2;
     font-weight:700;
-    font-family: poppins;
-    font-size: 65px;
+     font-size: 65px;
 }
 .header-content .secondline{
     z-index: 2;
@@ -766,12 +766,12 @@ height: 600px;
     padding: 10px;
     border: 0px solid #79FE0C;
     background: #79FE0C;
-    box-shadow:0px 0px 0px 0px #7f07ff ;
+    box-shadow:0px 0px 0px 0px #58af11; ;
     height:100px;
     transition: all .8s ease;
 }
 .service:hover .service-img img{
-    box-shadow:0px 0px 0px 400px #7f07ff ;
+    box-shadow:0px 0px 0px 400px #79fe0c;
 }
 .service-description{
     font-family: poppins;
@@ -1388,10 +1388,11 @@ canvas {
 }
 
 .containerSponsor .cardSponsor .faceSponsor{
-    width: 300px;
+
     height: 200px;
     transition: 0.5s;
     margin: 20px;
+    padding: 100px;
 }
 
 .containerSponsor .cardSponsor .faceSponsor.face1Sponsor{
@@ -1401,10 +1402,12 @@ canvas {
     justify-content: center;
     align-items: center;
     z-index: 1;
+    border-radius: 5%;
+
 }
 
 .containerSponsor .cardSponsor:hover .faceSponsor.face1Sponsor{
-    background: #3b1883;
+    background: #356e05;
     /*Background color when the cardSponser is hovered over */
 }
 
@@ -2165,7 +2168,7 @@ padding-top: 2%;
                 display: none;
             }
             .service:hover .service-img img{
-                box-shadow:0px 0px 0px 0px #7f07ff ;
+                box-shadow:0px 0px 0px 0px #79FE0C;;
             }
             .portfolio-image img{
                 height: 300px;
@@ -2643,7 +2646,7 @@ for tabs and large phones
                 display: none;
             }
             .service:hover .service-img img{
-                box-shadow:0px 0px 0px 0px #7f07ff ;
+                box-shadow:0px 0px 0px 0px #79FE0C; ;
             }
             .portfolio-image img{
                 height: 380px;
@@ -3402,8 +3405,7 @@ text-align: center;
 	 top: 0;
 	 border-radius: 4px 4px 0px 0px;
 	 transition: all 0.4s ease;
-	 background: linear-gradient(
-140deg, rgb(104 33 182), rgb(32 4 64));
+	 background: linear-gradient(140deg, #59b90b, #071000);
 	 z-index: 1;
 }
 
@@ -3691,7 +3693,7 @@ text-align: center;
 }
  .wrapper .module-team .team .team-cards .navigation .swiper-button-prev {
 	 /*background-image: url("https://rafaelalucas.com/dailyui/6/assets/arrow-prev.svg");*/
-     color: rgb(104 33 182);
+     color: #2afd09;
 	 background-position-x: 5px;
 	 transform: translateX(5px);
      z-index: 3;
@@ -3701,7 +3703,7 @@ text-align: center;
 }
  .wrapper .module-team .team .team-cards .navigation .swiper-button-next {
 	 /*background-image: url("https://rafaelalucas.com/dailyui/6/assets/arrow-next.svg");*/
-     color: rgb(104 33 182);
+     color: #2afd09;
 	 background-position-x: -5px;
 	 transform: translateX(-5px);
        z-index: 3;
@@ -3712,11 +3714,11 @@ text-align: center;
 
 .blog-slider__button {
   display: inline-flex;
-  background-image: linear-gradient(147deg, rgba(133, 46, 232, 0.98) 0%, #511891 74%);
+  background-image: linear-gradient(147deg, rgb(121, 254, 12) 0%, #2c5b05 74%);
   padding: 15px 25px;
   border-radius: 50px;
-  color: #fff;
-  box-shadow: 0px 14px 30px rgba(81, 24, 145, 0.6);
+  color: #fff; !important;
+  box-shadow: 0px 10px 15px rgb(20, 110, 7);
   text-decoration: none;
   font-weight: 500;
   justify-content: center;

@@ -1,11 +1,4 @@
 
-/* Type 2 - Event Time line */ 
-
-/*html, body {
-	 background-color: #222c32;
-	 height: 100%;
-
-}*/
  .cd-container {
 	 width: 90%;
 	 max-width: 1080px;
@@ -33,7 +26,7 @@
 	 left: 25px;
 	 height: 100%;
 	 width: 4px;
-	 background: #7e57c2;
+	 background: #63ce0b;
 }
  @media only screen and (min-width: 1170px) {
 	 #cd-timeline {
@@ -78,10 +71,10 @@
 	 width: 30px;
 	 height: 30px;
 	 border-radius: 50%;
-	 box-shadow: 0 0 0 4px #7e57c2, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+	 box-shadow: 0 0 0 4px #21b00b, inset 0 2px 0 rgb(8, 52, 2), 0 3px 0 4px rgb(7, 101, 19);
 }
  .cd-timeline-img {
-	 background: #673ab7;
+	 background: #57b943;
 }
  @media only screen and (min-width: 1170px) {
 	 .cd-timeline-img {
