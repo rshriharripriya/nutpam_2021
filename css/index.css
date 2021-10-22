@@ -67,16 +67,16 @@ body{
     position:relative;
     display: block;
 }
-#particles{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100vw;
-    background-size: cover;
-    background-position: 50% 50%;
-    display: block;
+.green_text:hover
+{
+    color: #2afd09 !important;
 }
+
+.white_text:hover
+{
+    color: #ffffff !important;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -310,7 +310,7 @@ color: #79FE0C;
     transform: rotate(90deg);
 }
 .logo img{
-    height: auto;
+    height: 80px;
     position: absolute;
     top: 3%;
     left: 2.5%;
@@ -324,7 +324,7 @@ color: #79FE0C;
     transform: rotate(-45deg);
 }
 #navigation-bar img{
-    height: 100px;
+    height: 80px;
     position: absolute;
 
     top: 15%;
@@ -505,7 +505,7 @@ color: #79FE0C;
 #breaker{
     height: 100vh;
     width: 200%;
-    background-color: #79FE0C;
+    background-color: #000000;
     opacity: 1;
     animation: breakeranimate 2s linear;
     display: none;
@@ -515,20 +515,18 @@ color: #79FE0C;
     position: fixed;
 }
 @keyframes breakeranimate{
-   0%{ transform : translateX(-100%)}
-   50%{ transform : translateX(0%) }
-   100%{ transform : translateX(100%) }
+   0%{ transform : translateX(100%)}
+   50%{ transform : translateX(-70%) }
+   100%{ transform : translateX(-170%) }
 }
 @-webkit-keyframes breakeranimate{
-    0%{ transform : translateX(-100%) }
-    50%{ transform : translateX(0%) }
-    100%{ transform : translateX(100%) }
+    0%{ transform : translateX(100%) }
+    50%{ transform : translateX(-70%) }
+    100%{ transform : translateX(-170%) }
 }
+
 .color{
-
-
     color: #79FE0C;
-
     transition: all .4s ease;
 }
 
@@ -1999,7 +1997,7 @@ padding-top: 2%;
     #breaker{
         height: 200vh;
         width: 200%;
-        background-color: #79FE0C;
+        background-color: #000000;
         opacity: 1;
         animation: breakeranimate 2s linear;
         display: none;
@@ -2008,15 +2006,15 @@ padding-top: 2%;
         position: fixed;
     }
     @keyframes breakeranimate{
-       0%{ transform : translateX(-100%)}
-       50%{ transform : translateX(0%) }
-       100%{ transform : translateX(100%) }
-    }
-    @-webkit-keyframes breakeranimate{
-        0%{ transform : translateX(-100%) }
-        50%{ transform : translateX(0%) }
-        100%{ transform : translateX(100%) }
-    }
+   0%{ transform : translateX(100%)}
+   50%{ transform : translateX(-70%) }
+   100%{ transform : translateX(-170%) }
+}
+@-webkit-keyframes breakeranimate{
+    0%{ transform : translateX(100%) }
+    50%{ transform : translateX(-70%) }
+    100%{ transform : translateX(-170%) }
+}
     .header-content-box{
         z-index: 2;
         text-align: center;
@@ -2461,7 +2459,7 @@ for tabs and large phones
     #breaker{
         height: 200vh;
         width: 200%;
-        background-color: #79FE0C;
+        background-color: #000000;
         opacity: 1;
         animation: breakeranimate 2s linear;
         display: none;
@@ -2469,15 +2467,16 @@ for tabs and large phones
         z-index: 10;
         position: fixed;
     }
-    @keyframes breakeranimate{
-       0%{ transform : translateX(-100%)}
-       50%{ transform : translateX(0%) }
-       100%{ transform : translateX(100%) }
-    }
-    @-webkit-keyframes breakeranimate{
-        0%{ transform : translateX(-100%) }
-        50%{ transform : translateX(0%) }
-        100%{ transform : translateX(100%) }
+   @keyframes breakeranimate{
+   0%{ transform : translateX(100%)}
+   50%{ transform : translateX(-70%) }
+   100%{ transform : translateX(-170%) }
+}
+@-webkit-keyframes breakeranimate{
+    0%{ transform : translateX(100%) }
+    50%{ transform : translateX(-70%) }
+    100%{ transform : translateX(-170%) }
+}
     }
     .header-content-box{
         z-index: 2;
@@ -2916,7 +2915,7 @@ text-align: center;
 }
 
 
-}
+
 
 
 

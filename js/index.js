@@ -1,14 +1,14 @@
 $(window).on('load',function(){
   gsap.to('#loader',1,{y:"-100%"});
-  gsap.to('#loader',1,{opacity:0});
-  gsap.to('#loader',0,{display:"block",delay:3});
+  // gsap.to('#loader',1,{opacity:0});
+  // gsap.to('#loader',0,{display:"block",delay:3});
   gsap.to('#header',0,{display:"block",delay:1});
 
 
 // gsap.to('#breaker',0,{display:"block"});
 // gsap.to('#breaker-two',0,{display:"block",delay:.1});
-gsap.to('#breaker',0,{display:"none",delay:2});
-gsap.to('#breaker-two',0,{display:"none",delay:2});
+gsap.to('#breaker',0,{display:"none",delay:1});
+gsap.to('#breaker-two',0,{display:"none",delay:1});
    gsap.to('#about',0,{display:"block",delay:.7});
 gsap.to('#portfolio',0,{display:"block",delay:.7});
 gsap.to('#contact',0,{display:"block",delay:.7});
@@ -107,12 +107,14 @@ $(function(){
   gsap.to('#header',0,{display:"block",delay:.7});
 gsap.to('#blog',0,{display:"block",delay:.7});
 gsap.to('#portfolio',0,{display:"block",delay:.7});
+gsap.to('#sponsors',0,{display:"block",delay:.7});
    gsap.to('#breaker',0,{display:"block"});
    gsap.to('#breaker-two',0,{display:"block",delay:.1});
 gsap.to('#contact',0,{display:"block",delay:.7});
    gsap.to('#breaker',0,{display:"none",delay:2});
    gsap.to('#breaker-two',0,{display:"none",delay:2});
    gsap.to('#about',0,{display:"block",delay:.7});
+   gsap.to('#team',0,{display:"block",delay:.7});
    gsap.to('#navigation-content',0,{display:'flex',delay:2});
  })
     $('#team-link').on('click',function(){
@@ -121,6 +123,7 @@ gsap.to('#contact',0,{display:"block",delay:.7});
   gsap.to('#header',0,{display:"block",delay:.7});
 gsap.to('#blog',0,{display:"block",delay:.7});
 gsap.to('#portfolio',0,{display:"block",delay:.7});
+gsap.to('#sponsors',0,{display:"block",delay:.7});
    gsap.to('#breaker',0,{display:"block"});
    gsap.to('#breaker-two',0,{display:"block",delay:.1});
 gsap.to('#contact',0,{display:"block",delay:.7});
@@ -135,12 +138,14 @@ gsap.to('#contact',0,{display:"block",delay:.7});
   gsap.to('#header',0,{display:"block",delay:.7});
 gsap.to('#blog',0,{display:"block",delay:.7});
 gsap.to('#portfolio',0,{display:"block",delay:.7});
+gsap.to('#sponsors',0,{display:"block",delay:.7});
    gsap.to('#breaker',0,{display:"block"});
    gsap.to('#breaker-two',0,{display:"block",delay:.1});
 gsap.to('#contact',0,{display:"block",delay:.7});
    gsap.to('#breaker',0,{display:"none",delay:2});
    gsap.to('#breaker-two',0,{display:"none",delay:2});
    gsap.to('#contact',0,{display:"block",delay:.7});
+   gsap.to('#team',0,{display:"block",delay:.7});
    gsap.to('#navigation-content',0,{display:'flex',delay:2});
  })
 $('#portfolio-link').on('click',function(){
@@ -155,6 +160,8 @@ gsap.to('#breaker-two',0,{display:"block",delay:.1});
 gsap.to('#breaker',0,{display:"none",delay:2});
 gsap.to('#breaker-two',0,{display:"none",delay:2});
 gsap.to('#portfolio',0,{display:"block",delay:.7});
+gsap.to('#sponsors',0,{display:"block",delay:.7});
+ gsap.to('#team',0,{display:"block",delay:.7});
 gsap.to('#navigation-content',0,{display:'flex',delay:2});
 })
 $('#blog-link').on('click',function(){
@@ -169,6 +176,8 @@ gsap.to('#breaker-two',0,{display:"block",delay:.1});
 gsap.to('#breaker',0,{display:"none",delay:2});
 gsap.to('#breaker-two',0,{display:"none",delay:2});
 gsap.to('#blog',0,{display:"block",delay:.7});
+gsap.to('#sponsors',0,{display:"block",delay:.7});
+ gsap.to('#team',0,{display:"block",delay:.7});
 gsap.to('#navigation-content',0,{display:'flex',delay:2});
 })
 $('#home-link').on('click',function(){
@@ -184,8 +193,27 @@ gsap.to('#breaker-two',0,{display:"block",delay:.1});
 gsap.to('#breaker',0,{display:"none",delay:2});
 gsap.to('#breaker-two',0,{display:"none",delay:2});
 gsap.to('#header',0,{display:"block",delay:.7});
+gsap.to('#sponsors',0,{display:"block",delay:.7});
+ gsap.to('#team',0,{display:"block",delay:.7});
 gsap.to('#navigation-content',0,{display:'flex',delay:2});
 })
+
+$('#sponsors-link').on('click',function(){
+      gsap.to('#navigation-content',0,{display:"none",delay:.7});
+      gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
+  gsap.to('#header',0,{display:"block",delay:.7});
+gsap.to('#blog',0,{display:"block",delay:.7});
+gsap.to('#portfolio',0,{display:"block",delay:.7});
+   gsap.to('#breaker',0,{display:"block"});
+   gsap.to('#breaker-two',0,{display:"block",delay:.1});
+gsap.to('#contact',0,{display:"block",delay:.7});
+   gsap.to('#breaker',0,{display:"none",delay:2});
+   gsap.to('#breaker-two',0,{display:"none",delay:2});
+   gsap.to('#about',0,{display:"block",delay:.7});
+   gsap.to('#sponsors',0,{display:"block",delay:.7});
+    gsap.to('#team',0,{display:"block",delay:.7});
+   gsap.to('#navigation-content',0,{display:'flex',delay:2});
+ })
 
 })
 $(function(){
