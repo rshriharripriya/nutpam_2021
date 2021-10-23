@@ -5870,6 +5870,7 @@ button.close {
   padding: 0;
   background-color: transparent;
   border: 0;
+  color:#ffffff;
 }
 
 a.close.disabled {
@@ -5930,6 +5931,7 @@ a.close.disabled {
 .modal-open .modal {
   overflow-x: hidden;
   overflow-y: auto;
+  background-color: #00000099;
 }
 
 .modal {
@@ -6045,6 +6047,11 @@ a.close.disabled {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
   outline: 0;
+
+  /* Custom edits made: */
+ /* background-image: linear-gradient(51deg, #175a1ade, #04221c);
+  color: #edfff9;
+*/
 }
 
 .modal-backdrop {
@@ -6073,9 +6080,13 @@ a.close.disabled {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 1rem 1rem;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6; /*default one */
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
+
+
+  /*custom*/
+  /*border-bottom: 1px solid #edfff9;*/
 }
 
 .modal-header .close {
@@ -6105,9 +6116,13 @@ a.close.disabled {
   -ms-flex-pack: end;
   justify-content: flex-end;
   padding: 0.75rem;
+  /* default --> */
   border-top: 1px solid #dee2e6;
   border-bottom-right-radius: calc(0.3rem - 1px);
   border-bottom-left-radius: calc(0.3rem - 1px);
+
+  /*custom */
+  /*border-top: 1px solid #edfff9;*/
 }
 
 .modal-footer > * {
