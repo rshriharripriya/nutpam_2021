@@ -3,7 +3,7 @@ $(window).on('load',function(){
   gsap.to('#loader',1,{opacity:0});
   gsap.to('#loader',0,{display:"block",delay:3});
   gsap.to('#header',0,{display:"block",delay:1});
-  gsap.to('#header',0,{display:"block",delay:.7});
+
 
 // gsap.to('#breaker',0,{display:"block"});
 // gsap.to('#breaker-two',0,{display:"block",delay:.1});
@@ -107,12 +107,14 @@ $(function(){
   gsap.to('#header',0,{display:"block",delay:.7});
 gsap.to('#blog',0,{display:"block",delay:.7});
 gsap.to('#portfolio',0,{display:"block",delay:.7});
+gsap.to('#sponsors',0,{display:"block",delay:.7});
    gsap.to('#breaker',0,{display:"block"});
    gsap.to('#breaker-two',0,{display:"block",delay:.1});
 gsap.to('#contact',0,{display:"block",delay:.7});
    gsap.to('#breaker',0,{display:"none",delay:2});
    gsap.to('#breaker-two',0,{display:"none",delay:2});
    gsap.to('#about',0,{display:"block",delay:.7});
+   gsap.to('#team',0,{display:"block",delay:.7});
    gsap.to('#navigation-content',0,{display:'flex',delay:2});
  })
     $('#team-link').on('click',function(){
@@ -121,6 +123,7 @@ gsap.to('#contact',0,{display:"block",delay:.7});
   gsap.to('#header',0,{display:"block",delay:.7});
 gsap.to('#blog',0,{display:"block",delay:.7});
 gsap.to('#portfolio',0,{display:"block",delay:.7});
+gsap.to('#sponsors',0,{display:"block",delay:.7});
    gsap.to('#breaker',0,{display:"block"});
    gsap.to('#breaker-two',0,{display:"block",delay:.1});
 gsap.to('#contact',0,{display:"block",delay:.7});
@@ -135,12 +138,14 @@ gsap.to('#contact',0,{display:"block",delay:.7});
   gsap.to('#header',0,{display:"block",delay:.7});
 gsap.to('#blog',0,{display:"block",delay:.7});
 gsap.to('#portfolio',0,{display:"block",delay:.7});
+gsap.to('#sponsors',0,{display:"block",delay:.7});
    gsap.to('#breaker',0,{display:"block"});
    gsap.to('#breaker-two',0,{display:"block",delay:.1});
 gsap.to('#contact',0,{display:"block",delay:.7});
    gsap.to('#breaker',0,{display:"none",delay:2});
    gsap.to('#breaker-two',0,{display:"none",delay:2});
    gsap.to('#contact',0,{display:"block",delay:.7});
+   gsap.to('#team',0,{display:"block",delay:.7});
    gsap.to('#navigation-content',0,{display:'flex',delay:2});
  })
 $('#portfolio-link').on('click',function(){
@@ -155,6 +160,8 @@ gsap.to('#breaker-two',0,{display:"block",delay:.1});
 gsap.to('#breaker',0,{display:"none",delay:2});
 gsap.to('#breaker-two',0,{display:"none",delay:2});
 gsap.to('#portfolio',0,{display:"block",delay:.7});
+gsap.to('#sponsors',0,{display:"block",delay:.7});
+ gsap.to('#team',0,{display:"block",delay:.7});
 gsap.to('#navigation-content',0,{display:'flex',delay:2});
 })
 $('#blog-link').on('click',function(){
@@ -169,6 +176,8 @@ gsap.to('#breaker-two',0,{display:"block",delay:.1});
 gsap.to('#breaker',0,{display:"none",delay:2});
 gsap.to('#breaker-two',0,{display:"none",delay:2});
 gsap.to('#blog',0,{display:"block",delay:.7});
+gsap.to('#sponsors',0,{display:"block",delay:.7});
+ gsap.to('#team',0,{display:"block",delay:.7});
 gsap.to('#navigation-content',0,{display:'flex',delay:2});
 })
 $('#home-link').on('click',function(){
@@ -184,8 +193,27 @@ gsap.to('#breaker-two',0,{display:"block",delay:.1});
 gsap.to('#breaker',0,{display:"none",delay:2});
 gsap.to('#breaker-two',0,{display:"none",delay:2});
 gsap.to('#header',0,{display:"block",delay:.7});
+gsap.to('#sponsors',0,{display:"block",delay:.7});
+ gsap.to('#team',0,{display:"block",delay:.7});
 gsap.to('#navigation-content',0,{display:'flex',delay:2});
 })
+
+$('#sponsors-link').on('click',function(){
+      gsap.to('#navigation-content',0,{display:"none",delay:.7});
+      gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
+  gsap.to('#header',0,{display:"block",delay:.7});
+gsap.to('#blog',0,{display:"block",delay:.7});
+gsap.to('#portfolio',0,{display:"block",delay:.7});
+   gsap.to('#breaker',0,{display:"block"});
+   gsap.to('#breaker-two',0,{display:"block",delay:.1});
+gsap.to('#contact',0,{display:"block",delay:.7});
+   gsap.to('#breaker',0,{display:"none",delay:2});
+   gsap.to('#breaker-two',0,{display:"none",delay:2});
+   gsap.to('#about',0,{display:"block",delay:.7});
+   gsap.to('#sponsors',0,{display:"block",delay:.7});
+    gsap.to('#team',0,{display:"block",delay:.7});
+   gsap.to('#navigation-content',0,{display:'flex',delay:2});
+ })
 
 })
 $(function(){
@@ -343,3 +371,143 @@ var setNumber = function (digit, number, on) {
 	}
 };
 
+
+
+window.addEventListener("load", event => {
+
+    var swiperWrapper = document.querySelector('.swiper-wrapper');
+
+    /* The Team */
+    var team = [{
+            name: "Alice Stone",
+            role: "UI Designer",
+            photo: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=compress&cs=tinysrgb&dpr=2&h=300&w=300",
+
+        },
+        {
+            name: "Adam Turner",
+            role: "Project Manager",
+            photo: "https://images.unsplash.com/photo-1522609925277-66fea332c575?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9?auto=compress&cs=tinysrgb&dpr=2&h=300&w=300",
+
+        },
+        {
+            name: "Nancy Hughes",
+            role: "UX Specialist",
+            photo: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=300",
+
+        },
+        {
+            name: "Jonathan Campbell",
+            role: "Front-End Developer",
+            photo: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=300",
+
+        },
+        {
+            name: "Jack Keller",
+            role: "Back-End Developer",
+            photo: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=300",
+
+        },
+        {
+            name: "Sara Carroll",
+            role: "Head of UI Design",
+            photo: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9?auto=compress&cs=tinysrgb&dpr=2&h=300&w=300",
+
+        },
+         {
+            name: "Sara Carroll",
+            role: "Head of UI Design",
+            photo: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9?auto=compress&cs=tinysrgb&dpr=2&h=300&w=300",
+
+        },
+    ];
+
+
+
+    /* Function to populate the team members */
+    function addTeam() {
+        for (let i = 0; i < 6; i++) {
+
+            /* Variables for the team */
+            var name = team[i].name,
+                role = team[i].role,
+                desc = team[i].desc,
+                photo = team[i].photo
+
+
+            /* Template for the Team Cards */
+            var template = `
+                <div class="swiper-slide">
+                <div class="card">
+                    <span class="bg"></span>
+                    <figure class="photo"><img src="${photo}"></figure>
+                        <article class="text pt-5">
+                            <p class="name">${name}</p>
+                            <p class="role">${role}</p> 
+                          
+                        </article>
+                      </div>
+                </div>`;
+
+            swiperWrapper.insertAdjacentHTML('beforeend', template);
+        }
+    };
+
+
+    addTeam();
+
+
+
+    /* Swiper Settings */
+
+    var mySwiper = new Swiper(".swiper-container", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        centeredSlides: true,
+        speed: 800,
+        slidesPerView: 4,
+        spaceBetween: 40,
+        threshold: 50,
+
+
+        // If we need pagination
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+        breakpoints: {
+            1180: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+                centeredSlides: true,
+                loop: true,
+            },
+            799: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+                centeredSlides: true,
+                loop: true,
+            },
+        }
+    });
+
+
+
+   function followCursor(event) {
+        var pointer = event.currentTarget.closest(".swiper-slide").querySelector('.pointer'),
+            index = event.currentTarget.dataset.index,
+            sizeIcon = (60 * index) + 25;
+
+        pointer.style.transform = `translateX(${sizeIcon}px)`;
+    }
+
+
+    /* end */
+});
