@@ -137,7 +137,6 @@ padding-top: 2%;
         box-shadow:0 0 50px rgba(255, 255, 255, 0.78);
 
     width: 1%;
-    height: 15px;
     border-radius: 100%;
     display: inline-block;
     position: relative;
@@ -2817,7 +2816,6 @@ for tabs and large phones
 }
 .blogs{
     height: 200px;
-    width: 40%;
     margin: 5%;
     border-radius: 8px;
      background-color: #050505;
@@ -2940,7 +2938,6 @@ text-align: center;
 }
 .blogs{
     height: 200px;
-    width: 40%;
     margin: 5%;
     border-radius: 8px;
      background-color: #050505;
@@ -3716,7 +3713,7 @@ text-align: center;
   background-image: linear-gradient(147deg, rgb(121, 254, 12) 0%, #2c5b05 74%);
   padding: 15px 25px;
   border-radius: 50px;
-  color: #fff; !important;
+  color: #fff !important;
   box-shadow: 0px 10px 15px rgb(20, 110, 7);
   text-decoration: none;
   font-weight: 500;
