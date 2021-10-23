@@ -1429,7 +1429,12 @@ canvas {
 
 
 
+/* modal pop up styles */
 
+/*.modal li{*/
+    /*margin: 2px;*/
+/*}*/
+/*end*/
 
 #portfolio{
     display: none;
