@@ -5971,7 +5971,7 @@ a.close.disabled {
 
 .modal.show .modal-dialog {
   -webkit-transform: none;
-    background-color: #171717;
+    /*background-color: #171717;*/
   transform: none;
 }
 
