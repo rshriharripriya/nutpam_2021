@@ -55,12 +55,15 @@
 	 z-index: 2;
 	 transition-delay: 0.25s;
 }
- .services__icon ion-icon {
-	 font-size: 4rem;
+ .services__icon .events-img {
+	 height: 80px;
+	 width: 80px;
+	 border-radius: 50%;
+	 /* font-size: 4rem;
 	 color: #fff;
 	 font-weight: bold;
 	 transition: 0.5s;
-	 transition-delay: 0s;
+	 transition-delay: 0s; */
 }
  .services__content {
 	 position: relative;
