@@ -36,7 +36,8 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
 
 
-
+	<!-- our team swiper section css -->
+	<link rel="stylesheet" href="css/swiper.css">
 
 
 </head>
@@ -1122,39 +1123,67 @@
 
 
 		<!--Start of Our Team -->
-		<div id="team" class="p-5">
+		<div id="team">
 
        		<div class="skills-header">
             	<span class="color">Our </span>Team.
         	</div>
 
 
-			<div class="wrapper">
-
-			   <section class="module-team">
-					<div class="team">
-					 	<div class="team-cards">
-
-						    <!-- Slider main container -->
-						    <div class="swiper-container">
-						       <!-- Additional required wrapper -->
-						       <div class="swiper-wrapper"></div>
-
-						    </div>
-
-						    <div class="swiper-pagination"></div>
-						    <!-- If we need navigation buttons -->
-						    <div class="navigation">
-						       <div class="swiper-button-prev"></div>
-						       <div class="swiper-button-next"></div>
-						    </div>
-					 </div>
-
+			<!-- Swiper -->
+			<div class="swiper-container">
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="images/KARTHIK K_CHAIRMAN.jpg" alt="">
+							<div class="info">
+								<h4>Karthik K</h4>
+								<p>Chairman</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="images/MUKUND_R_S-Vice_Chairman.jpg" alt="">
+							<div class="info">
+								<h4>Mukund R S</h4>
+								<p>Vise - Chairman</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="images/Pavithra D_Treasurer.JPG" alt="">
+							<div class="info">
+								<h4>Pavithra D</h4>
+								<p>Treasurer</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="images/Kavana Rao Y- Vice Treasurer.jpeg" alt="">
+							<div class="info">
+								<h4>Kavana Rao Y</h4>
+								<p>Vise - Treasurer</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="images/Vishnu Prasath R_ Secretary .JPG" alt="">
+							<div class="info">
+								<h4>Vishnu Prasath R</h4>
+								<p>Secretary</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="images/Karthick_vice_secretary.jpg" alt="">
+							<div class="info">
+								<h4>Karthick M</h4>
+								<p>Vise - Secretary</p>
+							</div>
+						</div>
 					</div>
-
-				</section>
-
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-pagination"></div>
+				</div>
+				
 			</div>
+			
 			<!-- end of wrapper -->
 
     		<div class="pb-1 text-center">
@@ -1535,6 +1564,42 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+	  <!-- Swiper JS -->
+	  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+	  <!-- Initialize Swiper -->
+	  <script>
+		  var swiper = new Swiper(".mySwiper", {
+			  slidesPerView: 'auto',
+			  spaceBetween: 30,
+			  centeredSlides: true,
+			  grabCursor: true,
+			  loop: true,
+			  // breakpoints: {
+			  //   345: {
+			  //     slidesPerView: 1,
+			  //     spaceBetween: 20,
+			  //   },
+			  //   480: {
+			  //     slidesPerView: 2,
+			  //     spaceBetween: 30,
+			  //   },
+			  //   640: {
+			  //     slidesPerView: 3,
+			  //     spaceBetween: 60,
+			  //   }
+			  // },
+			  speed: 900,
+			  pagination: {
+				  el: ".swiper-pagination",
+				  clickable: true,
+			  },
+			  navigation: {
+				  nextEl: ".swiper-button-next",
+				  prevEl: ".swiper-button-prev",
+			  },
+		  });
+	  </script>
 </body>
 
 </html>
