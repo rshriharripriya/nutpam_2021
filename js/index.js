@@ -20,18 +20,7 @@ gsap.to('#blog',0,{display:"block",delay:.7})
 // gsap.to('#header',0,{display:"none"});
 // gsap.to('#navigation-content',0,{display:'flex',delay:2});
 })
-$(function(){
-  $('.color-panel').on("click",function(e) {
-    e.preventDefault();
-    $('.color-changer').toggleClass('color-changer-active');
-});
-$('.colors a').on("click",function(e) {
-  e.preventDefault();
-  var attr = $(this).attr("title");
-  console.log(attr);
-  $('head').append('<link rel="stylesheet" href="css/'+attr+'.css">');
-});
-});
+
 $(function(){
      $('.menubar').on('click',function(){
          gsap.to('#navigation-content',.6,{y:0});
@@ -246,7 +235,6 @@ $(function(){
   $('.navigation-close').hover(cursorhover,cursor);
 
 })
-
 $(function(){
   var clock= document.querySelector('clock');
 
