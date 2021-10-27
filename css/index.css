@@ -576,7 +576,7 @@ color: #79FE0C;
     text-align: center;
     align-items: center;
     justify-content: center;
-    font-size: 45px;
+    font-size: 30px;
     font-family: raleway;
     color: whitesmoke;
     padding:10px;
@@ -3065,7 +3065,7 @@ text-align: center;
         display: block;
     }
      .about-first-line .color{
-         font-size: 46px;
+         font-size: 30px;
      }
     .about-second-line{
         opacity: .8;
@@ -3712,6 +3712,8 @@ text-align: center;
 }
 
 .blog-slider__button {
+  font-family: 'poppins', ui-rounded , "Arial Rounded MT Bold";
+  font-size: 20px !important;
   display: inline-flex;
   background-image: linear-gradient(147deg, rgb(121, 254, 12) 0%, #2c5b05 74%);
   padding: 15px 25px;
