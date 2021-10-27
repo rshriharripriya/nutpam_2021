@@ -235,6 +235,7 @@ $(function(){
   $('.navigation-close').hover(cursorhover,cursor);
 
 })
+
 $(function(){
   var clock= document.querySelector('clock');
 
