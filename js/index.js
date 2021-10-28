@@ -238,7 +238,7 @@ $(function(){
   // Grab the current date
   var currentDate = new Date();
 
-  // Target future date/24 hour time/Timezone
+  // Target future date/24 hour time/Timezone/
   var targetDate = moment.tz("2021-18-11 00:00", "Asia/Kolkata");
 
   // Calculate the difference in seconds between the future and current date
