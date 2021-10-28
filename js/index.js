@@ -239,7 +239,7 @@ $(function(){
   var currentDate = new Date();
 
   // Target future date/24 hour time/Timezone
-  var targetDate = moment.tz("2021-19-11 00:00", "Asia/Kolkata");
+  var targetDate = moment.tz("2021-18-11 00:00", "Asia/Kolkata");
 
   // Calculate the difference in seconds between the future and current date
   var diff = targetDate / 1000 - currentDate.getTime() / 1000;
@@ -282,7 +282,7 @@ $(function(){
   }
 });
 
-var countDownDate = new Date("Nov 17, 2021 12:00:00").getTime();
+var countDownDate = new Date("Nov 18, 2021 12:00:00").getTime();
 // Demo date in a month
 var date = new Date();
 // var countDownDate = new Date(date.setMonth(date.getMonth()+1)).getTime();
