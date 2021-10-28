@@ -239,7 +239,7 @@ $(function(){
   var currentDate = new Date();
 
   // Target future date/24 hour time/Timezone
-  var targetDate = moment.tz("2021-18-11 00:00", "Asia/Kolkata");
+  var targetDate = moment.tz("2021-19-11 00:00", "Asia/Kolkata");
 
   // Calculate the difference in seconds between the future and current date
   var diff = targetDate / 1000 - currentDate.getTime() / 1000;
@@ -282,7 +282,7 @@ $(function(){
   }
 });
 
-var countDownDate = new Date("Nov 18, 2021 12:00:00").getTime();
+var countDownDate = new Date("Nov 17, 2021 12:00:00").getTime();
 // Demo date in a month
 var date = new Date();
 // var countDownDate = new Date(date.setMonth(date.getMonth()+1)).getTime();
@@ -356,14 +356,143 @@ var setNumber = function (digit, number, on) {
 	}
 };
 
-document.getElementById("ModalEvent1").addEventListener('shown.bs.modal', function (events) {});
-document.getElementById("ModalEvent2").addEventListener('shown.bs.modal', function (events) {});
-document.getElementById("ModalEvent3").addEventListener('shown.bs.modal', function (events) {});
-document.getElementById("ModalEvent4").addEventListener('shown.bs.modal', function (events) {});
-document.getElementById("ModalEvent5").addEventListener('shown.bs.modal', function (events) {});
-document.getElementById("ModalEvent6").addEventListener('shown.bs.modal', function (events) {});
-document.getElementById("ModalEvent7").addEventListener('shown.bs.modal', function (events) {});
-document.getElementById("ModalEvent8").addEventListener('shown.bs.modal', function (events) {});
+
+
+window.addEventListener("load", event => {
+
+    var swiperWrapper = document.querySelector('.swiper-wrapper');
+
+    /* The Team */
+    var team = [{
+            name: "Alice Stone",
+            role: "UI Designer",
+            photo: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=compress&cs=tinysrgb&dpr=2&h=300&w=300",
+
+        },
+        {
+            name: "Adam Turner",
+            role: "Project Manager",
+            photo: "https://images.unsplash.com/photo-1522609925277-66fea332c575?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9?auto=compress&cs=tinysrgb&dpr=2&h=300&w=300",
+
+        },
+        {
+            name: "Nancy Hughes",
+            role: "UX Specialist",
+            photo: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=300",
+
+        },
+        {
+            name: "Jonathan Campbell",
+            role: "Front-End Developer",
+            photo: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=300",
+
+        },
+        {
+            name: "Jack Keller",
+            role: "Back-End Developer",
+            photo: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=300",
+
+        },
+        {
+            name: "Sara Carroll",
+            role: "Head of UI Design",
+            photo: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9?auto=compress&cs=tinysrgb&dpr=2&h=300&w=300",
+
+        },
+         {
+            name: "Sara Carroll",
+            role: "Head of UI Design",
+            photo: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9?auto=compress&cs=tinysrgb&dpr=2&h=300&w=300",
+
+        },
+    ];
 
 
 
+    /* Function to populate the team members */
+    function addTeam() {
+        for (let i = 0; i < 6; i++) {
+
+            /* Variables for the team */
+            var name = team[i].name,
+                role = team[i].role,
+                desc = team[i].desc,
+                photo = team[i].photo
+
+
+            /* Template for the Team Cards */
+            var template = `
+                <div class="swiper-slide">
+                <div class="card">
+                    <span class="bg"></span>
+                    <figure class="photo"><img src="${photo}"></figure>
+                        <article class="text pt-5">
+                            <p class="name">${name}</p>
+                            <p class="role">${role}</p> 
+                          
+                        </article>
+                      </div>
+                </div>`;
+
+            swiperWrapper.insertAdjacentHTML('beforeend', template);
+        }
+    };
+
+
+    addTeam();
+
+
+
+    /* Swiper Settings */
+
+    var mySwiper = new Swiper(".swiper-container", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        centeredSlides: true,
+        speed: 800,
+        slidesPerView: 4,
+        spaceBetween: 40,
+        threshold: 50,
+
+
+        // If we need pagination
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+        breakpoints: {
+            1180: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+                centeredSlides: true,
+                loop: true,
+            },
+            799: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+                centeredSlides: true,
+                loop: true,
+            },
+        }
+    });
+
+
+
+   function followCursor(event) {
+        var pointer = event.currentTarget.closest(".swiper-slide").querySelector('.pointer'),
+            index = event.currentTarget.dataset.index,
+            sizeIcon = (60 * index) + 25;
+
+        pointer.style.transform = `translateX(${sizeIcon}px)`;
+    }
+
+
+    /* end */
+});

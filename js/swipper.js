@@ -13,3 +13,4 @@ var swiper = new Swiper('.blog-slider', {
 });
 
 exports.default = swiper;
+
