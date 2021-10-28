@@ -1594,7 +1594,6 @@ canvas {
 .contact-info{
     width: 50%;
     height: 500px;
-    background: url(../images/contact-back.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 16px;
