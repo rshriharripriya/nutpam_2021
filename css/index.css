@@ -2051,13 +2051,7 @@ padding-top: 2%;
         padding: 5px;
         border-radius: 10%;
     }
-    .about-img {
-        width: 100%;
-        height:250px;
-        text-align: center;
-        overflow: hidden;
-        border-radius: 10%;
-    }
+
     .service{
         height:320px;
         width:90%;
@@ -2508,18 +2502,18 @@ for tabs and large phones
     /*    flex-direction: column-reverse;*/
     /*}*/
     .about-img img{
-        width: 100%;
+        width: 500px;
         height:380px;
         padding: 30px;
         border-radius: 40px;
     }
-    .about-img {
-        width: 550px;
-        height:auto;
-        padding: 30px;
-        padding-top: 10px;
-        border-radius: 40px;
-    }
+    /*.about-img {*/
+    /*    width: 550px;*/
+    /*    height:auto;*/
+    /*    padding: 30px;*/
+    /*    padding-top: 10px;*/
+    /*    border-radius: 40px;*/
+    /*}*/
     .cv a button{
         border:none;
         padding: 20px 30px;
@@ -3014,18 +3008,18 @@ text-align: center;
         width: 40%;
     }
     .about-img img{
-        width: 100%;
+        width: 500px;
         height:450px;
         padding: 30px;
         border-radius: 40px;
         animation: opacity 1.4s ease ;
     }
-    .about-img {
-        width: 40%;
-        height:450px;
-        padding: 30px;
-        border-radius: 40px;
-    }
+    /*.about-img {*/
+    /*    width: 50%;*/
+    /*    height:450px;*/
+    /*    padding: 30px;*/
+    /*    border-radius: 40px;*/
+    /*}*/
     .about-first-line{
         font-size: 45px;
         opacity: 1;
