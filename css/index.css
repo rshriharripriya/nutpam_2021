@@ -1142,7 +1142,7 @@ padding-top: 2%;
     }
     .about-second-line{
         opacity: .8;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .about-main{
         display: flex;
@@ -1372,7 +1372,7 @@ for tabs and large phones
     }
     .about-second-line{
         opacity: .8;
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
     .about-main{
         display: flex;
@@ -1646,7 +1646,7 @@ text-align: center;
      }
     .about-second-line{
         opacity: .8;
-        font-size: 1rem;
+        font-size: 1.3rem;
         font-weight: 200;
     }
     .cv a button{
