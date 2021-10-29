@@ -10,8 +10,8 @@
     <title>NUTPAM 2k21</title>
     <!--favicon-img-->
     <link rel="icon" type="image/png" href="images/50X50 GREEN.png">
-    <!--favicon-img-->
-    <!--main css file should not be removed -->
+    <!--fa icon-->
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    &lt;!&ndash;main css file should not be removed &ndash;&gt;-->
     <link rel="stylesheet" href="css/index.css">
     <!-- blog slider for event coordinators -->
     <link rel="stylesheet" href="css/swiper.min.css">
@@ -238,7 +238,7 @@
 
 
         <!--about-->
-        div id="about" class="container" >
+        <div id="about" class="container" >
     		<!--about content-->
     		<div id="about-content">
         		<div class="about-header">
@@ -247,7 +247,14 @@
         		</div>
 
                 		<!--about description-->
-						<div class="row p-5 ">
+						<div class="row p-5">
+							<div class="col-12 col-lg-5  mx-auto">
+							    <!--about picture-->
+            <div class="img-fluid p-0 about-img">
+                <img src="images/hands.jpg" alt="Your Image">
+            </div>
+		</div>
+
 							<div class="col-12 col-lg-7 mx-auto">
                 				<span class="about-first-line text-md-left">Bounding the theme<br>
 									<div class="about-sub-line">
@@ -267,50 +274,52 @@
 
 										</div>
 
-		<div class="col-12 col-lg-5  mx-auto">
-							    <!--about picture-->
-            <div class="img-fluid p-0">
-                <img src="images/hands.jpg" alt="Your Image">
-            </div>
-		</div>
+
 							</div>
 						<br>
 						<div class="row p-5">
+							<div class="col-12 col-lg-5  mx-auto">
+							    <!--about picture-->
+								<div class="img-fluid p-0 about-img">
+									<img src="images/hands.jpg" alt="Your Image">
+								</div>
+							</div>
 
-					<div class="col-12 col-lg-7 mx-auto">
-                		<span class="about-first-line text-md-left">
-							<div class="about-sub-line"><span class="color">INSTITUTION</span>
+							<div class="col-12 col-lg-7 mx-auto">
+								<span class="about-first-line text-md-left">
+	                    	<div class="about-sub-line"><span class="color">INSTITUTION</span>
 	                    	</div>
 							</span>
-							<span class="about-second-line ">
-								<p>Sri Sai Ram Institute of Technology moves ahead towards the path of excellence in
+	                    	<span class="about-second-line ">Sri Sai Ram Institute of Technology moves ahead towards the path of excellence in
 								diversified domains with inspiring ambience for rational developments, novel thinking,
 								and personal growth to prepare the scholars with the skills,
 								insights and practical experience to serve the society. Besides,
 								it provides leading–edge opportunities to excel in all aspects like Academic, Professional,
 								Leadership development to face the Global challenges. The Institution
-								encourages an excellent all-around education and exposure.</p>
+								encourages an excellent all-around education and exposure.
 								<br>
 
-								<p>Sri Sai Ram Institute of Technology  is approved by All India Council
+								Sri Sai Ram Institute of Technology  is approved by All India Council
 									for Technical Education (AICTE). It is recertified as ISO 9001:2015 Certified
 									institution as well, it has been accredited with “A+” grade with a CGPA of 3.30
-									by the Executive Committee of NAAC.</p>
-							</span>
+									by the Executive Committee of NAAC.</span>
+
 		                    <div class="cv">
 	                            <a href="#" class="blog-slider__button white_text">Watch Video</a>
 		                    </div>
+
 										</div>
-					<div class="col-12 col-lg-5 mx-auto">
-							    <!--about picture-->
-            <div class="img-fluid p-0">
-                <img src="images/hands.jpg" alt="Your Image">
-            </div>
-		</div>
+
 
 							</div>
 						<br>
 						<div class="row p-5">
+							<div class="col-12 col-lg-5 mx-auto">
+							    <!--about picture-->
+            <div class="img-fluid p-0 about-img">
+                <img src="images/hands.jpg" alt="Your Image">
+            </div>
+		</div>
 										<div class="col-12 col-lg-7 mx-auto">
                 		<span class="about-first-line text-md-left">
 	                    	<div class="about-sub-line"><span class="color">DEPARTMENT</span>
@@ -323,12 +332,7 @@
 		                    </div>
 										</div>
 
-		<div class="col-12 col-lg-5 mx-auto">
-							    <!--about picture-->
-            <div class="img-fluid p-0">
-                <img src="images/hands.jpg" alt="Your Image">
-            </div>
-		</div>
+
 
 
 
@@ -344,11 +348,12 @@
 
 
         <!-- Start of services-event section -->
+		<div id="services">
 
         <h2 class="blog-header color"><span class="color"> Events </span> </h2>
 
 
-        <h2 class="blog-header color"> Our <span class="color"> Technical Events </span> </h2>
+        <h2 class="blog-header color"> Our <servicespan class="color"> Technical Events </servicespan> </h2>
         <!-- Start of services-event section -->
 
         <div class="service-container-body-event">
@@ -521,24 +526,6 @@
 		        </p>
 		        <!-- Button trigger modal -->
 				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalEvent7" >
-				  More Info
-				</button>
-		      </div>
-		    </div>
-
-		    <div class="services__box">
-		      <figure class="services__icon" >
-		         <img class="events-img" src="images/DefyTheLimits.jpg" alt="">
-		      </figure>
-		      <div class="services__content">
-		        <h2 class="services__title">
-		          Defy the limits
-		        </h2>
-		        <p class="services__description">
-		          Creativity is your Greatest Weapon
-		        </p>
-		        <!-- Button trigger modal -->
-				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalEvent6" >
 				  More Info
 				</button>
 		      </div>
@@ -909,7 +896,7 @@ spontaneity, knowledge about the topic, body language, communication skills and 
 		</div>
 		<!-- end of MODAL -->
 		<!-- END of List - ALL MODALS -->
-
+</div>
         <!-- End of event details -->
 
 		<h2 class="blog-header pt-5 color"> Event <span class="color">Timeline </span> </h2>
@@ -1166,9 +1153,6 @@ spontaneity, knowledge about the topic, body language, communication skills and 
 
 					</ul>
 
-					<p> Note : Participants attending full day events can't participate in other events.<br>
-					Kindly Plan accordingly. </p>
-
 					<!-- <span class="cd-date">Feb 26</span> -->
 				</div> <!-- cd-timeline-content -->
 			</div> <!-- cd-timeline-block -->
@@ -1229,6 +1213,7 @@ spontaneity, knowledge about the topic, body language, communication skills and 
 
 
         <!--Start of FAQ -->
+	<div id="blog">
         <div class="blog-header"> FAQs</span>
             <span class="header-caption align-middle"> Frequently Asked <span class="color"> Questions </span></span>
         </div>
@@ -1298,13 +1283,14 @@ spontaneity, knowledge about the topic, body language, communication skills and 
             </div>
         </div>
         <!-- end of blog content -->
+		</div>
         <!--End of FAQ -->
 
 
 		<!--Start of Our Team -->
 		<div id="team">
 
-       		<div class="skills-header">
+       		<div class="about-header">
             	<span class="color">Our </span>Team.
         	</div>
 
@@ -1406,10 +1392,10 @@ spontaneity, knowledge about the topic, body language, communication skills and 
 			<div class="col-md-3 mx-auto">
 			<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Department Details</h5>
 				<ul class="list-unstyled">
-				  <li><i class="fa fa-angle-right"></i> <a href="https://cse.sairamit.edu.in/" target="_blank">Home</a></li>
-				  <li><i class="fa fa-angle-right"></i> <a href="https://cse.sairamit.edu.in/department/" target="_blank">About us</a></li>
-				  <li><i class="fa fa-angle-right"></i> <a href="https://cse.sairamit.edu.in/faculty/" target="_blank">Faculty</a></li>
-				  <li><i class="fa fa-angle-right"></i> <a href="https://cse.sairamit.edu.in/news/" target="_blank">News</a></li>
+				  <li><i class="fas fa-angle-right"></i> <a href="https://cse.sairamit.edu.in/" target="_blank">Home</a></li>
+				  <li><i class="fas fa-angle-right"></i> <a href="https://cse.sairamit.edu.in/department/" target="_blank">About us</a></li>
+				  <li><i class="fas fa-angle-right"></i> <a href="https://cse.sairamit.edu.in/faculty/" target="_blank">Faculty</a></li>
+				  <li><i class="fas fa-angle-right"></i> <a href="https://cse.sairamit.edu.in/news/" target="_blank">News</a></li>
 				</ul>
 		</div>
 			<!-- Grid column -->
