@@ -613,6 +613,9 @@ color: #79FE0C;
     flex-direction: row;
 }
 
+.about-img img{
+    width: 100%;
+}
 
 
 .cv {
@@ -2502,7 +2505,7 @@ for tabs and large phones
     /*    flex-direction: column-reverse;*/
     /*}*/
     .about-img img{
-        width: 500px;
+        width: 100%;
         height:380px;
         padding: 30px;
         border-radius: 40px;
@@ -3008,7 +3011,7 @@ text-align: center;
         width: 40%;
     }
     .about-img img{
-        width: 500px;
+        width: 100%;
         height:450px;
         padding: 30px;
         border-radius: 40px;
