@@ -572,9 +572,13 @@ color: #79FE0C;
     /*padding-right: 50px;*/
     flex-direction: row;
 }
-
+.about-img{
+    text-align: center;
+    align-items: center;
+}
 .about-img img{
-    width: 100%;
+    width: 70%;
+
 }
 
 
@@ -1142,7 +1146,7 @@ padding-top: 2%;
     }
     .about-second-line{
         opacity: .8;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .about-main{
         display: flex;
@@ -1155,8 +1159,6 @@ padding-top: 2%;
         flex-direction: column-reverse;
     }
     .about-img img{
-        width: 280px;
-        height:220px;
         padding: 5px;
         border-radius: 10%;
     }
@@ -1372,7 +1374,7 @@ for tabs and large phones
     }
     .about-second-line{
         opacity: .8;
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
     .about-main{
         display: flex;
@@ -1385,8 +1387,6 @@ for tabs and large phones
         flex-direction: column-reverse;
     }
     .about-img img{
-        width: 100%;
-        height:380px;
         padding: 30px;
         border-radius: 40px;
     }
@@ -1628,8 +1628,6 @@ text-align: center;
 }
 
     .about-img img{
-        width: 100%;
-        height:450px;
         padding: 30px;
         border-radius: 40px;
         animation: opacity 1.4s ease ;
@@ -1646,7 +1644,7 @@ text-align: center;
      }
     .about-second-line{
         opacity: .8;
-        font-size: 1rem;
+        font-size: 1.3rem;
         font-weight: 200;
     }
     .cv a button{
