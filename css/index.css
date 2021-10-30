@@ -310,10 +310,10 @@ color: #79FE0C;
     opacity: 1;
     transform: rotate(90deg);
 }
-.logo img{
-    height: 80px;
+.logo svg{
+    height: 70px;
     position: absolute;
-    top: 3%;
+    top: 14%;
     left: 2.5%;
     opacity: 1;
     z-index: 2;
@@ -578,7 +578,10 @@ color: #79FE0C;
 }
 .about-img img{
     width: 70%;
+}
 
+.about-img svg{
+    width: 70%;
 }
 
 
