@@ -1,5 +1,5 @@
 var swiper = new Swiper('.blog-slider', {
-    spaceBetween: 30,
+    spaceBetween: 40,
     effect: 'fade',
     loop: true,
     mousewheel: {
