@@ -101,7 +101,7 @@ padding-top: 2%;
     /*margin: 0 0.1%;*/
     position: relative;
     display: inline-block;
-
+    border-radius: 10px;
 /*  filter: blur(1px); */
 }
 
@@ -113,7 +113,7 @@ padding-top: 2%;
 
 .digit .segment {
     background: rgba(255, 255, 255, 0.78);
-  border-radius: 5%;
+  border-radius: 30%;
     position: absolute;
     opacity: 0.05;
     transition: opacity 0.2s;
@@ -136,12 +136,12 @@ padding-top: 2%;
 }
 
 .separator {
-        box-shadow:0 0 50px rgba(255, 255, 255, 0.78);
-
+        box-shadow:0 0 50px rgba(255, 255, 255, 0);
     width: 1%;
     border-radius: 100%;
     display: inline-block;
     position: relative;
+    bottom: 15px;
     /*margin-bottom: 7%;*/
 /*  filter: blur(1px); */
 }
