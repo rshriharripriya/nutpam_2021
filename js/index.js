@@ -6,7 +6,7 @@ $(window).on('load',function(){
   gsap.to('#breaker',0,{display:"none",delay:2});
   gsap.to('#breaker-two',0,{display:"none",delay:2});
   gsap.to('#about',0,{display:"block",delay:.7});
-  gsap.to('#portfolio',0,{display:"block",delay:.7});
+  gsap.to('#services',0,{display:"block",delay:.7});
   gsap.to('#contact',0,{display:"block",delay:.7});
   gsap.to('#blog',0,{display:"block",delay:.7})
 // gsap.to('#navigation-content',0,{display:"none"});
@@ -144,7 +144,7 @@ gsap.to('#breaker',0,{display:"block"});
 gsap.to('#breaker-two',0,{display:"block",delay:.1});
 gsap.to('#breaker',0,{display:"none",delay:2});
 gsap.to('#breaker-two',0,{display:"none",delay:2});
-gsap.to('#portfolio',0,{display:"block",delay:.7});
+gsap.to('#services',0,{display:"block",delay:.7});
 gsap.to('#sponsors',0,{display:"block",delay:.7});
  gsap.to('#team',0,{display:"block",delay:.7});
 gsap.to('#navigation-content',0,{display:'flex',delay:2});
@@ -154,7 +154,7 @@ $('#blog-link').on('click',function(){
   gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
 gsap.to('#header',0,{display:"block",delay:.7});
 gsap.to('#about',0,{display:"block",delay:.7});
-gsap.to('#portfolio',0,{display:"block",delay:.7});
+gsap.to('#services',0,{display:"block",delay:.7});
 gsap.to('#contact',0,{display:"block",delay:.7});
 gsap.to('#breaker',0,{display:"block"});
 gsap.to('#breaker-two',0,{display:"block",delay:.1});
@@ -170,7 +170,7 @@ $('#home-link').on('click',function(){
   gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
 gsap.to('#header',0,{display:"none"});
    gsap.to('#about',0,{display:"block",delay:.7});
-gsap.to('#portfolio',0,{display:"block",delay:.7});
+gsap.to('#services',0,{display:"block",delay:.7});
 gsap.to('#contact',0,{display:"block",delay:.7});
 gsap.to('#blog',0,{display:"block",delay:.7});
 gsap.to('#breaker',0,{display:"block"});
@@ -188,7 +188,7 @@ $('#sponsors-link').on('click',function(){
       gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
   gsap.to('#header',0,{display:"block",delay:.7});
 gsap.to('#blog',0,{display:"block",delay:.7});
-gsap.to('#portfolio',0,{display:"block",delay:.7});
+gsap.to('#services',0,{display:"block",delay:.7});
    gsap.to('#breaker',0,{display:"block"});
    gsap.to('#breaker-two',0,{display:"block",delay:.1});
 gsap.to('#contact',0,{display:"block",delay:.7});
@@ -232,9 +232,7 @@ $(function(){
 
 })
 
-
-var countDownDate = new Date("Nov 19, 2021 00:00:00").getTime();
-console.log(countDownDate);
+var countDownDate = new Date("Nov 19, 2021 12:00:00").getTime();
 // Demo date in a month
 var date = new Date();
 // var countDownDate = new Date(date.setMonth(date.getMonth()+1)).getTime();
@@ -307,5 +305,3 @@ var setNumber = function (digit, number, on) {
 		digit.setAttribute('data-value', number);
 	}
 };
-
-
