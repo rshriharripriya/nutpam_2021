@@ -310,7 +310,7 @@ color: #79FE0C;
     opacity: 1;
     transform: rotate(90deg);
 }
-.logo svg{
+.logo img{
     height: 70px;
     position: absolute;
     top: 14%;
@@ -320,10 +320,10 @@ color: #79FE0C;
     cursor: pointer;
     transition: all .4s ease;
 }
-.logo img:hover{
+/* .logo img:hover{
     opacity: 1;
     transform: rotate(-45deg);
-}
+} */
 #navigation-bar img{
     height: 80px;
     position: absolute;
