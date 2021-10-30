@@ -10,36 +10,28 @@
     <title>NUTPAM 2k21</title>
     <!--favicon-img-->
     <link rel="icon" type="image/png" href="images/50X50 GREEN.png">
-    <!--favicon-img-->
-    <!--main css file should not be removed -->
+    <!--fa icon-->
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    &lt;!&ndash;main css file should not be removed &ndash;&gt;-->
     <link rel="stylesheet" href="css/index.css">
     <!-- blog slider for event coordinators -->
     <link rel="stylesheet" href="css/swiper.min.css">
-    
+
     <!-- bootstrap links -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
-    
     <!-- css for event timeline-->
     <link rel="stylesheet" type="text/css" href="css/event-timeline.css">
-
     <!-- css for event display -->
     <link rel="stylesheet" type="text/css" href="css/event-display.css">
-	
-	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
 
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 	<!-- Google Fonts -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-	<!-- Bootstrap core CSS -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+
 	<!-- Material Design Bootstrap -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-
-
-
-
+	<link href="css/mdb.min.css" rel="stylesheet">
+	<!-- our team swiper section css -->
+	<link rel="stylesheet" href="css/swiper.css">
+	<!-- radar dot style for the event section -->
+	<link rel="stylesheet" href="css/timelineDot.css">
 
 </head>
 
@@ -51,11 +43,13 @@
         <div class="cursor"></div>
         <!--mouse  follower-->
 
-        <!--loader-->
-<!--        <div id="loader">-->
-<!--            <span class="color">NUTPAM</span>2k21-->
+<!--        loader-->
+
+<!--        <div id="loader" >-->
+<!--            <span class="txt-rotate" data-period="" data-rotate='["COMPILING"]'></span>-->
+<!--                        <span class="slash">_</span>-->
 <!--        </div>-->
-        <!--loader-end-->
+<!--        loader-end-->
 
         <!--link-screen-->
         <div id="breaker"></div>
@@ -112,7 +106,7 @@
 
             <!-- background Animation -->
             <!-- Rainbow lines Canvas Start -->
-            <canvas id="c"> </canvas>
+            <canvas id="c" onload="init()"> </canvas>
             <!-- Rainbow lines Canvas Start -->
            	<!-- end of background animation -->
 
@@ -234,6 +228,7 @@
 
                 </div>
                 <!-- END header-content-box -->
+
             </div>
             <!-- END header-content -->
         </div>
@@ -243,7 +238,7 @@
 
 
         <!--about-->
-        <div id="about">
+        <div id="about" class="container-fluid" >
     		<!--about content-->
     		<div id="about-content">
         		<div class="about-header">
@@ -251,54 +246,143 @@
 <!--            		<span class="header-caption">Get to <span class="color"> Know.</span></span>-->
         		</div>
 
-        		<div class="about-main">
-            		<div class="about-first-paragraph wow">
                 		<!--about description-->
-                		<span class="about-first-line">
-	                    	Bounding the theme<br>
-	                    	<div class="about-sub-line"><span class="color">'ANYONE CAN CODE'</span>
-	                    	</div>
+						<div class="row p-md-5">
+							<div class="col-12 col-lg-5  mx-auto">
+							    <!--about picture-->
 
+            <div class="img-fluid p-0 about-img">
+                <img src="images/75X75 GREEN.png" alt="Your Image">
+
+            </div>
+		</div>
+
+							<div class="col-12 col-lg-7 mx-auto">
+                				<span class="about-first-line text-md-left">Bounding the theme<br>
+									<div class="about-sub-line">
+										<span class="color">'ANYONE CAN CODE'</span>
+	                    			</div>
+								</span>
 	                    	<br>
-	                    	<span class="about-second-line">Sri Sairam Institute of Technology is hosting a one-day Tech Fest
+
+	                    	<span class="about-second-line ">Sri Sairam Institute of Technology is hosting a one-day Tech Fest
 	                        virtually to bring out talent among budding engineers.
 	                        It becomes interesting when code meets fun and when it happens from your own
 	                        placeholder!!!</span>
-
 
 		                    <div class="cv">
 	                            <a href="#" class="blog-slider__button white_text">Watch Video</a>
 		                    </div>
 
-		                </span>
-		            </div>
+										</div>
 
-		            <!--about picture-->
-		            <div class="about-img">
-		                <img src="images/hands.jpg" alt="Your Image">
-		            </div>
-		        </div>
+
+							</div>
+						<br>
+						<div class="row p-md-5">
+							<div class="col-12 col-lg-5 align-self-center  mx-auto">
+							    <!--about picture-->
+
+								<div class="img-fluid p-0 about-img">
+									<img src="images/logos/logo.png" alt="Your Image">
+
+								</div>
+							</div>
+
+							<div class="col-12 col-lg-7 mx-auto">
+								<span class="about-first-line text-md-left">
+	                    	<div class="about-sub-line"><span class="color">INSTITUTION</span>
+	                    	</div>
+							</span>
+	                    	<span class="about-second-line ">Sri Sai Ram Institute of Technology moves ahead towards the path of excellence in
+								diversified domains with inspiring ambience for rational developments, novel thinking,
+								and personal growth to prepare the scholars with the skills,
+								insights and practical experience to serve the society. Besides,
+								it provides leading–edge opportunities to excel in all aspects like Academic, Professional,
+								Leadership development to face the Global challenges. The Institution
+								encourages an excellent all-around education and exposure.
+								<br>
+
+								Sri Sai Ram Institute of Technology  is approved by All India Council
+									for Technical Education (AICTE). It is recertified as ISO 9001:2015 Certified
+									institution as well, it has been accredited with “A+” grade with a CGPA of 3.30
+									by the Executive Committee of NAAC.</span>
+
+						</div>
+
+
+							</div>
+						<br>
+						<div class="row p-md-5">
+							<div class="col-12 col-lg-5 mx-auto">
+							    <!--about picture-->
+            <div class="img-fluid p-0 about-img">
+
+                <img src="images/logos/dept_logo.png" alt="Your Image">
+
+            </div>
+		</div>
+										<div class="col-12 col-lg-7 mx-auto">
+                		<span class="about-first-line text-md-left">
+	                    	<div class="about-sub-line"><span class="color">DEPARTMENT</span>
+	                    	</div>
+							</span>
+	                    	<span class="about-second-line ">The Department of CSE is accredited by NBA,AICTE and has acquired Autonomous status under Anna University, Chennai.Every year Department produces at least 10 rank holders and has Centre of Excellences for Red Hat, Cisco, Oracle, Salesforce, VMWare & Data Science and Big Data Analytics.The students of CSE were placed in top MNC companies like TCS,WIPRO,CTS,ZOHO,Amazon and so on.The Department has signed MoU's with ICTACT, Red Hat Academy, Cisco Academy, Oracle Academy, SANDS India Pvt. Ltd., EPR Labs, IBM Rational Seed, Network Bulls Pvt.Ltd., and CSN Systems. Our students are active members of CSI,ISTE, SIESRP and IEI.</span>
+
+										</div>
+
+
+
+
+
+
 		        <!-- End of about-main -->
 
-		    </div>
+		    	</div>
 		    <!-- End of About-Content -->
 		</div>
+
+		</div>
         <!-- End of About -->
-		<!--services-->
+
+
+        <!-- Start of services-event section -->
 		<div id="services">
-        <!-- event details Start-->
 
-        <h2 class="blog-header color"> Our <span class="color"> Events </span> </h2>
+        <h1 class="h1-xs blog-header color"><span class="color">Events</span> </h1>
 
+
+        <h2 class="text-white text-center"> Our <servicespan class="color"> Technical Events </servicespan> </h2>
         <!-- Start of services-event section -->
 
         <div class="service-container-body-event">
 
         <section class="services align-items-stretch">
 
+
+        	<div class="services__box">
+		      <figure class="services__icon">
+		        <!-- <ion-icon name="color-palette-outline"></ion-icon> -->
+		        <img class="events-img" src="images/CODE SENSE.jpg" alt="">
+		      </figure>
+		      <div class="services__content">
+		        <h2 class="services__title">
+		          CodeSense
+		        </h2>
+		        <p class="services__description">
+		          Syntax Error: <svg width="20" height="20" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="brain" class="svg-inline--fa fa-brain fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M208 0c-29.9 0-54.7 20.5-61.8 48.2-.8 0-1.4-.2-2.2-.2-35.3 0-64 28.7-64 64 0 4.8.6 9.5 1.7 14C52.5 138 32 166.6 32 200c0 12.6 3.2 24.3 8.3 34.9C16.3 248.7 0 274.3 0 304c0 33.3 20.4 61.9 49.4 73.9-.9 4.6-1.4 9.3-1.4 14.1 0 39.8 32.2 72 72 72 4.1 0 8.1-.5 12-1.2 9.6 28.5 36.2 49.2 68 49.2 39.8 0 72-32.2 72-72V64c0-35.3-28.7-64-64-64zm368 304c0-29.7-16.3-55.3-40.3-69.1 5.2-10.6 8.3-22.3 8.3-34.9 0-33.4-20.5-62-49.7-74 1-4.5 1.7-9.2 1.7-14 0-35.3-28.7-64-64-64-.8 0-1.5.2-2.2.2C422.7 20.5 397.9 0 368 0c-35.3 0-64 28.6-64 64v376c0 39.8 32.2 72 72 72 31.8 0 58.4-20.7 68-49.2 3.9.7 7.9 1.2 12 1.2 39.8 0 72-32.2 72-72 0-4.8-.5-9.5-1.4-14.1 29-12 49.4-40.6 49.4-73.9z"></path></svg> expected
+		        </p>
+		        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalEvent8">
+				  More Info
+				</button>
+		      </div>
+		    </div>
+
 		    <div class="services__box">
 		      <figure class="services__icon">
-		        <ion-icon name="color-palette-outline"></ion-icon>
+
+		        <!-- <ion-icon name="color-palette-outline"></ion-icon>  -->
+		        <img class="events-img" src="images/DEBUG ENTITY.jpg" alt="">
 		      </figure>
 
 		      <div class="services__content">
@@ -317,14 +401,15 @@
 
 		    <div class="services__box">
 		      <figure class="services__icon">
-		        <ion-icon name="code-slash-outline"></ion-icon>
+		        <img class="events-img" src="images/INNOVATION HUB.jpg" alt="">
+		        <!-- <ion-icon name="code-slash-outline"></ion-icon> -->
 		      </figure>
 		      <div class="services__content">
 		        <h2 class="services__title">
 		         Innovation Hub
 		        </h2>
 		        <p class="services__description">
-		         Innovation is not only doing different things but also doing things differently andproductively
+		         Innovation is not only doing different things but also doing things differently and productively.
 		        </p>
 		        <!-- Button trigger modal -->
 				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalEvent2" >
@@ -335,7 +420,8 @@
 
 		    <div class="services__box">
 		      <figure class="services__icon">
-		        <ion-icon name="search-outline"></ion-icon>
+		      	<img class="events-img" src="images/INTERFACE ROYALE.jpg" alt="">
+		        <!-- <ion-icon name="search-outline"></ion-icon> -->
 		      </figure>
 		      <div class="services__content">
 		        <h2 class="services__title">
@@ -353,7 +439,8 @@
 
 		    <div class="services__box">
 		      <figure class="services__icon">
-		        <ion-icon name="bar-chart-outline"></ion-icon>
+		        <!-- <ion-icon name="bar-chart-outline"></ion-icon> -->
+		        <img class="events-img" src="images/SCHEME WITH SCHEMA.jpg" alt="">
 		      </figure>
 		      <div class="services__content">
 		        <h2 class="services__title">
@@ -372,9 +459,24 @@
 		      </div>
 		    </div>
 
-		    <div class="services__box">
+
+	  </section>
+		</div>
+
+
+        <!-- End of services-event section -->
+
+        <h2 class="text-white text-center"> Our <span class="color"> Non Technical Events </span> </h2>
+
+
+<div class="service-container-body-event">
+
+<section class="services align-items-stretch">
+
+		<div class="services__box">
 		      <figure class="services__icon">
-		        <ion-icon name="videocam-outline"></ion-icon>
+		        <!-- <ion-icon name="videocam-outline"></ion-icon> -->
+		        <img class="events-img" src="images/Connec_T_ech.jpg" alt="">
 		      </figure>
 		      <div class="services__content">
 		        <h2 class="services__title">
@@ -393,14 +495,14 @@
 
 		    <div class="services__box">
 		      <figure class="services__icon" >
-		        <ion-icon name="game-controller-outline"></ion-icon>
+		         <img class="events-img" src="images/DefyTheLimits.jpg" alt="">
 		      </figure>
 		      <div class="services__content">
 		        <h2 class="services__title">
 		          Defy the limits
 		        </h2>
 		        <p class="services__description">
-		          Gaming contest.
+		          Creativity is your Greatest Weapon
 		        </p>
 		        <!-- Button trigger modal -->
 				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalEvent6" >
@@ -411,7 +513,8 @@
 
 		    <div class="services__box">
 		      <figure class="services__icon" >
-		        <ion-icon name="color-palette-outline"></ion-icon>
+		        <img class="events-img" src="images/THINK 'N' GRAB.jpg" alt="">
+		        <!-- <ion-icon name="color-palette-outline"></ion-icon> -->
 		      </figure>
 		      <div class="services__content">
 		        <h2 class="services__title">
@@ -427,25 +530,7 @@
 		      </div>
 		    </div>
 
-		    <div class="services__box">
-		      <figure class="services__icon">
-		        <ion-icon name="color-palette-outline"></ion-icon>
-		      </figure>
-		      <div class="services__content">
-		        <h2 class="services__title">
-		          CodeSense
-		        </h2>
-		        <p class="services__description">
-		          A big shout out to the curious programmers out there
-		        </p>
-		        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalEvent8">
-				  More Info
-				</button>
-		      </div>
-		    </div>
-
-
-		  </section>
+</section>
 		</div>
 
 
@@ -455,474 +540,617 @@
 
 		<!-- Start of List of ALL MODALS -->
 
-			<!-- Modal Start-->
-			<div class="modal fade" id="ModalEvent1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-			  <div class="modal-dialog modal-dialog-centered" role="document">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <h5 class="modal-title" >DEBUG ENTITY</h5>
-			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			          <span aria-hidden="true">&times;</span>
-			        </button>
-			      </div>
-			      <div class="modal-body ml-2">
-					<h4><b>Event Description:</b> </h4> 
-					<ul>
-					<li> Debug entity is an event which has three rounds</li>
-					<li> Easy – 3 questions for 10 mins</li>
-					<li> Intermediate – 2 questions for 10 mins </li>
-					<li> Difficult – 1 question for 10 mins</li>
-					<li> In this event participants will have to debug either in C or Python.  </li>
-						
-					<li>Participants have to be careful while answering questions and have to
-					complete within the given stipulated time.</li>
-					<li>Cash prize is awarded for the wining participant.</li>
+		<!-- Modal Start-->
+		<div class="modal fade" id="ModalEvent1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		 <div class="modal-dialog modal-lg modal-dialog modal-lg-centered" role="document">
+		   <div class="modal-content">
+			 <div class="modal-header">
+			   <h5 class="modal-title" >DEBUG ENTITY</h5>
+			   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				 <span aria-hidden="true">&times;</span>
+			   </button>
+			 </div>
+			 <div class="modal-body ml-2">
+		<h4><b>Event Description:</b> </h4>
+		<ul>
+		<li> Debug entity is an event which has three rounds</li>
+		<li> Easy – 3 questions for 10 mins</li>
+		<li> Intermediate – 2 questions for 10 mins </li>
+		<li> Difficult – 1 question for 10 mins</li>
+		<li> In this event participants will have to debug either in C or Python.  </li>
 
-					<br>
-					<h4><b>Rules:</b></h4>
-					<li> Participants who have registered is only eligible for this event.</li>
-					<li> Every participants should have installed discord on their system.</li>
-					<li> Link will be provided and the participants should join the event on time.</li>
-					<li> Event will be conducted in SkillEnza coding platform.</li>
-					<li> Before staring the event participants should choose their programming  language (C/python).</li>
-					<li> In case of any malpractice, participants will be disqualified immediately.</li>
-					<li>Time Duration: Total time duration is 30 mins.</li>
-					<li>Team size: 1 </li>
-					</ul>
+		<li>Participants have to be careful while answering questions and have to
+		complete within the given stipulated time.</li>
+		<li>Cash prize is awarded for the wining participant.</li>
 
-			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-			        <button type="button" class="btn btn-primary"> Regiter Now </button>
-			      </div>
-			    </div>
-			  </div>
-			</div>
-			<!-- end of MODAL -->
+		<br>
+		<h4><b>Rules:</b></h4>
+		<li> Participants who have registered is only eligible for this event.</li>
+		<li> Every participants should have installed discord on their system.</li>
+		<li> Link will be provided and the participants should join the event on time.</li>
+		<li> Event will be conducted in SkillEnza coding platform.</li>
+		<li> Before staring the event participants should choose their programming  language (C/python).</li>
+		<li> In case of any malpractice, participants will be disqualified immediately.</li>
+		<li>Time Duration: Total time duration is 30 mins.</li>
+		<li>Team size: 1 </li>
+		</ul>
 
-			<!-- Modal Start-->
-			<div class="modal fade" id="ModalEvent2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-			  <div class="modal-dialog modal-dialog-centered" role="document">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <h5 class="modal-title" >INNOVATION HUB</h5>
-			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			          <span aria-hidden="true">&times;</span>
-			        </button>
-			      </div>
-			      <div class="modal-body ml-2">
+			 </div>
+			 <div class="modal-footer">
+			   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			   <button type="button" class="btn btn-primary"> Regiter Now </button>
+			 </div>
+		   </div>
+		 </div>
+		</div>
+		<!-- end of MODAL -->
 
-					<h4><b>Description:</b></h4>
-					<ul>
-						<li>Innovation Hub is a totally theme-based presentation. 
-						It is a technical event where the participants is required to submit the ideas.Participants can use any form of media to present their idea like power points, live demonstrations (all on Google Meet). Matching the theme (SDG) border, the best team will be grabbing the prize!</li> 
-						
-						<li>Participants will be judgedbased on spontaneity, knowledge about the topic,
-						body language, communication skills andclarity.</li>
+		<!-- Modal Start-->
+		<div class="modal fade" id="ModalEvent2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		 <div class="modal-dialog modal-lg modal-dialog modal-lg-centered" role="document">
+		   <div class="modal-content">
+			 <div class="modal-header">
+			   <h5 class="modal-title" >INNOVATION HUB</h5>
+			   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				 <span aria-hidden="true">&times;</span>
+			   </button>
+			 </div>
+			 <div class="modal-body ml-2">
 
-						<li>Team Size : Two </li>
-						<li><b>Theme : Sustainable Development Goals</b></li>					
-					</ul>
+		<h4><b>Description:</b></h4>
+		<ul>
+		<li>Innovation Hub is a totally theme-based presentation. It is a technical event where the
+participants is required to submit the ideas.Participants can use any form of media to
+present their idea like power points, live demonstrations (all on Discord). Matching the
+theme border, the best team will be grabbing the prize! Participants will be judged based on
+spontaneity, knowledge about the topic, body language, communication skills and clarity.
 
-					<br>
-					<h4><b>Rules:</b></h4>
-						<ul>
-						<li> The ideas will then be put through an initial test to make sure
-						there is no plagiarism </li>
-						<li>ANY IDEA FOUND TO BE PLAGIARISED WILL BE IMMEDIATELY DISQUALIFIED.</li>
-						 <li>After the preliminary scanning the selected ideas will be announced after which the participants will be required to present their work to a panel of esteemed judges.</li>
-						 <li>Each Team should present within 10 minutes of time.</li>
-						<li>The idea should match the Sustainable Development Goals.</li>
-						 <li>Results will be purely based on the final judgement of the panel members.</li>
-						 <li>A team should submit one idea.</li>
-						 <li>While presenting the idea, Team members must turn on the videos.</li>
-					 </ul>	
-			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-			        <button type="button" class="btn btn-primary"> Regiter Now </button>
-			      </div>
-			    </div>
-			  </div>
-			</div>
-			<!-- end of MODAL -->
+	</li>
 
-			<!-- Modal Start-->
-			<div class="modal fade" id="ModalEvent3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-			  <div class="modal-dialog modal-dialog-centered" role="document">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <h5 class="modal-title" >INTERFACE ROYALE</h5>
-			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			          <span aria-hidden="true">&times;</span>
-			        </button>
-			      </div>
-			      <div class="modal-body ml-2">
+		<li>Participants will be judgedbased on spontaneity, knowledge about the topic,
+		body language, communication skills andclarity.</li>
 
-			      		<p>Are you fond of designing? Then Interface Royale is just for you. It is a Web Designing event where participants are required to design a website adhering to one of the 4 themes (which will be revealed during the event) using the Figma platform within the stipulated time.
-						</p>
+		<li>Team Size : Two </li>
+		<li><b>Theme : Any theme related to current industry technology</b></li>
+		</ul>
 
-						Tool: Figma <br>
-						Team size: Maximum 3 <br>
-						Duration: 1.5 hrs<br>
-						Theme: To be disclosed at the time of the event <br>
-						Platform: Discord (link to join the event will be sent at the time of registration) 
+		<br>
+		<h4><b>Rules:</b></h4>
+		<ul>
+		<li> The ideas will then be put through an initial test to make sure
+		there is no plagiarism </li>
+		<li>ANY IDEA FOUND TO BE PLAGIARISED WILL BE IMMEDIATELY DISQUALIFIED.</li>
+		<li>After the preliminary scanning the selected ideas will be announced after which the participants will be required to present their work to a panel of esteemed judges.</li>
+		<li>Each Team should present within 10 minutes of time.</li>
+		<li>The idea should match the Sustainable Development Goals.</li>
+		<li>Results will be purely based on the final judgement of the panel members.</li>
+		<li>A team should submit one idea.</li>
+		<li>While presenting the idea, Team members must turn on the videos.</li>
+		</ul>
+			 </div>
+			 <div class="modal-footer">
+			   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			   <button type="button" class="btn btn-primary"> Regiter Now </button>
+			 </div>
+		   </div>
+		 </div>
+		</div>
+		<!-- end of MODAL -->
 
-						<br>
-						<br>
-						<h4><b>Event Rules & Description : </b></h4>
-						
-					<ul>
-						<li>Each participant should have a Discord and Figma account.</li>
-						<li>Participants should join the event’s (Interface Royale) discord server.</li>
-						<li>The designs are to be created in Figma.</li>
-						<li>Depending on the number of the teams registered, separate rooms/channels will be  allotted for the team.</li>
-						<li>The teams should be present inside the allotted room during the entire event.</li>
-						<li>Any one member of the team must present their screen during the course of designing.</li>
-						<li>If the presenting member of the team faces any issues, it should be intimated to the event coordinator and the other member of the team should continue presenting their screen.</li>
-						<li>Themes for designing the webpage will be disclosed 10 mins before the start of the event.
-						<li>No need to use any of the coding languages/scripts like HTML, CSS, JS.</li>
-						<li>The participants are required to design only the UI and need not implement the same at the time of the event.</li>
-						<li>Plagiarism or copying/using an existing template will not be entertained. The team will be disqualified immediately.</li>
-					</ul>
+		<!-- Modal Start-->
+		<div class="modal fade" id="ModalEvent3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		 <div class="modal-dialog modal-lg modal-dialog modal-lg-centered" role="document">
+		   <div class="modal-content">
+			 <div class="modal-header">
+			   <h5 class="modal-title" >INTERFACE ROYALE</h5>
+			   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				 <span aria-hidden="true">&times;</span>
+			   </button>
+			 </div>
+			 <div class="modal-body ml-2">
 
-			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-			        <button type="button" class="btn btn-primary"> Regiter Now </button>
-			      </div>
-			    </div>
-			  </div>
-			</div>
-			<!-- end of MODAL -->
+			  <p>Are you fond of designing? Then Interface Royale is just for you. It is a Web Designing event where participants are required to design a website adhering to one of the 4 themes (which will be revealed during the event) using the Figma platform within the stipulated time.
+		</p>
 
-			<!-- Modal Start-->
-			<div class="modal fade" id="ModalEvent4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-			  <div class="modal-dialog modal-dialog-centered" role="document">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <h5 class="modal-title" > SCHEME WITH SCHEMA</h5>
-			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			          <span aria-hidden="true">&times;</span>
-			        </button>
-			      </div>
-			      <div class="modal-body ml-2">
-						<h4><b>Event Description:</b></h4>
-						<ul>
-						<li>Scheme with schema is a combined event of both Mcqs on  Database and SQL queries.</li>
-						<li>Participants have to answer all the Mcqs and the SQL queries  within the given time limit.</li>
-						<li>Participants should be careful while answering questions and  have to finish within time no extra will be provided.</li>
-						<li>Individual participation.</li>
-						<li>Cash prize is awarded for the wining participant. </li>
-						</ul>
+		Tool: Figma <br>
+		Team size: Maximum 3 <br>
+		Duration: 1.5 hrs<br>
+		Theme: To be disclosed at the time of the event <br>
+		Platform: Discord (link to join the event will be sent at the time of registration)
 
-						<br>
-						<h4><b>Rules:</b></h4>
-						<ul>
-						<li>Participants who have registered is only eligible for this event.</li>
-						<li>Every participants should have installed discord on their system.</li>
-						<li>Link will be provided and the participants should join the event on time.</li>
-						<li>Event will be conducted in HackerRank coding platform.</li>
-						<li>This event consists of two rounds <br>
-						1. Multiple choice question on DBMS (30 questions for 30mins) <br>
-						2. Sql queries (15 questions for 30mins)</li> 
-						<li>In case of any malpractice, participants will be disqualified immediately.</li>
-						<li>Time Duration: Total time duration is 1 hour.</li>
-						<li>Team size: 1 </li>
-						</ul>
-			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-			        <button type="button" class="btn btn-primary"> Regiter Now </button>
-			      </div>
-			    </div>
-			  </div>
-			</div>
-			<!-- end of MODAL -->
+		<br>
+		<br>
+		<h4><b>Event Rules & Description : </b></h4>
 
-			<!-- Modal Start-->
-			<div class="modal fade" id="ModalEvent5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-			  <div class="modal-dialog modal-dialog-centered" role="document">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <h5 class="modal-title" >CONNEC'T'ECH</h5>
-			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			          <span aria-hidden="true">&times;</span>
-			        </button>
-			      </div>
-			      <div class="modal-body ml-2">
-						<h5><b>GAME PROCEDURE </b></h5>
+		<ul>
+		<li>Each participant should have a Discord and Figma account.</li>
+		<li>Participants should join the event’s (Interface Royale) discord server.</li>
+		<li>The designs are to be created in Figma.</li>
+		<li>Depending on the number of the teams registered, separate rooms/channels will be  allotted for the team.</li>
+		<li>The teams should be present inside the allotted room during the entire event.</li>
+		<li>Any one member of the team must present their screen during the course of designing.</li>
+		<li>If the presenting member of the team faces any issues, it should be intimated to the event coordinator and the other member of the team should continue presenting their screen.</li>
+		<li>Themes for designing the webpage will be disclosed 10 mins before the start of the event.
+		<li>No need to use any of the coding languages/scripts like HTML, CSS, JS.</li>
+		<li>The participants are required to design only the UI and need not implement the same at the time of the event.</li>
+		<li>Plagiarism or copying/using an existing template will not be entertained. The team will be disqualified immediately.</li>
+		</ul>
 
-						<ul> 
-						<li>There will be 3 rounds .</li>
-						<li>First 2 rounds will be Non-Technical. </li>
-						<li>And the last round will be Technical.</li>
-						
-						<li>It is a single-player contest. </li>
-						<li>PLATFORM : COSMOBUZZ </li>
-						<li>TIMINGS : 50 MINUTES </li>
-						<li>REWARDS : Certificates and Prizes will be offered to the winners.</li>
-						<li>CONNECT TO BEAT</li>
-						</ul>
+			 </div>
+			 <div class="modal-footer">
+			   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			   <button type="button" class="btn btn-primary"> Regiter Now </button>
+			 </div>
+		   </div>
+		 </div>
+		</div>
+		<!-- end of MODAL -->
 
-			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-			        <button type="button" class="btn btn-primary"> Regiter Now </button>
-			      </div>
-			    </div>
-			  </div>
-			</div>
-			<!-- end of MODAL -->
+		<!-- Modal Start-->
+		<div class="modal fade" id="ModalEvent4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		 <div class="modal-dialog modal-lg modal-dialog modal-lg-centered" role="document">
+		   <div class="modal-content">
+			 <div class="modal-header">
+			   <h5 class="modal-title" > SCHEME WITH SCHEMA</h5>
+			   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				 <span aria-hidden="true">&times;</span>
+			   </button>
+			 </div>
+			 <div class="modal-body ml-2">
+		<h4><b>Event Description:</b></h4>
+		<ul>
+		<li>Scheme with schema is a combined event of both Mcqs on  Database and SQL queries.</li>
+		<li>Participants have to answer all the Mcqs and the SQL queries  within the given time limit.</li>
+		<li>Participants should be careful while answering questions and  have to finish within time no extra will be provided.</li>
+		<li>Individual participation.</li>
+		<li>Cash prize is awarded for the wining participant. </li>
+		</ul>
 
-			<!-- Modal Start-->
-			<div class="modal fade" id="ModalEvent6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-			  <div class="modal-dialog modal-dialog-centered" role="document">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <h5 class="modal-title" >DEFY THE LIMITS</h5>
-			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			          <span aria-hidden="true">&times;</span>
-			        </button>
-			      </div>
-			      <div class="modal-body ml-2">
-					<h5>GAME => Valorant </h5><br>
-						<p>A 5v5 character-based tactical FPS where precise gunplay meets unique agent abilities<p>
+		<br>
+		<h4><b>Rules:</b></h4>
+		<ul>
+		<li>Participants who have registered is only eligible for this event.</li>
+		<li>Every participants should have installed discord on their system.</li>
+		<li>Link will be provided and the participants should join the event on time.</li>
+		<li>Event will be conducted in HackerRank coding platform.</li>
+		<li>This event consists of two rounds <br>
+		1. Multiple choice question on DBMS (30 questions for 30mins) <br>
+		2. Sql queries (15 questions for 30mins)</li>
+		<li>In case of any malpractice, participants will be disqualified immediately.</li>
+		<li>Time Duration: Total time duration is 1 hour.</li>
+		<li>Team size: 1 </li>
+		</ul>
+			 </div>
+			 <div class="modal-footer">
+			   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			   <button type="button" class="btn btn-primary"> Regiter Now </button>
+			 </div>
+		   </div>
+		 </div>
+		</div>
+		<!-- end of MODAL -->
 
-					<b>Rules:</b> <br>
-					- Toxic behaviour is not entertained and may lead to direct elimination. <br>
-					- Substitute players is not mandatory. <br>
-					- Tactical timeouts will be available for each side once per match. <br>
-					<b>Qualifiers:</b> <Br>
-					- Every match will be an elimination round of best of 1. <Br>
-					- Coin tosses will be performed to decide to choose the map and sides before each match. <br>
-					- Each team can ban a map before the starting of the match. <br>
-					- Facture map is out by default in the map pool. <br>
-					<b>Finals:</b> <Br>
-					- Finals will be a best of 3. <br>
-					- Each team gets to ban and pick one map each and the last map by coin toss. <br>
+		<!-- Modal Start-->
+		<div class="modal fade" id="ModalEvent5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		 <div class="modal-dialog modal-lg modal-dialog modal-lg-centered" role="document">
+		   <div class="modal-content">
+			 <div class="modal-header">
+			   <h5 class="modal-title" >CONNEC'T'ECH</h5>
+			   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				 <span aria-hidden="true">&times;</span>
+			   </button>
+			 </div>
+			 <div class="modal-body ml-2">
+		<h5><b>GAME PROCEDURE </b></h5>
 
-			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-			        <button type="button" class="btn btn-primary"> Regiter Now </button>
-			      </div>
-			    </div>
-			  </div>
-			</div>
-			<!-- end of MODAL -->
+		<ul>
+		<li>There will be 3 rounds .</li>
+		<li>First 2 rounds will be Non-Technical. </li>
+		<li>And the last round will be Technical.</li>
 
-			<!-- Modal Start-->
-			<div class="modal fade" id="ModalEvent7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-			  <div class="modal-dialog modal-dialog-centered" role="document">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <h5 class="modal-title" >THINK 'N' GRAB</h5>
-			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			          <span aria-hidden="true">&times;</span>
-			        </button>
-			      </div>
-			      <div class="modal-body ml-2">
+		<li>It is a single-player contest. </li>
+		<li>PLATFORM : COSMOBUZZ </li>
+		<li>TIMINGS : 50 MINUTES </li>
+		<li>REWARDS : Certificates and Prizes will be offered to the winners.</li>
+		<li>CONNECT TO BEAT</li>
+		</ul>
 
-			      	<h4><b>Event Description:</b></h4>
-					<ul>
-					<li> Event is comprised of Questions based on Movies,Tv series,technology based questions.</li>
-					<li> Participants get points acoording to thier answer.</li>
-					<li> Participants should be careful while answering questions as each question will have time limit.</li>
-					<li> Individual participation.</li>
-					<li> Video , audio and screen sharing must be on during the competition or else will lead to disqualification.</li>
-			      
-					</ul>
+			 </div>
+			 <div class="modal-footer">
+			   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			   <button type="button" class="btn btn-primary"> Regiter Now </button>
+			 </div>
+		   </div>
+		 </div>
+		</div>
+		<!-- end of MODAL -->
 
-					<h4><b>Rules:</b></h4>
-			      	<ul>
-					<li>Maximum registration amount - 20</li>
-					<li>team size - Solo quiz</li>
-					<li>Quiz type - Oral,Video Clip,Pictures  </li>
-					<li>Platform - Discord </li>
-					<li>Quiz Rounds - 3 (Duration 30-40 mins) </li>
-					<li>Round 1 (Based on Netflix tv series, Hollywoodmovies, Music, memes ect...) - 10 questions.  (elimination to top 10) (10 mins)</li>
+		<!-- Modal Start-->
+		<div class="modal fade" id="ModalEvent6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		 <div class="modal-dialog modal-lg modal-dialog modal-lg-centered" role="document">
+		   <div class="modal-content">
+			 <div class="modal-header">
+			   <h5 class="modal-title" >DEFY THE LIMITS</h5>
+			   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				 <span aria-hidden="true">&times;</span>
+			   </button>
+			 </div>
+			 <div class="modal-body ml-2">
+		<h5><b>GAME => Valorant</b> </h5>
+		<p>Defy the limits is an Gaming contest.<br> Evolve your gaming experience.<br>A 5v5 character-based tactical FPS where precise gunplay meets unique agent abilities. <p>
 
-					<li>Round 2 (Movie clip question) - 10 questions. (elimination to top 5) (10 mins)</li>
-					<li>Round 3 (technology based) - 5 questions +1 question if duce.(elimination to 1st place) (5 mins) (30sec each question)</li>
-					</ul>
+			<h4><b>Rules</b></h4>
+			<ul>
+ <li>Entry fee is 150/- per  team</li>
+<li>Qualification is based on first to win 7 rounds on knockout basis</li>
+ <li>Must join discord server and voice call throughout the entire match time</li>
+ <li>Map is chosen through a coin toss and die roll, each team gets to ban a map.</li>
+<li>finals will be best of 13 rounds knockout.</li>
+<li>Toxic behaviour & unfair means of play may lead to direct elimination. </li>
+ <li>For each team only one substitue is allowed.</li>
+<li>Team limit is 16, first come first preference.</li>
+</ul>
+<h4><b>Suggestion</b></h4>
+ Make sure that your internet connection is stable.
 
-			      </div>
-			      
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-			        <button type="button" class="btn btn-primary"> Regiter Now </button>
-			      </div>
 
-			    </div>
-			  </div>
-			</div>
-			<!-- end of MODAL -->
+			 </div>
+			 <div class="modal-footer">
+			   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			   <button type="button" class="btn btn-primary"> Regiter Now </button>
+			 </div>
+		   </div>
+		 </div>
+		</div>
+		<!-- end of MODAL -->
 
-			<!-- Modal Start-->
-			<div class="modal fade" id="ModalEvent8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-			  <div class="modal-dialog modal-dialog-centered" role="document">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <h5 class="modal-title" >CODESENSE</h5>
-			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			          <span aria-hidden="true">&times;</span>
-			        </button>
-			      </div>
-			      <div class="modal-body ml-2">
-					
-					<h4><b>Event Description:</b></h4>
-					<ul>
-						<li>The event is conducted as a single round and it’s a solo event</li>
-						<li>The competition will be conducted in "Skillenza" platform</li>
-						<li>The competition will be a Coding + MCQ round</li>
-						<li>Language Support: Python 2, Python 3, Ruby, JavaScript, Scala, Go, C, PERL, Java 8, Java 6, C++, C#, Kotlin, SQL Server, R, Haskell </li>
-					</ul>
-					
-					<h4><b>Rules & Regulations:-</b></h4>
-				
-					<ul> 
-						<li>Plagiarism and cheating by any means will not be encouraged and leads to immediate disqualification</li>
-						<li>The score of an individual will be calculated by the code efficiency and solving duration.</li>
-						<li>Judge decision is the final and no other changes will be encouraged.</li>
-						<li>Posting solutions/test cases in discussion forum will lead to disqualification.</li>
-						<li>Leaderboard is calculated by atleast code submission time and score of the particular individual.</li>
-					</ul>
-			      
-			      </div>
-			      
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-			        <button type="button" class="btn btn-primary"> Regiter Now </button>
-			      </div>
-			    
-			    </div>
-			  </div>
-			</div>
-			<!-- end of MODAL -->
+		<!-- Modal Start-->
+		<div class="modal fade" id="ModalEvent7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		 <div class="modal-dialog modal-lg modal-dialog modal-lg-centered" role="document">
+		   <div class="modal-content">
+			 <div class="modal-header">
+			   <h5 class="modal-title" >THINK 'N' GRAB</h5>
+			   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				 <span aria-hidden="true">&times;</span>
+			   </button>
+			 </div>
+			 <div class="modal-body ml-2">
+
+			  <h4><b>Event Description:</b></h4>
+		<ul>
+		<li> Event is comprised of Questions based on Movies,Tv series,technology based questions.</li>
+		<li> Participants get points acoording to thier answer.</li>
+		<li> Participants should be careful while answering questions as each question will have time limit.</li>
+		<li> Individual participation.</li>
+		<li> Video , audio and screen sharing must be on during the competition or else will lead to disqualification.</li>
+
+		</ul>
+
+		<h4><b>Rules:</b></h4>
+			  <ul>
+		<li>Maximum registration amount - 20</li>
+		<li>team size - Solo quiz</li>
+		<li>Quiz type - Oral,Video Clip,Pictures  </li>
+		<li>Platform - Discord </li>
+		<li>Quiz Rounds - 3 (Duration 30-40 mins) </li>
+		<li>Round 1 (Based on Netflix tv series, Hollywoodmovies, Music, memes ect...) - 10 questions.  (elimination to top 10) (10 mins)</li>
+
+		<li>Round 2 (Movie clip question) - 10 questions. (elimination to top 5) (10 mins)</li>
+		<li>Round 3 (technology based) - 5 questions +1 question if duce.(elimination to 1st place) (5 mins) (30sec each question)</li>
+		</ul>
+
+			 </div>
+
+			 <div class="modal-footer">
+			   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			   <button type="button" class="btn btn-primary"> Regiter Now </button>
+			 </div>
+
+		   </div>
+		 </div>
+		</div>
+		<!-- end of MODAL -->
+
+		<!-- Modal Start-->
+		<div class="modal fade" id="ModalEvent8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		 <div class="modal-dialog modal-lg modal-dialog modal-lg-centered" role="document">
+		   <div class="modal-content">
+			 <div class="modal-header">
+			   <h5 class="modal-title" >CODESENSE</h5>
+			   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				 <span aria-hidden="true">&times;</span>
+			   </button>
+			 </div>
+			 <div class="modal-body ml-2">
+
+			 	<h5>A big shout out to the curious programmers out there, want to test your coding and logical thinking skills? The wait is over, do participate in "CODE SENSE" a Coding + MCQ event and be ready to test your skills!!!</h5>
+
+		<h4><b>Event Description:</b></h4>
+		<ul>
+		<li>The event is conducted as a single round and it’s a solo event</li>
+		<li>The competition will be conducted in "Skillenza" platform</li>
+		<li>The competition will be a Coding + MCQ round</li>
+		<li>Language Support: Python 2, Python 3, Ruby, JavaScript, Scala, Go, C, PERL, Java 8, Java 6, C++, C#, Kotlin, SQL Server, R, Haskell </li>
+		</ul>
+
+		<h4><b>Rules & Regulations:-</b></h4>
+
+		<ul>
+		<li>Plagiarism and cheating by any means will not be encouraged and leads to immediate disqualification</li>
+		<li>The score of an individual will be calculated by the code efficiency and solving duration.</li>
+		<li>Judge decision is the final and no other changes will be encouraged.</li>
+		<li>Posting solutions/test cases in discussion forum will lead to disqualification.</li>
+		<li>Leaderboard is calculated by atleast code submission time and score of the particular individual.</li>
+		</ul>
+
+			 </div>
+
+			 <div class="modal-footer">
+			   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			   <button type="button" class="btn btn-primary"> Regiter Now </button>
+			 </div>
+
+		   </div>
+		 </div>
+		</div>
+		<!-- end of MODAL -->
 		<!-- END of List - ALL MODALS -->
-
-		<!-- Script for all modals - Start -->
-		<script >
-			document.getElementById("ModalEvent1").addEventListener('shown.bs.modal', function (events) {});
-			document.getElementById("ModalEvent2").addEventListener('shown.bs.modal', function (events) {});
-			document.getElementById("ModalEvent3").addEventListener('shown.bs.modal', function (events) {});
-			document.getElementById("ModalEvent4").addEventListener('shown.bs.modal', function (events) {});
-			document.getElementById("ModalEvent5").addEventListener('shown.bs.modal', function (events) {});
-			document.getElementById("ModalEvent6").addEventListener('shown.bs.modal', function (events) {});
-			document.getElementById("ModalEvent7").addEventListener('shown.bs.modal', function (events) {});
-			document.getElementById("ModalEvent8").addEventListener('shown.bs.modal', function (events) {});
-		</script>
-		<!-- Script for all modals - End -->
-
+</div>
         <!-- End of event details -->
 
-
-        <!-- Start of Event timeline  -->
-
-        <br>
-        <br>
-		<h2 class="blog-header color"> Event <span class="color">Timeline </span> </h2>
+		<h2 class="blog-header pt-5 color"> Event <span class="color">Timeline </span> </h2>
 
         <section id="cd-timeline" class="cd-container">
 
 			<div class="cd-timeline-block">
-				 <div class="cd-timeline-img cd-picture">
-					</div> <!-- This is for the round circle in the vertical timeline-->
+				<!-- This is for the round circle in the vertical timeline-->
+				<div class="map">
+					<div class="marker">
+						<div class="animated-dot">
+							<div class="middle-dot"></div>
+							<div class="signal"></div>
+							<div class="signal2"></div>
+						</div>
+					</div>
+				</div>
 
-					<div class="cd-timeline-content">
-						<h3>Condesense </h3>
+				<div class="cd-timeline-content">
+					<h3> 9:00 AM - 10:00 AM </h3>
 
-						<p>1 hour (9 to 10)</p>
-						<h3>Connec'T'ech </h3>
-						<p>1 hour (9 to 10)</p>
-
+					<h5> Codesense </h5>
 				</div> <!-- cd-timeline-content -->
 			</div> <!-- cd-timeline-block -->
 
 			<div class="cd-timeline-block">
-				<div class="cd-timeline-img cd-movie">
-				</div> <!-- cd-timeline-img -->
+				<!-- This is for the round circle in the vertical timeline-->
+				<div class="map">
+					<div class="marker">
+						<div class="animated-dot">
+							<div class="middle-dot"></div>
+							<div class="signal"></div>
+							<div class="signal2"></div>
+						</div>
+					</div>
+				</div>
 
 				<div class="cd-timeline-content">
-					<H2>BATCH 1</H2>
-					<h3>Scheme Schema</h3>
-					<p>1 hour (10.30 to 11.30)</p>
-					<h3>Interface Royale</h3>
-					<p>1 hour (10.30 to 11.30)</p>
-					<!-- <span class="cd-date">Jan 18</span> -->
+					<h3> 10:30 AM - 11:30 AM </h3>
+
+					<h5> Scheme With Scheme (Batch 1) </h5>
 				</div> <!-- cd-timeline-content -->
 			</div> <!-- cd-timeline-block -->
 
 			<div class="cd-timeline-block">
-				<div class="cd-timeline-img cd-picture">
-				</div> <!-- cd-timeline-img -->
+				<!-- This is for the round circle in the vertical timeline-->
+				<div class="map">
+					<div class="marker">
+						<div class="animated-dot">
+							<div class="middle-dot"></div>
+							<div class="signal"></div>
+							<div class="signal2"></div>
+						</div>
+					</div>
+				</div>
 
 				<div class="cd-timeline-content">
-					<h2>Batch 1</h2>
-					<h3>Think 'N' Grab</h3>
-					<p>45 mins(11.30 to 12.15)</p>
-					<h3>Debug Entity</h3>
-					<p>45 mins(11.30 to 12.15)</p>
+					<h3> 10:30 AM - 11:30 PM </h3>
 
-					<!-- <span class="cd-date">Jan 24</span> -->
+					<h5> Debug Entity (Batch 1) </h5>
 				</div> <!-- cd-timeline-content -->
 			</div> <!-- cd-timeline-block -->
 
 			<div class="cd-timeline-block">
-				<div class="cd-timeline-img cd-location">
-				</div> <!-- cd-timeline-img -->
+				<!-- This is for the round circle in the vertical timeline-->
+				<div class="map">
+					<div class="marker">
+						<div class="animated-dot">
+							<div class="middle-dot"></div>
+							<div class="signal"></div>
+							<div class="signal2"></div>
+						</div>
+					</div>
+				</div>
 
 				<div class="cd-timeline-content">
-					<h3>LUNCH BREAK</h3>
-					<p>(12.15TO 12.45)</p>
+					<h3> 11:30 AM - 12:15 PM </h3>
+
+					<h5> Think N Grab (Batch 1) </h5>
+				</div> <!-- cd-timeline-content -->
+			</div> <!-- cd-timeline-block -->
+
+			<div class="cd-timeline-block">
+				<!-- This is for the round circle in the vertical timeline-->
+				<div class="map">
+					<div class="marker">
+						<div class="animated-dot">
+							<div class="middle-dot"></div>
+							<div class="signal"></div>
+							<div class="signal2"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="cd-timeline-content">
+					<h3> 11:30 AM - 12:15 PM </h3>
+
+					<h5> Connec'T'ech (Batch 1) </h5>
+				</div> <!-- cd-timeline-content -->
+			</div> <!-- cd-timeline-block -->
+
+			<div class="cd-timeline-block">
+				<!-- This is for the round circle in the vertical timeline-->
+				<div class="map">
+					<div class="marker">
+						<div class="animated-dot">
+							<div class="middle-dot"></div>
+							<div class="signal"></div>
+							<div class="signal2"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="cd-timeline-content">
+					<h3> 11:30 AM - 01:00 PM </h3>
+
+					<h5> Interface Royale </h5>
+				</div> <!-- cd-timeline-content -->
+			</div> <!-- cd-timeline-block -->
+
+			<div class="cd-timeline-block">
+				<!-- cd-timeline-img -->
+				<div class="map">
+					<div class="marker">
+						<div class="animated-dot">
+							<div class="middle-dot"></div>
+							<div class="signal"></div>
+							<div class="signal2"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="cd-timeline-content">
+					<h3>12:15 PM - 12:45 PM</h3>
+
+					<h5>Lunch Break </h5>
 					<!-- <span class="cd-date">Feb 14</span> -->
 				</div> <!-- cd-timeline-content -->
 			</div> <!-- cd-timeline-block -->
 
 			<div class="cd-timeline-block">
-				<div class="cd-timeline-img cd-location">
+				<!-- This is for the round circle in the vertical timeline-->
+				<div class="map">
+					<div class="marker">
+						<div class="animated-dot">
+							<div class="middle-dot"></div>
+							<div class="signal"></div>
+							<div class="signal2"></div>
+						</div>
+					</div>
 				</div>
 
 				<div class="cd-timeline-content">
-					<h2>Batch 2 </h2>
-					<h3>Scheme Schema</h3>
-					<p>1 hour (12.45 to 13.30)</p>
-					<h3>Interface Royale</h3>
-					<p>1 hour (12.45 to 13.30)</p>
+					<h3> 12:45 PM - 01:45 PM </h3>
 
-					<!-- <span class="cd-date">Feb 18</span> -->
+					<h5> Scheme With Schema (Batch 2) </h5>
 				</div> <!-- cd-timeline-content -->
 			</div> <!-- cd-timeline-block -->
 
 			<div class="cd-timeline-block">
-				<div class="cd-timeline-img cd-movie">
-				</div> <!-- cd-timeline-img -->
+				<!-- This is for the round circle in the vertical timeline-->
+				<div class="map">
+					<div class="marker">
+						<div class="animated-dot">
+							<div class="middle-dot"></div>
+							<div class="signal"></div>
+							<div class="signal2"></div>
+						</div>
+					</div>
+				</div>
 
 				<div class="cd-timeline-content">
-					<h2>Batch 2</h2>
-					<h3>Think 'N' Grab</h3>
-					<p>45 mins(13.30 to 14.30)</p>
-					<h3>Debug Entity</h3>
-					<p>45 mins(13.30 to 14.30)</p>
+					<h3> 12:45 PM - 01:45 PM </h3>
 
-					<!-- <span class="cd-date">Feb 26</span> -->
+					<h5> Debug Entity (Batch 2) </h5>
 				</div> <!-- cd-timeline-content -->
 			</div> <!-- cd-timeline-block -->
 
 			<div class="cd-timeline-block">
-				<div class="cd-timeline-img cd-movie">
-				</div> <!-- cd-timeline-img -->
+				<!-- This is for the round circle in the vertical timeline-->
+				<div class="map">
+					<div class="marker">
+						<div class="animated-dot">
+							<div class="middle-dot"></div>
+							<div class="signal"></div>
+							<div class="signal2"></div>
+						</div>
+					</div>
+				</div>
 
 				<div class="cd-timeline-content">
-					<h2>Full day event</h2>
-					<h3>Defy the limits</h3>
-					<p>(10 to 14.30)</p>
-					<h3>Innovation hub</h3>
-					<p>(9 to 14.30)</p>
-					<h3>Workshop</h3>
-					<p>(10.30 to 12.30 & 13.00 to 15.00)</p>
+					<h3> 01:45 PM - 02:30 PM </h3>
 
+					<h5> Think N Grab (Batch 2) </h5>
+				</div> <!-- cd-timeline-content -->
+			</div> <!-- cd-timeline-block -->
+
+			<div class="cd-timeline-block">
+				<!-- This is for the round circle in the vertical timeline-->
+				<div class="map">
+					<div class="marker">
+						<div class="animated-dot">
+							<div class="middle-dot"></div>
+							<div class="signal"></div>
+							<div class="signal2"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="cd-timeline-content">
+					<h3> 01:45 PM - 02:30 PM </h3>
+
+					<h5> Connec'T'ech (Batch 2) </h5>
+				</div> <!-- cd-timeline-content -->
+			</div> <!-- cd-timeline-block -->
+
+			<div class="cd-timeline-block">
+				<!-- cd-timeline-img -->
+				<div class="map">
+					<div class="marker">
+						<div class="animated-dot">
+							<div class="middle-dot"></div>
+							<div class="signal"></div>
+							<div class="signal2"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="cd-timeline-content ">
+					<h2>Full Day Events</h2><br>
+
+					<ul class="ml-4">
+
+						<li>
+							Defy the Limits (Gaming) <br>
+							10:00 AM - 02:30 PM
+						</li>
+						<br>
+						<li>
+							Innovation Hub  <br>
+							09:00 AM - 02:30 PM
+						</li>
+						<br>
+						<li>
+							Workshop-1 <br>
+							10:30 AM - 12:30 PM
+						</li>
+						<br>
+						<li>
+
+							Workshop-2 <br>
+							01:00 PM - 03:00 PM
+						</li>
+
+					</ul>
 
 					<!-- <span class="cd-date">Feb 26</span> -->
 				</div> <!-- cd-timeline-content -->
@@ -930,7 +1158,7 @@
 
 		</section> <!-- cd-timeline -->
 		<!-- end of timeline -->
-		</div>
+
 		<!-- End of services -->
 
         <!-- Start of Sponsors -->
@@ -984,80 +1212,74 @@
 
 
         <!--Start of FAQ -->
-		<div id="blog container">
-        <div class="blog-header"> FAQs</span>
-            <span class="header-caption align-middle"> Frequently Asked <span class="color"> Questions </span></span>
+	<div id="blog">
+        <div class="blog-header">FAQs</span>
+            <span class="header-caption align-middle">Frequently Asked <span class="color"> Questions </span></span>
         </div>
 
-        <div class="blog-content row justify-content-center">
-			<div class="col-lg-6 col-12 p-0">
-					<div class="blogs mx-0 my-2"> 
-					<div class="img">
-						<h3>What is NUTPAM 2k21?</h3>
-					</div>
-					<div class="blog-text">
-						<p>It is a one day symposium conducted by the students of Department Computer Science and
-							Engineering of Sri Sairam Institute of Technology.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-6 col-12 p-0">			
-				<div class="blogs mx-0 my-2"> 
-				   <div class="img">
-					   <h3>Who can come?</h3>
-				   </div>
-   
-				   <div class="blog-text">
-					   <p>Nutpam 2k21 is open to any enrolled undergraduate or graduate student</p>
-				   </div>
-			   </div>
-			</div>
-			<div class="col-lg-6 col-12 p-0">
-				<div class="blogs mx-0 my-2"> 
-				   <div class="img">
-					   <h3>When and where?</h3>
-				   </div>
-				   <div class="blog-text">
-					   <p>For the health and safety of our participants and , Nutpam 2k21 will be held online on November
-						   17, 2k21!!!!</p>
-				   </div>
-			   </div>
-			</div>
-			<div class="col-lg-6 col-12 p-0">
-				<div class="blogs mx-0 my-2"> 
-					<div class="img">
-						<h3>How much does it cost?</h3>
-					</div>
-					<div class="blog-text">
+        <div class="blog-content">
 
-						<p>It’s FREE! All you need is a laptop and Wi-Fi!</p>
+            <div class="blogs">
+                <div class="img">
+                    <h3>What is NUTPAM 2021?</h3>
+                </div>
+                <div class="blog-text">
+                    <p>It is a one day symposium conducted by the students of Department Computer Science and
+                        Engineering of Sri Sairam Institute of Technology.
+                    </p>
+                </div>
+            </div>
 
-					</div>
-            	</div>
-			</div>
-			<div class="col-lg-6 col-12 p-0">
-				<div class="blogs mx-0 my-2"> 
-					<div class="img">
-						<h3>How does registration work?</h3>
-					</div>
-					<div class="blog-text">
-	
-						<p>Registration will happen through Google Forms.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-6 col-12 p-0">
-				<div class="blogs mx-0 my-2"> 
-					<div class="img">
-						<h3>Have additional questions?</h3>
-					</div>
-					<div class="blog-text">
-	
-						<p>Send us an email at abc@gmail.com</p>
-					</div>
-				</div>
-			</div>
+            <div class="blogs">
+                <div class="img">
+                    <h3>Who can come?</h3>
+                </div>
+
+                <div class="blog-text">
+                    <p>Nutpam 2021 is open to any enrolled undergraduate or graduate student</p>
+                </div>
+            </div>
+
+            <div class="blogs">
+                <div class="img">
+                    <h3>When and where?</h3>
+                </div>
+                <div class="blog-text">
+                    <p>For the health and safety of our participants and , Nutpam 2021 will be held online on November
+                        17, 2021!!!!</p>
+                </div>
+            </div>
+
+            <div class="blogs">
+                <div class="img">
+                    <h3>How much does it cost?</h3>
+                </div>
+                <div class="blog-text">
+
+                    <p>It’s FREE! All you need is a laptop and Wi-Fi!</p>
+
+                </div>
+            </div>
+
+            <div class="blogs">
+                <div class="img">
+                    <h3>How does registration work?</h3>
+                </div>
+                <div class="blog-text">
+
+                    <p>Registration will happen through Google Forms.</p>
+                </div>
+            </div>
+
+            <div class="blogs">
+                <div class="img">
+                    <h3>Have additional questions?</h3>
+                </div>
+                <div class="blog-text">
+
+                    <p>Send us an email at nutpam@sairamit.edu.in</p>
+                </div>
+            </div>
         </div>
         <!-- end of blog content -->
 		</div>
@@ -1065,42 +1287,70 @@
 
 
 		<!--Start of Our Team -->
-		<div id="team" class="p-5">
+		<div id="team">
 
-       		<div class="skills-header">
+       		<div class="about-header">
             	<span class="color">Our </span>Team.
         	</div>
 
 
-			<div class="wrapper">
-
-			   <section class="module-team">
-					<div class="team">
-					 	<div class="team-cards">
-
-						    <!-- Slider main container -->
-						    <div class="swiper-container">
-						       <!-- Additional required wrapper -->
-						       <div class="swiper-wrapper"></div>
-
-						    </div>
-
-						    <div class="swiper-pagination"></div>
-						    <!-- If we need navigation buttons -->
-						    <div class="navigation">
-						       <div class="swiper-button-prev"></div>
-						       <div class="swiper-button-next"></div>
-						    </div>
-					 </div>
-
+			<!-- Swiper -->
+			<div class="swiper-container">
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="images/team/core/KARTHIK-K_CHAIRMAN.jpg" alt="">
+							<div class="info">
+								<h4>Karthik K</h4>
+								<p>Chairman</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="images/team/core/MUKUND_R_S-Vice_Chairman.jpg" alt="">
+							<div class="info">
+								<h4>Mukund R S</h4>
+								<p>Vice - Chairman</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="images/team/core/Pavithra-D_Treasurer.jpg" alt="">
+							<div class="info">
+								<h4>Pavithra D</h4>
+								<p>Treasurer</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="images/team/core/Kavana-Rao-Y--Vice-Treasurer.jpg" alt="">
+							<div class="info">
+								<h4>Kavana Rao Y</h4>
+								<p>Vice - Treasurer</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="images/team/core/Vishnu-Prasath-R_-Secretary-.jpg" alt="">
+							<div class="info">
+								<h4>Vishnu Prasath R</h4>
+								<p>Secretary</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="images/team/core/Karthick_vice_secretary.jpg" alt="">
+							<div class="info">
+								<h4>Karthick M</h4>
+								<p>Vice - Secretary</p>
+							</div>
+						</div>
 					</div>
-
-				</section>
+					<div class="swiper-button-next" style="color:#60c90a;"></div>
+					<div class="swiper-button-prev" style="color:#60c90a;"></div>
+					<div class="swiper-pagination"></div>
+				</div>
 
 			</div>
+
 			<!-- end of wrapper -->
 
-    		<div class="pb-1 text-center">
+    		<div class="pb-5 text-center">
   				<a class="blog-slider__button white_text" href="TEAM.html" style="color: white">
 					View More
    				</a>
@@ -1112,368 +1362,179 @@
 
 	    <!--Start of contact-->
 	    <!-- Footer -->
-<div id = "contact" >
-<footer class="page-footer font-small stylish-color-dark pt-4">
+		<div id = "contact" >
+		<footer class="page-footer font-small stylish-color-dark pt-4">
 
-	<!-- Footer Links -->
-	<div class="container text-center text-md-left">
+			<!-- Footer Links -->
+			<div class="container-fluid mx-5 text-center text-md-left">
 
-	  <!-- Grid row -->
-	  <div class="row">
+			<!-- Grid row -->
+			<div class="row">
 
-		<!-- Grid column -->
-		<div class="col-md-4 mx-auto">
+				<hr class="clearfix w-100 d-md-none">
 
-		  <!-- Content -->
-		  <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Address</h5>
-		  <p>Sri Sairam Institute of Technology, Sairam College Rd, Sai Leo Nagar, Tambaram West, Chennai, Tamil Nadu 600044</p>
+				<!-- Grid column -->
+					<div class="col-md-3 mx-auto">
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Department Details</h5>
+						<ul class="list-unstyled">
+						<li><i class="fas fa-angle-right"></i> <a href="https://cse.sairamit.edu.in/" target="_blank">Home</a></li>
+						<li><i class="fas fa-angle-right"></i> <a href="https://cse.sairamit.edu.in/department/" target="_blank">About us</a></li>
+						<li><i class="fas fa-angle-right"></i> <a href="https://cse.sairamit.edu.in/faculty/" target="_blank">Faculty</a></li>
+						<li><i class="fas fa-angle-right"></i> <a href="https://cse.sairamit.edu.in/news/" target="_blank">News</a></li>
+						</ul>
+				</div>
+					<!-- Grid column -->
 
-		</div>
-		<!-- Grid column -->
 
-		<hr class="clearfix w-100 d-md-none">
 
-		<!-- Grid column -->
-		<div class="col-md-4 mx-auto">
+				<hr class="clearfix w-100 d-md-none">
 
-		  <!-- Links -->
-		  <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Staffs</h5>
-		  <div class="row">
-			<ul class="list-unstyled col-6">
-				<li>
-					Dr. K.C. Suresh
-				  </li>
-				  <li>
-				   Assistant Professor
-				  </li>
+				<!-- Grid column -->
+				<div class="col-md-3 mx-auto">
+
+				<!-- Content -->
+				<h5 class="font-weight-bold text-uppercase mt-3 mb-4 ">Address</h5>
+				<p>
+					Sri Sairam Institute of Technology,<br>
+					Sairam College Rd, Sai Leo Nagar,<br>
+					Tambaram West, Tamil Nadu, <br>
+					Chennai - 600044.
+				</p>
+
+				</div>
+				<!-- Grid column -->
+
+				<!-- Grid column -->
+				<div class="col-md-3 mx-auto">
+
+				<!-- Links -->
+				<h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-center">Staffs</h5>
+				<div class="row">
+					<ul class="list-unstyled col-6 text-center">
+						<li>
+							Dr. K.C. Suresh
+						</li>
+						<li>
+						Assistant Professor
+						</li>
+					</ul>
+					<ul class="list-unstyled col-6 text-center">
+						<li>
+							Mrs. Swathi S
+						</li>
+						<li>
+							Assistant Professor
+						</li>
+					</ul>
+				</div>
+				</div>
+				<!-- Grid column -->
+
+				<hr class="clearfix w-100 d-md-none">
+
+				<!-- Grid column -->
+				<div class="col-md-3 mx-auto">
+
+				<!-- Links -->
+				<h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-center">Commitee</h5>
+
+				<div class="row">
+					<ul class="list-unstyled col-6 text-center">
+						<li>
+						<b>KARTHIK K</b>
+						</li>
+						<li > Chairman </li>
+						<li> <a href="tel:+917092863491">Click to call</a> </li>
+					</ul>
+					<ul class="list-unstyled col-6 text-center">
+						<li>
+							<b>Mukund R S</b>
+							</li>
+							<li>
+							Vice-chairman
+							</li>
+							<li>
+							<a href="tel:+916369838179">Click to call</a>
+							</li>
+					</ul>
+				</div>
+				</div>
+				<!-- Grid column -->
+
+				<hr class="clearfix w-100 d-md-none">
+
+
+
+			</div>
+			<!-- Grid row -->
+
+			</div>
+			<!-- Footer Links -->
+
+			<hr>
+
+			<!-- Call to action -->
+			<ul class="list-unstyled list-inline text-center">
+			<li class="list-inline-item">
+				<h5 class="mb-1">Connect with us</h5>
+			</li>
+			<li class="list-inline-item">
+				<a href="https://bit.ly/nutpam-2k21-discord" target="_blank" class="btn btn-danger btn-rounded white_text">DISCORD</a>
+			</li>
 			</ul>
-			<ul class="list-unstyled col-6"> 
-				<li>
-					Mrs. Swathi S
-				  </li>
-				  <li>
-					Assistant Professor
-				  </li>
+			<!-- Call to action -->
+
+			<hr>
+
+			<!-- Social buttons -->
+			<ul class="list-unstyled list-inline text-center">
+			<li class="list-inline-item">
+				<a href="https://www.instagram.com/nutpam_2k21/" target="_blank" ><img src="images/instagram logo.png"
+								class="social-media btn-floating btn-fb mx-1" alt="instagram-logo"></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="https://www.facebook.com/nutpam.sit.1" target="_blank"><img src="images/facebook logo.png"
+								class="social-media btn-floating btn-fb mx-1" alt="instagram-logo"></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="https://www.linkedin.com/in/nutpam-tech-event-64b9711b7" target="_blank"><img src="images/linkedin logo.png"
+								class="social-media btn-floating btn-fb mx-1" alt="instagram-logo"></a>
+			</li>
+		<!--	  <li class="list-inline-item">-->
+		<!--		<a href="https://www.instagram.com/nutpam_2k21/" target="_blank" ><img src="images/instagram logo.png"-->
+		<!--                        class="social-media btn-floating btn-fb mx-1" alt="instagram-logo"></a>-->
+		<!--	  </li>-->
+
 			</ul>
-		  </div>
+			<!-- Social buttons -->
+
+			<!-- Copyright -->
+			<div class="footer-copyright text-center py-3">©  Copyright Students
+							of Sri Sairam Institute Of Technology. All Rights Reserved
+			</div>
+			<!-- Copyright -->
+
+		</footer>
+		<!-- Footer -->
 		</div>
-		<!-- Grid column -->
-
-		<hr class="clearfix w-100 d-md-none">
-
-		<!-- Grid column -->
-		<div class="col-md-4 mx-auto">
-
-		  <!-- Links -->
-		  <h5 class="font-weight-bold text-uppercase mt-3 mb-4 ">Commitee</h5>
-
-		  <div class="row">
-			<ul class="list-unstyled col-6">
-				<li>
-				  <b>KARTHIK K</b>
-				</li>
-				<li > Chairman </li>
-				<li> <a href="tel:+917092863491">Click to call</a> </li>
-			</ul>
-			<ul class="list-unstyled col-6"> 
-				<li>
-					<b>Mukund R S</b>
-					</li>
-					<li>
-					Vice-chairman
-					</li>
-					<li>
-					  <a href="tel:+916369838179">Click to call</a>
-					</li>
-			</ul>
-		  </div>
-		</div>
-		<!-- Grid column -->
-
-		<hr class="clearfix w-100 d-md-none">
-
-		<!-- Grid column -->
-		<div class="col-md-4 mx-auto">
-
-<!--		  &lt;!&ndash; Links &ndash;&gt;-->
-<!--		  <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>-->
-
-<!--		  <ul class="list-unstyled">-->
-<!--			<li>-->
-<!--			  <a href="#!">Link 1</a>-->
-<!--			</li>-->
-<!--			<li>-->
-<!--			  <a href="#!">Link 2</a>-->
-<!--			</li>-->
-<!--			<li>-->
-<!--			  <a href="#!">Link 3</a>-->
-<!--			</li>-->
-<!--			<li>-->
-<!--			  <a href="#!">Link 4</a>-->
-<!--			</li>-->
-<!--		  </ul>-->
-
-		</div>
-		<!-- Grid column -->
-
-	  </div>
-	  <!-- Grid row -->
-
-	</div>
-	<!-- Footer Links -->
-
-	<hr>
-
-	<!-- Call to action -->
-	<ul class="list-unstyled list-inline text-center">
-	  <li class="list-inline-item">
-		<h5 class="mb-1">Connect with us</h5>
-	  </li>
-	  <li class="list-inline-item">
-		<a href="https://bit.ly/nutpam-2k21-discord" target="_blank" class="btn btn-danger btn-rounded white_text">DISCORD</a> <!--LINK TO BE ADDED
-		-->
-	  </li>
-	</ul>
-	<!-- Call to action -->
-
-	<hr>
-
-	<!-- Social buttons -->
-	<ul class="list-unstyled list-inline text-center">
-	  <li class="list-inline-item">
-		  <a href="https://www.instagram.com/nutpam_2k21/" target="_blank" ><img src="images/instagram logo.png"
-                        class="social-media btn-floating btn-fb mx-1" alt="instagram-logo"></a>
-	  </li>
-	  <li class="list-inline-item">
-		 <a href="https://www.facebook.com/nutpam.sit.1" target="_blank"><img src="images/facebook logo.png"
-                        class="social-media btn-floating btn-fb mx-1" alt="instagram-logo"></a>
-	  </li>
-	  <li class="list-inline-item">
-		<a href="https://www.linkedin.com/in/nutpam-tech-event-64b9711b7" target="_blank"><img src="images/linkedin logo.png"
-                        class="social-media btn-floating btn-fb mx-1" alt="instagram-logo"></a>
-	  </li>
-	  <li class="list-inline-item">
-		<a href="https://www.instagram.com/nutpam_2k21/" target="_blank" ><img src="images/instagram logo.png"
-                        class="social-media btn-floating btn-fb mx-1" alt="instagram-logo"></a>
-	  </li>
-
-	</ul>
-	<!-- Social buttons -->
-
-	<!-- Copyright -->
-	<div class="footer-copyright text-center py-3">©  Copyright Students
-	                of Sri Sairam Institute Of Technology. All Rights Reserved
-	</div>
-	<!-- Copyright -->
-
-  </footer>
-  <!-- Footer -->
-</div>
 
 
 
 	    <!--contact end-->
 
-	</div>
+</div>
 	<!--End of all the divisions-->
-	<!-- JQuery -->
+<!-- JQuery -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<!-- Bootstrap tooltips -->
 	<script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-	<!-- MDB core JavaScript -->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-
-    <!-- Start of Script for Rainbow line Canvas  -->
-    <script>
-    	var w = c.width = window.innerWidth,
-    	h = c.height = window.innerHeight,
-    	ctx = c.getContext( '2d' ),
-
-    	minDist = 63,
-    	maxDist = 108,
-    	initialWidth = 2,
-    	maxLines = 54,
-    	initialLines = 3,
-    	speed = 3,
-
-    	lines = [],
-    	frame = 0,
-    	timeSinceLast = 0,
-
-    	dirs = [
-   			// straight x, y velocity
-      		[ 0, .7 ],
-      		[ .7, 0 ],
-      		[ 0, -.7 ],
-    		[ -.7, 0 ],
-   			// diagonals, 0.7 = sin(PI/4) = cos(PI/4)
-      		[ .5, .5 ],
-      		[ .5, -.5 ],
-      		[ -.5, .5 ],
-      		[ -.5, -.5]
-    	],
-
-    	starter = { // starting parent line, just a pseudo line
-      	//x:w/5
-      	//y:h/5
-     	x: w ,
-      	y: h ,
-      	vx: 0,
-      	vy: 0,
-      	width: initialWidth
-    	};
-
-		function init() {
-
-		  lines.length = 0;
-
-		  for( var i = 0; i < initialLines; ++i )
-		    lines.push( new Line( starter ) );
-
-		  ctx.fillStyle = '#171717';
-		  ctx.fillRect( 0, 0, w, h );
-
-		  // if you want a cookie ;)
-		   ctx.lineCap = 'round';
-		}
-
-		function getColor( x ) {
-
-		  // return 'hsl( hue, 80%, 50% )'.replace(
-		  // 	'hue', x / w * 360 + frame
-		  return 'white'.replace(
-		   	'hue', x / w * 360 + frame);
-		}
-
-		function anim() {
-
-		  window.requestAnimationFrame( anim );
-
-		  ++frame;
-
-		  ctx.shadowBlur = 0;
-		  ctx.fillStyle = 'rgba(0,0,0,.02)';
-		  ctx.fillRect( 0, 0, w, h );
-		  ctx.shadowBlur = .5;
-
-		  for( var i = 0; i < lines.length; ++i )
-
-		    if( lines[ i ].step() ) { // if true it's dead
-
-		      lines.splice( i, 1 );
-		      --i;
-
-		    }
-
-		  // spawn new
-
-		  ++timeSinceLast
-
-		  if( lines.length < maxLines && timeSinceLast > 10 && Math.random() < .5 ) {
-
-		    timeSinceLast = 0;
-
-		    lines.push( new Line( starter ) );
-
-		    // cover the middle;
-		    ctx.fillStyle = ctx.shadowColor = getColor( starter.x );
-		    ctx.beginPath();
-		    ctx.arc( starter.x, starter.y, initialWidth, 0, Math.PI * 2 );
-		    ctx.fill();
-		  }
-		}
-
-		function Line( parent ) {
-
-		  this.x = parent.x | 0;
-		  this.y = parent.y | 0;
-		  this.width = parent.width / 1.25;
-
-		  do {
-
-		    var dir = dirs[ ( Math.random() * dirs.length ) |0 ];
-		    this.vx = dir[ 0 ];
-		    this.vy = dir[ 1 ];
-
-		  } while (
-		    ( this.vx === -parent.vx && this.vy === -parent.vy ) || ( this.vx === parent.vx && this.vy === parent.vy) );
-
-		  this.vx *= speed;
-		  this.vy *= speed;
-
-		  this.dist = ( Math.random() * ( maxDist - minDist ) + minDist );
-
-		}
-		Line.prototype.step = function() {
-
-		  var dead = false;
-
-		  var prevX = this.x,
-		      prevY = this.y;
-
-		  this.x += this.vx;
-		  this.y += this.vy;
-
-		  --this.dist;
-
-		  // kill if out of screen
-		  if( this.x < 0 || this.x > w || this.y < 0 || this.y > h )
-		    dead = true;
-
-		  // make children :D
-		  if( this.dist <= 0 && this.width > 1 ) {
-
-		    // keep yo self, sometimes
-		    this.dist = Math.random() * ( maxDist - minDist ) + minDist;
-
-		    // add 2 children
-		    if( lines.length < maxLines ) lines.push( new Line( this ) );
-		    if( lines.length < maxLines && Math.random() < .5 ) lines.push( new Line( this ) );
-
-		    // kill the poor thing
-		    if( Math.random() < .2 ) dead = true;
-		  }
-
-		  ctx.strokeStyle = ctx.shadowColor = getColor( this.x );
-		  ctx.beginPath();
-		  ctx.lineWidth = this.width;
-		  ctx.moveTo( this.x, this.y );
-		  ctx.lineTo( prevX, prevY );
-		  ctx.stroke();
-
-		  if( dead ) return true
-		}
-
-		init();
-		anim();
-
-		window.addEventListener( 'resize', function() {
-
-		  w = c.width = window.innerWidth;
-		  h = c.height = window.innerHeight;
-		  starter.x = w / 2;
-		  starter.y = h / 2;
-
-		  init();
-		} )
-
-    </script>
-    <!-- End of Script for Rainbow line Canvas -->
-
-    <script src="js/index.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
 	<script src="js/dynamics.min.js"></script>
-
-
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-
-    <!-- for events info displaying-->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <script src="js/swiper-main.js"></script>
+    <script src="js/gsap.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/bg-animate.js"></script>
 </body>
 
 </html>

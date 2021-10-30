@@ -3,35 +3,20 @@ $(window).on('load',function(){
   gsap.to('#loader',1,{opacity:0});
   gsap.to('#loader',0,{display:"block",delay:3});
   gsap.to('#header',0,{display:"block",delay:1});
-
-
-// gsap.to('#breaker',0,{display:"block"});
-// gsap.to('#breaker-two',0,{display:"block",delay:.1});
-gsap.to('#breaker',0,{display:"none",delay:2});
-gsap.to('#breaker-two',0,{display:"none",delay:2});
-   gsap.to('#about',0,{display:"block",delay:.7});
-gsap.to('#portfolio',0,{display:"block",delay:.7});
-gsap.to('#contact',0,{display:"block",delay:.7});
-gsap.to('#blog',0,{display:"block",delay:.7})
- // gsap.to('#navigation-content',0,{display:"none"});
+  gsap.to('#breaker',0,{display:"none",delay:2});
+  gsap.to('#breaker-two',0,{display:"none",delay:2});
+  gsap.to('#about',0,{display:"block",delay:.7});
+  gsap.to('#services',0,{display:"block",delay:.7});
+  gsap.to('#contact',0,{display:"block",delay:.7});
+  gsap.to('#blog',0,{display:"block",delay:.7})
+// gsap.to('#navigation-content',0,{display:"none"});
 //   gsap.to('#navigation-content',0,{display:"flex",delay:1});
 //     gsap.to('#navigation-content',0,{display:"none",delay:.7});
 //   gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
 // gsap.to('#header',0,{display:"none"});
 // gsap.to('#navigation-content',0,{display:'flex',delay:2});
 })
-$(function(){
-  $('.color-panel').on("click",function(e) {
-    e.preventDefault();
-    $('.color-changer').toggleClass('color-changer-active');
-});
-$('.colors a').on("click",function(e) {
-  e.preventDefault();
-  var attr = $(this).attr("title");
-  console.log(attr);
-  $('head').append('<link rel="stylesheet" href="css/'+attr+'.css">');
-});
-});
+
 $(function(){
      $('.menubar').on('click',function(){
          gsap.to('#navigation-content',.6,{y:0});
@@ -159,7 +144,7 @@ gsap.to('#breaker',0,{display:"block"});
 gsap.to('#breaker-two',0,{display:"block",delay:.1});
 gsap.to('#breaker',0,{display:"none",delay:2});
 gsap.to('#breaker-two',0,{display:"none",delay:2});
-gsap.to('#portfolio',0,{display:"block",delay:.7});
+gsap.to('#services',0,{display:"block",delay:.7});
 gsap.to('#sponsors',0,{display:"block",delay:.7});
  gsap.to('#team',0,{display:"block",delay:.7});
 gsap.to('#navigation-content',0,{display:'flex',delay:2});
@@ -169,7 +154,7 @@ $('#blog-link').on('click',function(){
   gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
 gsap.to('#header',0,{display:"block",delay:.7});
 gsap.to('#about',0,{display:"block",delay:.7});
-gsap.to('#portfolio',0,{display:"block",delay:.7});
+gsap.to('#services',0,{display:"block",delay:.7});
 gsap.to('#contact',0,{display:"block",delay:.7});
 gsap.to('#breaker',0,{display:"block"});
 gsap.to('#breaker-two',0,{display:"block",delay:.1});
@@ -185,7 +170,7 @@ $('#home-link').on('click',function(){
   gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
 gsap.to('#header',0,{display:"none"});
    gsap.to('#about',0,{display:"block",delay:.7});
-gsap.to('#portfolio',0,{display:"block",delay:.7});
+gsap.to('#services',0,{display:"block",delay:.7});
 gsap.to('#contact',0,{display:"block",delay:.7});
 gsap.to('#blog',0,{display:"block",delay:.7});
 gsap.to('#breaker',0,{display:"block"});
@@ -203,7 +188,7 @@ $('#sponsors-link').on('click',function(){
       gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
   gsap.to('#header',0,{display:"block",delay:.7});
 gsap.to('#blog',0,{display:"block",delay:.7});
-gsap.to('#portfolio',0,{display:"block",delay:.7});
+gsap.to('#services',0,{display:"block",delay:.7});
    gsap.to('#breaker',0,{display:"block"});
    gsap.to('#breaker-two',0,{display:"block",delay:.1});
 gsap.to('#contact',0,{display:"block",delay:.7});
@@ -247,60 +232,10 @@ $(function(){
 
 })
 
-$(function(){
-  var clock= document.querySelector('clock');
-
-  // Grab the current date
-  var currentDate = new Date();
-
-  // Target future date/24 hour time/Timezone
-  var targetDate = moment.tz("2021-17-11 00:00", "Asia/Kolkata");
-
-  // Calculate the difference in seconds between the future and current date
-  var diff = targetDate / 1000 - currentDate.getTime() / 1000;
-
-  if (diff <= 0) {
-    // If remaining countdown is 0
-    clock = $(".clock").FlipClock(0, {
-      clockFace: "DailyCounter",
-      countdown: true,
-      autostart: false
-    });
-    console.log("Date has already passed!")
-
-  } else {
-    // Run countdown timer
-    clock = $(".clock").FlipClock(diff, {
-      clockFace: "DailyCounter",
-      countdown: true,
-      callbacks: {
-        stop: function() {
-          console.log("Timer has ended!")
-        }
-      }
-    });
-
-    // Check when timer reaches 0, then stop at 0
-    setTimeout(function() {
-      checktime();
-    }, 1000);
-
-    function checktime() {
-      t = clock.getTime();
-      if (t <= 0) {
-        clock.setTime(0);
-      }
-      setTimeout(function() {
-        checktime();
-      }, 1000);
-    }
-  }
-});
-
-var countDownDate = new Date("Nov 17, 2021 12:00:00").getTime();
+var countDownDate = new Date("Nov 18, 2021 12:00:00").getTime();
 // Demo date in a month
 var date = new Date();
-// var countDownDate = new Date(date.setMonth(date.getMonth()+1)).getTime();
+
 
 var digitSegments = [
 	[1, 2, 3, 4, 5, 6],
@@ -326,7 +261,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		var distance = countDownDate - now;
 
 		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
@@ -373,141 +308,206 @@ var setNumber = function (digit, number, on) {
 
 
 
-window.addEventListener("load", event => {
-
-    var swiperWrapper = document.querySelector('.swiper-wrapper');
-
-    /* The Team */
-    var team = [{
-            name: "Alice Stone",
-            role: "UI Designer",
-            photo: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=compress&cs=tinysrgb&dpr=2&h=300&w=300",
-
-        },
-        {
-            name: "Adam Turner",
-            role: "Project Manager",
-            photo: "https://images.unsplash.com/photo-1522609925277-66fea332c575?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9?auto=compress&cs=tinysrgb&dpr=2&h=300&w=300",
-
-        },
-        {
-            name: "Nancy Hughes",
-            role: "UX Specialist",
-            photo: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=300",
-
-        },
-        {
-            name: "Jonathan Campbell",
-            role: "Front-End Developer",
-            photo: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=300",
-
-        },
-        {
-            name: "Jack Keller",
-            role: "Back-End Developer",
-            photo: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=300",
-
-        },
-        {
-            name: "Sara Carroll",
-            role: "Head of UI Design",
-            photo: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9?auto=compress&cs=tinysrgb&dpr=2&h=300&w=300",
-
-        },
-         {
-            name: "Sara Carroll",
-            role: "Head of UI Design",
-            photo: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9?auto=compress&cs=tinysrgb&dpr=2&h=300&w=300",
-
-        },
-    ];
-
-
-
-    /* Function to populate the team members */
-    function addTeam() {
-        for (let i = 0; i < 6; i++) {
-
-            /* Variables for the team */
-            var name = team[i].name,
-                role = team[i].role,
-                desc = team[i].desc,
-                photo = team[i].photo
-
-
-            /* Template for the Team Cards */
-            var template = `
-                <div class="swiper-slide">
-                <div class="card">
-                    <span class="bg"></span>
-                    <figure class="photo"><img src="${photo}"></figure>
-                        <article class="text pt-5">
-                            <p class="name">${name}</p>
-                            <p class="role">${role}</p> 
-                          
-                        </article>
-                      </div>
-                </div>`;
-
-            swiperWrapper.insertAdjacentHTML('beforeend', template);
-        }
-    };
-
-
-    addTeam();
-
-
-
-    /* Swiper Settings */
-
-    var mySwiper = new Swiper(".swiper-container", {
-        // Optional parameters
-        direction: "horizontal",
-        loop: true,
-        centeredSlides: true,
-        speed: 800,
-        slidesPerView: 4,
-        spaceBetween: 40,
-        threshold: 50,
-
-
-        // If we need pagination
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
-        },
-        breakpoints: {
-            1180: {
-                slidesPerView: 4,
-                spaceBetween: 40,
-                centeredSlides: true,
-                loop: true,
-            },
-            799: {
-                slidesPerView: 3,
-                spaceBetween: 10,
-                centeredSlides: true,
-                loop: true,
-            },
-        }
-    });
-
-
-
-   function followCursor(event) {
-        var pointer = event.currentTarget.closest(".swiper-slide").querySelector('.pointer'),
-            index = event.currentTarget.dataset.index,
-            sizeIcon = (60 * index) + 25;
-
-        pointer.style.transform = `translateX(${sizeIcon}px)`;
-    }
-
-
-    /* end */
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  centeredSlides: true,
+  grabCursor: true,
+  loop: true,
+  // breakpoints: {
+  //   345: {
+  //     slidesPerView: 1,
+  //     spaceBetween: 20,
+  //   },
+  //   480: {
+  //     slidesPerView: 2,
+  //     spaceBetween: 30,
+  //   },
+  //   640: {
+  //     slidesPerView: 3,
+  //     spaceBetween: 60,
+  //   }
+  // },
+  speed: 900,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
+
+    	var w = c.width = window.innerWidth,
+    	h = c.height = window.innerHeight,
+    	ctx = c.getContext( '2d' ),
+
+    	minDist = 63,
+    	maxDist = 108,
+    	initialWidth = 2,
+    	maxLines = 54,
+    	initialLines = 3,
+    	speed = 3,
+
+    	lines = [],
+    	frame = 0,
+    	timeSinceLast = 0,
+
+    	dirs = [
+   			// straight x, y velocity
+      		[ 0, .7 ],
+      		[ .7, 0 ],
+      		[ 0, -.7 ],
+    		[ -.7, 0 ],
+   			// diagonals, 0.7 = sin(PI/4) = cos(PI/4)
+      		[ .5, .5 ],
+      		[ .5, -.5 ],
+      		[ -.5, .5 ],
+      		[ -.5, -.5]
+    	],
+
+    	starter = { // starting parent line, just a pseudo line
+      	//x:w/5
+      	//y:h/5
+     	x: w ,
+      	y: h ,
+      	vx: 0,
+      	vy: 0,
+      	width: initialWidth
+    	};
+
+		function init() {
+
+		  lines.length = 0;
+
+		  for( var i = 0; i < initialLines; ++i )
+		    lines.push( new Line( starter ) );
+
+		  ctx.fillStyle = '#171717';
+		  ctx.fillRect( 0, 0, w, h );
+
+		  // if you want a cookie ;)
+		   ctx.lineCap = 'round';
+		}
+
+		function getColor( x ) {
+
+		  // return 'hsl( hue, 80%, 50% )'.replace(
+		  // 	'hue', x / w * 360 + frame
+		  return 'white'.replace(
+		   	'hue', x / w * 360 + frame);
+		}
+
+		function anim() {
+
+		  window.requestAnimationFrame( anim );
+
+		  ++frame;
+
+		  ctx.shadowBlur = 0;
+		  ctx.fillStyle = 'rgba(0,0,0,.02)';
+		  ctx.fillRect( 0, 0, w, h );
+		  ctx.shadowBlur = .5;
+
+		  for( var i = 0; i < lines.length; ++i )
+
+		    if( lines[ i ].step() ) { // if true it's dead
+
+		      lines.splice( i, 1 );
+		      --i;
+
+		    }
+
+		  // spawn new
+
+		  ++timeSinceLast
+
+		  if( lines.length < maxLines && timeSinceLast > 10 && Math.random() < .5 ) {
+
+		    timeSinceLast = 0;
+
+		    lines.push( new Line( starter ) );
+
+		    // cover the middle;
+		    ctx.fillStyle = ctx.shadowColor = getColor( starter.x );
+		    ctx.beginPath();
+		    ctx.arc( starter.x, starter.y, initialWidth, 0, Math.PI * 2 );
+		    ctx.fill();
+		  }
+		}
+
+		function Line( parent ) {
+
+		  this.x = parent.x | 0;
+		  this.y = parent.y | 0;
+		  this.width = parent.width / 1.25;
+
+		  do {
+
+		    var dir = dirs[ ( Math.random() * dirs.length ) |0 ];
+		    this.vx = dir[ 0 ];
+		    this.vy = dir[ 1 ];
+
+		  } while (
+		    ( this.vx === -parent.vx && this.vy === -parent.vy ) || ( this.vx === parent.vx && this.vy === parent.vy) );
+
+		  this.vx *= speed;
+		  this.vy *= speed;
+
+		  this.dist = ( Math.random() * ( maxDist - minDist ) + minDist );
+
+		}
+		Line.prototype.step = function() {
+
+		  var dead = false;
+
+		  var prevX = this.x,
+		      prevY = this.y;
+
+		  this.x += this.vx;
+		  this.y += this.vy;
+
+		  --this.dist;
+
+		  // kill if out of screen
+		  if( this.x < 0 || this.x > w || this.y < 0 || this.y > h )
+		    dead = true;
+
+		  // make children :D
+		  if( this.dist <= 0 && this.width > 1 ) {
+
+		    // keep yo self, sometimes
+		    this.dist = Math.random() * ( maxDist - minDist ) + minDist;
+
+		    // add 2 children
+		    if( lines.length < maxLines ) lines.push( new Line( this ) );
+		    if( lines.length < maxLines && Math.random() < .5 ) lines.push( new Line( this ) );
+
+		    // kill the poor thing
+		    if( Math.random() < .2 ) dead = true;
+		  }
+
+		  ctx.strokeStyle = ctx.shadowColor = getColor( this.x );
+		  ctx.beginPath();
+		  ctx.lineWidth = this.width;
+		  ctx.moveTo( this.x, this.y );
+		  ctx.lineTo( prevX, prevY );
+		  ctx.stroke();
+
+		  if( dead ) return true
+		}
+
+		init();
+		anim();
+
+		window.addEventListener( 'resize', function() {
+
+		  w = c.width = window.innerWidth;
+		  h = c.height = window.innerHeight;
+		  starter.x = w / 2;
+		  starter.y = h / 2;
+
+		  init();
+		} )
+

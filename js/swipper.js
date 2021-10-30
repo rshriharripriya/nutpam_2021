@@ -1,7 +1,5 @@
-import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
-
 var swiper = new Swiper('.blog-slider', {
-    spaceBetween: 30,
+    spaceBetween: 40,
     effect: 'fade',
     loop: true,
     mousewheel: {
@@ -15,3 +13,4 @@ var swiper = new Swiper('.blog-slider', {
 });
 
 exports.default = swiper;
+

@@ -5870,7 +5870,8 @@ button.close {
   padding: 0;
   background-color: transparent;
   border: 0;
-  color:#ffffff;
+  /*custom*/
+  color:#c50707;
 }
 
 a.close.disabled {
@@ -6087,6 +6088,7 @@ a.close.disabled {
 
   /*custom*/
   /*border-bottom: 1px solid #edfff9;*/
+  opacity: 1.5;
 }
 
 .modal-header .close {

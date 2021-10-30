@@ -1,0 +1,196 @@
+/* * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+} */
+
+/* html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+    vertical-align: baseline;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+} */
+
+.map {
+    /* height: 200px;
+    position: relative;
+    overflow: hidden;
+    width: 51px;
+    left: -27rem; */
+    position: absolute;
+    top: -88px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.marker {
+    position: absolute;
+    padding-left: 0px;
+    cursor: pointer;
+    left: 50%;
+    margin-left: -10px;
+    top: 100px;
+}
+
+/* .map .animated-dot {
+    width: 20px;
+    height: 20px;
+    left: -9px;
+    top: -5px;
+    position: relative;
+  background-color: #333;
+      border-radius: 50%;
+} */
+
+.map .animated-dot .middle-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  background-color: rgb(96, 206, 33);
+}
+
+.map .animated-dot .signal {
+    width: 75px;
+    pointer-events: none;
+    height: 75px;
+    border-radius: 200px;
+    position: absolute;
+    left: -25px;
+    top: -25px;
+    opacity: 0;
+    -webkit-animation: animationSignal cubic-bezier(0,.55,.55,1) 2s;
+    animation: animationSignal cubic-bezier(0,.55,.55,1) 2s;
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards;
+    animation-delay: 0.78s;
+    animation-iteration-count: infinite;
+    background-color: rgb(67, 228, 46);
+}
+
+.map .animated-dot .signal2 {
+    width: 75px;
+    height: 75px;
+    pointer-events: none;
+    border-radius: 200px;
+    position: absolute;
+    left: -25px;
+    top: -25px;
+    opacity: 0;
+    -webkit-animation: animationSignal cubic-bezier(0,.55,.55,1) 2s;
+    animation: animationSignal cubic-bezier(0,.55,.55,1) 2s;
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    background-color: rgb(67, 228, 46);;
+}
+
+@-webkit-keyframes animationSignal {
+    0% {
+        opacity: 0;
+        transform: scale(0.00)
+    }
+
+    1% {
+        opacity: 0.25
+    }
+
+    20% {
+        opacity: 0.25
+    }
+
+    60% {
+        transform: scale(1);
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes animationSignal2 {
+    0% {
+        opacity: 0
+    }
+
+    1% {
+        opacity: 0.2
+    }
+
+    20% {
+        opacity: 0.17
+    }
+
+    60% {
+        opacity: 0
+    }
+}
+
+@keyframes animationSignal {
+    0% {
+        opacity: 0;
+        transform: scale(0.00)
+    }
+
+    1% {
+        opacity: 0.25
+    }
+
+    20% {
+        opacity: 0.25
+    }
+
+    60% {
+        transform: scale(1);
+        opacity: 0
+    }
+}
+
+@keyframes animationSignal2 {
+    0% {
+        opacity: 0
+    }
+
+    1% {
+        opacity: 0.2
+    }
+
+    20% {
+        opacity: 0.17
+    }
+
+    60% {
+        opacity: 0
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+    .map {
+        width: 300px;
+        height: 30px;
+        left: 50%;
+        margin-left: -15px;
+        margin-top: 15px;
+    }
+    .map .animated-dot .middle-dot {
+        left: -135px;
+        top: -10px;
+    }
+    .map .animated-dot .signal {
+        left: -162px;
+        top: -38px;
+    }
+    .map .animated-dot .signal2 {
+        left: -162px;
+        top: -38px;
+    }
+}
