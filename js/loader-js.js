@@ -44,11 +44,18 @@ function reset() {
 
 
 $(window).on("load", function(){
+
+
+  $("html").css("overflow","hidden");
    setTimeout(removeLoader, 4500); //wait for page load PLUS 4.5 seconds.
 });
+
+
 function removeLoader(){
   $(".loader-body").fadeOut("slow");
 }
+
+// $(window).off('scroll.scrolldisabler');
 
 // DO NOT REMOVE
 // $(window).on("load",function(){
