@@ -1,0 +1,65 @@
+alphabet = new Array("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0");
+letter_count = 0;
+el = $("#loading");
+word = el.html().trim();
+finished = false;
+
+el.html("");
+for (var i = 0; i < word.length; i++) {
+  el.append("<span>"+word.charAt(i)+"</span>");
+}
+
+setTimeout(write, 75);
+incrementer = setTimeout(inc, 1000);
+
+function write() {
+  for (var i = letter_count; i < word.length; i++) {
+    var c = Math.floor(Math.random() * 36);
+    $("span")[i].innerHTML = alphabet[c];
+  }
+  if (!finished) {
+    setTimeout(write, 75);
+  }
+}
+
+function inc() {
+  $("span")[letter_count].innerHTML = word[letter_count];
+  $("span:eq("+letter_count+")").addClass("glow");
+  letter_count++;
+  if (letter_count >= word.length) {
+    finished = true;
+    setTimeout(reset, 700);
+  } else {
+    setTimeout(inc, 700);
+  }
+}
+
+function reset() {
+  letter_count = 0;
+  finished = false;
+  setTimeout(inc, 700);
+  setTimeout(write, 75);
+  $("span").removeClass("glow");
+}
+
+
+$(window).on("load", function(){
+
+
+  $("html").css("overflow","hidden");
+   setTimeout(removeLoader, 4500); //wait for page load PLUS 4.5 seconds.
+});
+
+
+function removeLoader(){
+  $(".loader-body").fadeOut("slow");
+}
+
+// $(window).off('scroll.scrolldisabler');
+
+// DO NOT REMOVE
+// $(window).on("load",function(){
+  
+//      $(".loader-body").fadeOut("slow");
+// });
+

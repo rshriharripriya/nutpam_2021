@@ -1,3 +1,6 @@
+
+
+
 var w = c.width = window.innerWidth,
     	h = c.height = window.innerHeight,
     	ctx = c.getContext( '2d' ),
@@ -5,9 +8,9 @@ var w = c.width = window.innerWidth,
     	minDist = 63,
     	maxDist = 108,
     	initialWidth = 2,
-    	maxLines = 54,
+    	maxLines = 45,
     	initialLines = 3,
-    	speed = 3,
+    	speed = 2,
 
     	lines = [],
     	frame = 0,
@@ -47,7 +50,7 @@ var w = c.width = window.innerWidth,
 		  ctx.fillRect( 0, 0, w, h );
 
 		  // if you want a cookie ;)
-		   ctx.lineCap = 'round';
+		   //ctx.lineCap = 'round';
 		}
 
 		function getColor( x ) {
@@ -98,9 +101,13 @@ var w = c.width = window.innerWidth,
 
 		function Line( parent ) {
 
-		  this.x = parent.x | 0;
-		  this.y = parent.y | 0;
-		  this.width = parent.width / 1.25;
+		  // this.x = parent.x | 0;
+		  // this.y = parent.y | 0;
+		  // this.width = parent.width / 1.25;
+
+		  this.x = parent.x ;
+		   this.y = parent.y ;
+		   this.width = parent.width ;
 
 		  do {
 
@@ -164,10 +171,16 @@ var w = c.width = window.innerWidth,
 
 		  w = c.width = window.innerWidth;
 		  h = c.height = window.innerHeight;
-		  starter.x = w / 2;
-		  starter.y = h / 2;
+		  // starter.x = w / 2;
+		  // starter.y = h / 2;
 
-		} )
+		  starter.x = w ;
+		  starter.y = h;
+
+		  ctx.fillStyle = '#171717';
+		  ctx.fillRect( 0, 0, w, h );
+
+		} );
 
 
 //init()-startermethod--userDefined-bgAnim

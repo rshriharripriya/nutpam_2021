@@ -1,4 +1,3 @@
-<!-- renamed to index.html -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,6 +31,9 @@
 	<link rel="stylesheet" href="css/swiper.css">
 	<!-- radar dot style for the event section -->
 	<link rel="stylesheet" href="css/timelineDot.css">
+	<link rel="stylesheet" type="text/css" href="css/loader.css">
+
+	<link rel="preconnect"  href="Fonts/SourceCodePro-Medium.tff">
 
 </head>
 
@@ -51,10 +53,23 @@
 		<!--        </div>-->
 		<!--        loader-end-->
 
+
+
+
 		<!--link-screen-->
-		<div id="breaker"></div>
-		<div id="breaker-two"></div>
+		<!-- <div id="breaker"></div> -->
+		<!-- <div id="breaker-two"></div> -->
 		<!--link-screen-->
+
+
+		<!--******************************************-->
+
+		<!-- Start of Loader Type 2 -->
+		<div class="loader-body "><!-- onload="loadfun()"> -->
+			<div id="loading" class="vertical-center"> NUTPAM </div>
+		</div>
+		<!-- End of Loader -->
+		<!--******************************************-->
 
 
 		<!--Main-Section-->
@@ -91,7 +106,9 @@
 		<!--Menubar-->
 		<div id="navigation-bar">
 			<div class="logo">
+
 				<a href="#" onclick="topFunction()" >
+
 					<!-- <object data="images/logos/LOGO  svg.svg" type=""></object> -->
 					<img src="images/logos/LOGO  svg.svg" alt="">
 				</a>
@@ -238,6 +255,7 @@
 		<!--Header End-->
 		<!--HomePage End-->
 		<!--Main-Section End-->
+        
         <button class="arrow-up" onclick="topFunction()" id="myBtn">
           <span class="left-arm"></span>
           <span class="right-arm"></span>
@@ -260,7 +278,7 @@
 						<!--about picture-->
 
 						<div class="img-fluid p-0 about-img">
-							<img src="images/logos/LOGO  svg.svg" alt="">
+							<img src="images/logos/LOGO  svg.svg" alt="" loading="lazy">
 						</div>
 					</div>
 
@@ -292,7 +310,7 @@
 						<!--about picture-->
 
 						<div class="img-fluid p-0 about-img">
-							<img src="images/logos/logo.png" alt="Your Image">
+							<img src="images/logos/logo.png" height="200px" alt="Your Image" loading="lazy">
 
 						</div>
 					</div>
@@ -327,7 +345,7 @@
 						<!--about picture-->
 						<div class="img-fluid p-0 about-img">
 
-							<img src="images/logos/dept_logo.png" alt="Your Image">
+							<img src="images/logos/dept_logo.png" height="350px"  alt="Your Image" loading="lazy">
 
 						</div>
 					</div>
@@ -805,7 +823,7 @@
 							<ul>
 								<li>There will be 3 rounds .</li>
 								<li>First 2 rounds will be Non-Technical. </li>
-								<li>And the last round will be Technical.</li>
+								<li>And the last round will be General Knowledge.</li>
 
 								<li>It is a single-player contest. </li>
 								<li>PLATFORM : COSMOBUZZ </li>
@@ -1335,7 +1353,7 @@
 					</div>
 					<div class="blog-text">
 
-						<p>It’s FREE! All you need is a laptop and Wi-Fi!</p>
+						<p>It’s FREE! (Except for 'Defy the Limits') All you need is a laptop and Wi-Fi!</p>
 
 					</div>
 				</div>
@@ -1493,21 +1511,23 @@
 							<!-- Links -->
 							<h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-center">Staffs</h5>
 							<div class="row">
-								<ul class="list-unstyled col-6 text-center">
+								<ul class="list-unstyled col-6">
 									<li>
 										Dr. K.C. Suresh
 									</li>
 									<li>
-										Assistant Professor
+										Associate Professor
 									</li>
+									<li> <a href="tel:+917092863491">Click to call</a> </li>
 								</ul>
-								<ul class="list-unstyled col-6 text-center">
+								<ul class="list-unstyled col-6">
 									<li>
 										Mrs. Swathi S
 									</li>
 									<li>
 										Assistant Professor
 									</li>
+									<li> <a href="tel:+918056678354">Click to call</a> </li>
 								</ul>
 							</div>
 						</div>
@@ -1522,14 +1542,14 @@
 							<h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-center">Commitee</h5>
 
 							<div class="row">
-								<ul class="list-unstyled col-6 text-center">
+								<ul class="list-unstyled col-6 ">
 									<li>
 										<b>KARTHIK K</b>
 									</li>
 									<li> Chairman </li>
 									<li> <a href="tel:+917092863491">Click to call</a> </li>
 								</ul>
-								<ul class="list-unstyled col-6 text-center">
+								<ul class="list-unstyled col-6">
 									<li>
 										<b>Mukund R S</b>
 									</li>
@@ -1622,6 +1642,7 @@
 	<script src="js/gsap.min.js"></script>
 	<script src="js/index.js"></script>
 	<script src="js/bg-animate.js"></script>
+	<script src="js/loader-js.js"></script>
 </body>
 
 </html>
