@@ -9,8 +9,8 @@ for (var i = 0; i < word.length; i++) {
   el.append("<span>"+word.charAt(i)+"</span>");
 }
 
-setTimeout(write, 75);
-incrementer = setTimeout(inc, 1000);
+setTimeout(write, 55);
+incrementer = setTimeout(inc, 700);
 
 function write() {
   for (var i = letter_count; i < word.length; i++) {
@@ -18,7 +18,7 @@ function write() {
     $("span")[i].innerHTML = alphabet[c];
   }
   if (!finished) {
-    setTimeout(write, 75);
+    setTimeout(write, 55);
   }
 }
 
@@ -28,17 +28,17 @@ function inc() {
   letter_count++;
   if (letter_count >= word.length) {
     finished = true;
-    setTimeout(reset, 700);
+    setTimeout(reset, 500);
   } else {
-    setTimeout(inc, 700);
+    setTimeout(inc, 500);
   }
 }
 
 function reset() {
   letter_count = 0;
   finished = false;
-  setTimeout(inc, 700);
-  setTimeout(write, 75);
+  setTimeout(inc, 500);
+  setTimeout(write, 55);
   $("span").removeClass("glow");
 }
 
@@ -47,7 +47,7 @@ $(window).on("load", function(){
 
 
   $("html").css("overflow","hidden");
-   setTimeout(removeLoader, 4500); //wait for page load PLUS 4.5 seconds.
+   setTimeout(removeLoader, 9000); //wait for page load PLUS 9 seconds.
 });
 
 
