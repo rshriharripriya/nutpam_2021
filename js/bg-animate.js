@@ -177,6 +177,9 @@ var w = c.width = window.innerWidth,
 		  starter.x = w ;
 		  starter.y = h;
 
+		  ctx.fillStyle = '#171717';
+		  ctx.fillRect( 0, 0, w, h );
+
 		} );
 
 
