@@ -1,4 +1,3 @@
-<!-- renamed to index.html -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,6 +31,9 @@
 	<link rel="stylesheet" href="css/swiper.css">
 	<!-- radar dot style for the event section -->
 	<link rel="stylesheet" href="css/timelineDot.css">
+	<link rel="stylesheet" type="text/css" href="css/loader.css">
+
+	<link rel="preconnect"  href="Fonts/SourceCodePro-Medium.tff">
 
 </head>
 
@@ -51,10 +53,23 @@
 		<!--        </div>-->
 		<!--        loader-end-->
 
+
+
+
 		<!--link-screen-->
-		<div id="breaker"></div>
-		<div id="breaker-two"></div>
+		<!-- <div id="breaker"></div> -->
+		<!-- <div id="breaker-two"></div> -->
 		<!--link-screen-->
+
+
+		<!--******************************************-->
+
+		<!-- Start of Loader Type 2 -->
+		<div class="loader-body "><!-- onload="loadfun()"> -->
+			<div id="loading" class="vertical-center"> NUTPAM </div>
+		</div>
+		<!-- End of Loader -->
+		<!--******************************************-->
 
 
 		<!--Main-Section-->
@@ -238,6 +253,7 @@
 		<!--Header End-->
 		<!--HomePage End-->
 		<!--Main-Section End-->
+        
         <button class="arrow-up" onclick="topFunction()" id="myBtn">
           <span class="left-arm"></span>
           <span class="right-arm"></span>
@@ -1624,6 +1640,7 @@
 	<script src="js/gsap.min.js"></script>
 	<script src="js/index.js"></script>
 	<script src="js/bg-animate.js"></script>
+	<script src="js/loader-js.js"></script>
 </body>
 
 </html>
