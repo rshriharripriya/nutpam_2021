@@ -1,0 +1,50 @@
+.reg-all-body {
+  background: #171717;
+  padding: 40px;
+}
+
+.btn-event {
+	background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+	border-radius: 40px;
+  box-sizing: border-box;
+	color: white;
+	display: block;
+	font: 1.125rem 'Oswald', Arial, sans-serif; /*18*/
+	height: 80px;
+	letter-spacing: 1px;
+	margin: 0 auto;
+	padding: 4px;
+	position: relative;
+  text-decoration: none;
+	text-transform: uppercase;
+	min-width: 220px;
+	max-width: 50%;
+	z-index: 2;
+}
+
+.btn-event:hover {
+	color: #fff;
+}
+
+.btn-event span {
+	align-items: center;
+	background: #171717;
+	border-radius: 40px;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	transition: background .5s ease;
+	width: 100%;
+}
+
+.btn-event:hover span {
+	background: transparent;
+}
+
+
+
+
+.discord-btn{
+	border-radius: 40px;
+    background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+}
