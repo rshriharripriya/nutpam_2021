@@ -46,7 +46,8 @@ var w = c.width = window.innerWidth,
 		  for( var i = 0; i < initialLines; ++i )
 		    lines.push( new Line( starter ) );
 
-		  ctx.fillStyle = '#171717';
+		  ctx.fillStyle = '#171717'; //cnvabgcolr
+
 		  ctx.fillRect( 0, 0, w, h );
 
 		  // if you want a cookie ;)
@@ -57,7 +58,7 @@ var w = c.width = window.innerWidth,
 
 		  // return 'hsl( hue, 80%, 50% )'.replace(
 		  // 	'hue', x / w * 360 + frame
-		  return 'white'.replace(
+		  return '#d4ebd6e0'.replace(
 		   	'hue', x / w * 360 + frame);
 		}
 

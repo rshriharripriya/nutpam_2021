@@ -1,6 +1,6 @@
 .reg-all-body {
   background: #171717;
-  padding: 40px;
+  /*padding: 40px;*/
 }
 
 .btn-event {
@@ -17,8 +17,8 @@
 	position: relative;
   text-decoration: none;
 	text-transform: uppercase;
-	min-width: 220px;
-	max-width: 50%;
+	min-width: 30%;
+	max-width: 40%;
 	z-index: 2;
 }
 
@@ -35,6 +35,7 @@
 	height: 100%;
 	transition: background .5s ease;
 	width: 100%;
+	padding: 10px;
 }
 
 .btn-event:hover span {
@@ -46,5 +47,9 @@
 
 .discord-btn{
 	border-radius: 40px;
-    background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+  background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+}
+
+.event-more-info-btn{
+	background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
 }
