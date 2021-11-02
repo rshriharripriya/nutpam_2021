@@ -35,6 +35,7 @@ input[type=number] {
 }
   html{
     background: #171717 !important;
+    scroll-behavior: smooth;
 
   }
   #loader{
@@ -57,6 +58,7 @@ body{
     user-select: none;
     height: auto;
     overflow-x: hidden;
+    scroll-behavior: smooth;
     width: 100%;
     background: #171717 !important;
 }
@@ -83,7 +85,6 @@ html, body {
     margin: 0;
     padding: 0;
     background: #171717;
-    background-color: #171717;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -93,6 +94,8 @@ html, body {
 padding-top: 2%;
      width: 100%;
     text-align: center;
+    background-color: #171717;
+    color: #79fe0c;
 }
 
 .digit {
@@ -311,19 +314,19 @@ color: #79FE0C;
     transform: rotate(90deg);
 }
 .logo img{
-    height: 80px;
+    height: 70px;
     position: absolute;
-    top: 3%;
+    top: 14%;
     left: 2.5%;
     opacity: 1;
     z-index: 2;
     cursor: pointer;
     transition: all .4s ease;
 }
-.logo img:hover{
+/* .logo img:hover{
     opacity: 1;
     transform: rotate(-45deg);
-}
+} */
 #navigation-bar img{
     height: 80px;
     position: absolute;
@@ -341,15 +344,7 @@ color: #79FE0C;
     height: 100vh;
     float: right;
 }
-.header-image{
-    float: right;
-    height: auto;
-    background-size: cover;
-    background-position: center;
-    width: 40%;
-    height: 100vh;
 
-}
 .header-content{
     height: 100vh;
     width: 100%;
@@ -578,7 +573,10 @@ color: #79FE0C;
 }
 .about-img img{
     width: 70%;
+}
 
+.about-img svg{
+    width: 70%;
 }
 
 
@@ -995,6 +993,7 @@ canvas {
 
 
 
+
 /*
 
 For devices with smaller width like mobile phone
@@ -1008,6 +1007,14 @@ For devices with smaller width like mobile phone
 
 @media only screen and (max-width: 550px){
 
+.dept img{
+    height: 300px !important;
+    width: 100%;
+}
+.inst img{
+   height: 100px !important;
+    width: 100%;
+        }
 
 .clock {
 padding-top: 2%;
@@ -1023,6 +1030,17 @@ padding-top: 2%;
     display: inline-block;
 
 }
+.separator {
+        box-shadow:0 0 50px rgba(255, 255, 255, 0);
+    width: 1%;
+    border-radius: 100%;
+    display: inline-block;
+    position: relative;
+    bottom: 5px;
+    /*margin-bottom: 7%;*/
+/*  filter: blur(1px); */
+}
+
     .header-content{
         height: 100vh;
         width: 100%;
@@ -1159,8 +1177,9 @@ padding-top: 2%;
         flex-direction: column-reverse;
     }
     .about-img img{
-        padding: 5px;
+        padding: 1px;
         border-radius: 10%;
+        height: 200px;
     }
 
 
@@ -1254,7 +1273,32 @@ padding-top: 2%;
     .blogs:hover .blog-text{
         transform: translateY(-100%);
     }
+.navigation-links a:hover::before{
+    content: attr(data-text);
+    opacity: 1;
+    letter-spacing: 10px;
+    width: 100%;
 
+}
+.navigation-links a::before{
+    content: "";
+    position: absolute;
+    top:50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 400;
+    font-family: monoton;
+    color:rgba(255, 255, 255,0.1);
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
+    letter-spacing: 10px;
+    transition: all .4s ease;
+}
 
 
 }
@@ -1667,9 +1711,6 @@ text-align: center;
 
 }
 
-
-
-
 .blog-slider__button {
   font-family: 'poppins', ui-rounded , "Arial Rounded MT Bold";
   font-size: 20px !important;
@@ -1684,4 +1725,152 @@ text-align: center;
   justify-content: center;
   text-align: center;
   letter-spacing: 1px;
+}
+
+/*
+.blog-slider__button {
+  font-family: 'poppins', ui-rounded , "Arial Rounded MT Bold";
+  font-size: 20px !important;*/
+  /*display: inline-flex;*/
+  /*background-image: linear-gradient(147deg, rgb(121, 254, 12) 0%, #2c5b05 74%);
+  background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+  padding: 15px 25px;
+  border-radius: 50px;*/
+  /*color: #fff !important;*/
+  /*box-shadow: 0px 10px 15px rgb(20, 110, 7);*/
+/*  text-decoration: none;
+  font-weight: 200;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 1px;
+  
+    color: #00a84f;
+    display: block;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    padding: 4px;
+    position: relative;
+    width: 20%;
+    height: 20%;
+}
+*/
+/*.blog-slider__button:hover{
+    color: #fff;
+}
+
+.blog-btn-span{
+    background: #171717;
+    border-radius: 50px;
+    transition: background .5s ease;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.blog-slider__button:hover .blog-btn-span{
+    background: transparent;
+}
+*/
+
+
+#myBtn {
+  /*display: none;*/
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 3;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgba(23, 23, 23,0.5);
+  /*color: white;*/
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+
+
+}
+
+#myBtn:hover{
+  background-color: rgb(23, 23, 23);
+    transform: rotate(-15deg);
+}
+
+ .arrow-up {
+    height: 40px;
+    width: 40px;
+    display: block;
+    border: 1px solid #666;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 1.5);
+    overflow: hidden;
+}
+ .arrow-slide {
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background: #666;
+    position: absolute;
+    display: block;
+    z-index: 0;
+}
+ .left-arm {
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    top: 19px;
+    left: 3px;
+    width: 20px;
+    display: block;
+    transform: rotate(-45deg);
+}
+ .left-arm:after {
+    content: "";
+    background-color: #2afd09;
+    width: 20px;
+    height: 1px;
+    display: block;
+    border-radius: 1px;
+    transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 1.5);
+    transform-origin: right center;
+    z-index: -1;
+}
+ .right-arm {
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    top: 19px;
+    left: 17px;
+    width: 20px;
+    display: block;
+    transform: rotate(45deg);
+    border-radius: 2px;
+}
+ .right-arm:after {
+    content: "";
+    background-color: #2afd09;
+    width: 20px;
+    height: 1px;
+    display: block;
+    border-radius: 1px;
+    transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 1.5);
+    transform-origin: left center;
+    z-index: -1;
+}
+ .arrow-up:hover {
+    transition: all 0.1s;
+}
+ .arrow-up:hover .left-arm:after {
+    transform: rotate(-10deg);
+}
+ .arrow-up:hover .right-arm:after {
+    transform: rotate(10deg);
+}
+ .arrow-up:hover .arrow-slide {
+    transition: all 0.4s ease-in-out;
+    transform: translateY(200%);
 }
