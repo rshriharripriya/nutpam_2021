@@ -43,22 +43,30 @@ function reset() {
 }
 
 
+
+
+
+
+// var loadTime = window.performance.timing.domContentLoadedEventEnd-window.performance.timing.navigationStart; 
+
 $(window).on("load", function(){
 
 
-  // $("#loader").css("overflow","hidden");
-   setTimeout(removeLoader, 5000); //wait for page load PLUS 9 seconds.
+    // $("html").css("overflow","hidden");
+    setTimeout(removeLoader, 5000); //wait for page load PLUS 5 seconds.
+    // $("html").css("overflow","scroll");
 });
 
 
 function removeLoader(){
 
    $(".loader-body").fadeOut("slow");
+   $("html").css("overflow","visible");
+   $("html").css("scroll-behavior","smooth");
 
 }
 
-  // $("html").css("overflow-x","hidden");
-   //    $("html").css("scroll-behavior","smooth");
+
 // $(window).off('scroll.scrolldisabler');
 
 // DO NOT REMOVE
