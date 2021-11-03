@@ -20,6 +20,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+
+html{
+  overflow-x: hidden;
+}
+
 body {
   background: #171717;
 }
@@ -52,7 +57,7 @@ body {
 
 .topic-container h2 {
   justify-content: center;
-  color: #fff;
+  color: #21c764;;
   font-size: 60px;
   text-align: center;
 }
@@ -69,13 +74,10 @@ body {
 }
 
 
-.container-t .card-t .imgBx img {
-  width: 300px;
-  height: 400px;
-  object-fit: cover;
-}
+
+
 .team-name p {
-  color: #fff;
+  color: #21c764;
 }
 
 .container-t {
