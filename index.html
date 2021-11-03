@@ -297,7 +297,7 @@
 							placeholder!!!</span>
 
 						<div class="cv">
-							<a href="#" class="blog-slider__button white_text">Watch Video</a>
+							<a href="#" class="blog-slider__button white_text" data-toggle="modal" data-target="#exampleModal">Watch Video</a>
 						</div>
 
 					<!-- 	<div class="reg-all-body cv">
@@ -310,6 +310,23 @@
 
 
 				</div>
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="exampleModalLabel">NUTPAM 2K21</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<div class="embed-responsive embed-responsive-16by9" id="vid-player">
+								<iframe class="embed-responsive-item" src="" ></iframe>
+							</div>
+						</div>
+					  </div>
+					</div>
+				  </div>
 				<br>
 				<div class="row p-md-5">
 					<div class="col-12 col-lg-5 align-self-center  mx-auto pb-5 pt-5">
@@ -1489,21 +1506,21 @@
 				<div class="swiper mySwiper">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<img src="images/team/.jpg" alt="">
+							<img src="images/faculty/hod.jpg" alt="">
 							<div class="info">
-								<h4>Dr.B.Sri Devi</h4>
+								<h4>Dr. B.Sree Devi</h4>
 								<p>HOD CSE</p>
 							</div>
 						</div>
 						<div class="swiper-slide">
-							<img src="images/team/" alt="">
+							<img src="images/faculty/suresh.jpg" alt="">
 							<div class="info">
 								<h4>Dr.K.C Suresh</h4>
 								<p>Associate Professor CSE</p>
 							</div>
 						</div>
 						<div class="swiper-slide">
-							<img src="images/team/.jpg" alt="">
+							<img src="images/faculty/swathi.jpg" alt="">
 							<div class="info">
 								<h4>Mrs.Swathi Lakshmi</h4>
 								<p>Associate Professor CSE</p>
@@ -1624,7 +1641,7 @@
 						<div class="col-md-3 mx-auto">
 
 							<!-- Links -->
-							<h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-center">Faculties</h5>
+							<h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-center">Faculty</h5>
 							<div class="row text-center">
 								<ul class="list-unstyled col-6">
 									<li>
@@ -1748,17 +1765,38 @@
 	<!--End of all the divisions-->
 	<!-- JQuery -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script>
+$(document).ready(function(){
+    /* Get iframe src attribute value i.e. YouTube video url
+    and store it in a variable */
+    var url = 'video/nutpam-2k21.mp4';
+    
+    /* Assign empty url value to the iframe src attribute when
+    modal hide, which stop the video playing */
+    $("#exampleModal").on('hide.bs.modal', function(){
+        $(".embed-responsive-item").attr('src', '');
+    });
+    
+    /* Assign the initially stored url back to the iframe src
+    attribute when modal is displayed again */
+    $("#exampleModal").on('show.bs.modal', function(){
+        $(".embed-responsive-item").attr('src', url);
+    });
+});
+			</script>
 	<!-- Bootstrap tooltips -->
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
 	<script type="text/javascript" src="js/popper.min.js"></script>
-	<script src="js/dynamics.min.js"></script>
-	<script src="js/swiper-main.js"></script>
-	<script src="js/gsap.min.js"></script>
-	<script src="js/index.js"></script>
-	<script src="js/bg-animate.js"></script>
-	<script src="js/loader-js.js"></script>
+	<script type="text/javascript" src="js/dynamics.min.js"></script>
+	<script type="text/javascript" src="js/swiper-main.js"></script>
+	<script type="text/javascript" src="js/gsap.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/bg-animate.js"></script>
+	<script type="text/javascript" src="js/loader-js.js"></script>
 	<script type="module" src="js/swipper.js"></script>
+
+	
 </body>
 
 </html>
