@@ -23,10 +23,15 @@
 
 html{
   overflow-x: hidden;
+  user-select: none;
 }
 
 body {
   background: #171717;
+}
+.btn-green{
+  background-color: #21c764 !important;
+  color: #fff !important;
 }
 
 .topic-container h2{
@@ -34,21 +39,13 @@ body {
 }
 
 .teams-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
-  top: 10rem;
 }
 
 .topic-container {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   padding: 10px 5px;
   width: 100%;
-  top: 75px;
   font-size: 33px;
   margin: 0px 0px 23px;
 }
@@ -62,14 +59,8 @@ body {
   text-align: center;
 }
 .team-name {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  top: -1rem;
   width: 100%;
-  margin: 30px 0px;
   font-size: 43px;
 }
 
@@ -192,13 +183,14 @@ body {
 /*Style for circular cards */
 
 .card {
-  margin-top: 2em;
   padding: 1.5em 0.5em 0.5em;
   border-radius: 2em;
   text-align: center;
-  /*box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);*/
+  -webkit-box-shadow:inset 0px 0px 8px 1px rgba(0,255,157,1) , 0px 0px 8px 1px rgba(0,255,157,1);
+  -moz-box-shadow:inset 0px 0px 8px 1px rgba(0,255,157,1) , 0px 0px 8px 1px rgba(0,255,157,1);
+  box-shadow:inset 0px 0px 8px 1px rgba(0,255,157,1) , 0px 0px 8px 1px rgba(0,255,157,1);
   background: transparent !important;
-  color: white;
+    color: #ffffff;
   border: none !important;
   font-size: 18px;
 }
@@ -217,7 +209,7 @@ body {
 }
 .card .card-title {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 18px;
   text-align: center;
   /*font-size:2vw;*/
 }
