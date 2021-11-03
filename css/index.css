@@ -1006,6 +1006,24 @@ For devices with smaller width like mobile phone
 
 
 @media only screen and (max-width: 550px){
+    .header-content .firstline{
+    z-index: 2;
+    font-weight:700;
+     font-size: 55px;
+}
+.header-content .secondline{
+    z-index: 2;
+    font-size: 24px;
+    padding-top:20px ;
+    font-weight:500;
+    color: rgba(255, 255, 255,0.8);
+}
+.slash{
+    animation-name: animateslash;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
 
 .dept img{
     height: 300px !important;
