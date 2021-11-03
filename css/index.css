@@ -38,21 +38,7 @@ input[type=number] {
     scroll-behavior: smooth;
 
   }
-  #loader{
-       display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      height:100vh;
-      position: fixed;
-      z-index:100;
-      font-family: 'poppins', ui-rounded , "Arial Rounded MT Bold";
-      background-color: #171717;
-      color: whitesmoke;
-      font-size: 70px;
-      width: 100%;
 
-  }
 
 body{
     user-select: none;
@@ -1800,7 +1786,7 @@ text-align: center;
 
 
 #myBtn {
-  /*display: none;*/
+  display: none;
   position: fixed;
   bottom: 20px;
   right: 30px;
