@@ -46,20 +46,24 @@ function reset() {
 $(window).on("load", function(){
 
 
-  $("html").css("overflow","hidden");
-   setTimeout(removeLoader, 9000); //wait for page load PLUS 9 seconds.
+  // $("#loader").css("overflow","hidden");
+   setTimeout(removeLoader, 5000); //wait for page load PLUS 9 seconds.
 });
 
 
 function removeLoader(){
-  $(".loader-body").fadeOut("slow");
+
+   $(".loader-body").fadeOut("slow");
+
 }
 
+  // $("html").css("overflow-x","hidden");
+   //    $("html").css("scroll-behavior","smooth");
 // $(window).off('scroll.scrolldisabler');
 
 // DO NOT REMOVE
 // $(window).on("load",function(){
-  
+//
 //      $(".loader-body").fadeOut("slow");
 // });
 
