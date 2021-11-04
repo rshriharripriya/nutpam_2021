@@ -1,6 +1,7 @@
 .swiper-container {
     display: flex;
     justify-content: center;
+    width: 90%;
 }
 
 .swiper {
@@ -37,7 +38,7 @@
 
 @media screen and (min-width: 700px) {
     .swiper-pagination {
-        visibility: hidden;
+        visibility: visible;
     }    
     .swiper-button-prev {
         right: -34px;
@@ -86,6 +87,6 @@
 } */
 
 .swiper-pagination-bullet {
-    background: #fff;
+    background: #60c90a;
     margin-left: 4px;
 }

@@ -624,6 +624,7 @@ height:auto;
 .modal-content {
    width: 700px;
   border:none;
+  color: #fff;
 }
 .modal-body {
    padding: 0;
