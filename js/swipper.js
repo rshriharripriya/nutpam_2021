@@ -4,6 +4,8 @@ var swiper = new Swiper(".mySwiper", {
     slidesPerView: 'auto',
     spaceBetween: 30,
     centeredSlides: true,
+    initialSlide: 3,
+    watchOverflow: false,
     grabCursor: true,
     loop: true,
     speed: 900,

@@ -624,6 +624,7 @@ height:auto;
 .modal-content {
    width: 700px;
   border:none;
+  color: #fff;
 }
 .modal-body {
    padding: 0;
@@ -2043,3 +2044,19 @@ text-align: center;
     font-style:italic;
   }
   
+
+.close-event-button{
+    background-image: linear-gradient(45deg, #603072, #7c111b);
+    border-radius: 30px !important;
+}
+
+.more-event-button{
+    /*background-image: linear-gradient(45deg, #603072, #7c111b);*/
+    background-image: linear-gradient(45deg, #2b8784, #0c5a1c);
+    border-radius: 30px !important;
+}
+
+.modal-title{
+    font-weight: 500;
+    font-size: x-large;
+}
