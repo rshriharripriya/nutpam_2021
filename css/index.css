@@ -763,14 +763,24 @@ canvas {
 .containerSponsor .cardSponsor .faceSponsor{
 
     height: 200px;
+    width: 300px;
     transition: 0.5s;
     margin: 20px;
-    padding: 100px;
+    /*padding: 100px;*/
 }
 
+.box {
+  transition: box-shadow .3s;
+  /*border: 1px solid #ccc;*/
+  /*float: left;*/
+
+}
+.box:hover {
+  box-shadow: 1px 1px 14px 5px #086a32;
+}
 .containerSponsor .cardSponsor .faceSponsor.face1Sponsor{
     position: relative;
-    background: #333;
+    background: rgba(51, 51, 51, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -780,7 +790,7 @@ canvas {
 }
 
 .containerSponsor .cardSponsor:hover .faceSponsor.face1Sponsor{
-    background: #356e05;
+    background: rgba(53, 110, 5, 0);
     /*Background color when the cardSponser is hovered over */
 }
 
@@ -789,7 +799,8 @@ canvas {
 }
 
 .containerSponsor .cardSponsor .face.face1Sponsor .contentSponsor img{
-    max-width: 100px;
+    max-width: 100%;
+    border-radius: 5%;
 }
 
 .containerSponsor .cardSponsor .faceSponsor.face1Sponsor .contentSponsor h3{
@@ -994,6 +1005,15 @@ For devices with smaller width like mobile phone
 
 
 @media only screen and (max-width: 550px){
+
+    .containerSponsor .cardSponsor .faceSponsor{
+        width: 200px !important;
+    }
+
+    .face1Sponsorimg {
+    width: 200px !important;
+    border-radius: 5%;
+}
     .header-content .firstline{
     z-index: 2;
     font-weight:700;
@@ -1892,9 +1912,9 @@ text-align: center;
     margin-top:20px;
     position:relative;
     color: white;
-    
+
   }
-  
+
   .timeline:before{
     position:absolute;
     content:'';
@@ -1909,7 +1929,7 @@ text-align: center;
     top:5px;
     border-radius:4px;
   }
-  
+
   .timeline-month{
     position:relative;
     padding:4px 15px 4px 35px;
@@ -1922,7 +1942,7 @@ text-align: center;
     margin-bottom:30px;
     color: #000000 !important;
   }
-  
+
   .timeline-month span{
     position:absolute;
     top:-1px;
@@ -1938,7 +1958,7 @@ text-align: center;
     box-sizing:border-box;
     color: #ffffff !important;
   }
-  
+
   .timeline-month:before{
     position:absolute;
     content:'';
@@ -1949,14 +1969,14 @@ text-align: center;
     border:1px solid #17191B;
     left:5px;
   }
-  
+
   .timeline-section{
     padding-left:35px;
     display:block;
     position:relative;
     margin-bottom:30px;
   }
-  
+
   .timeline-date{
     margin-bottom:15px;
     padding:2px 15px;
@@ -1977,7 +1997,7 @@ text-align: center;
     top:12px;
     left:20px;
   }
-  
+
   .timeline-section:after{
     content:'';
     position:absolute;
@@ -1989,14 +2009,14 @@ text-align: center;
     border:1px solid #17191B;
     border-radius:100%;
   }
-  
+
   .timeline-section .col-sm-4{
     margin-bottom:15px;
   }
-  
+
   .timeline-box{
     position:relative;
-    
+
    background-color:#444950;
     border-radius:15px;
     border-top-left-radius:0px;
@@ -2005,37 +2025,37 @@ text-align: center;
     transition:all 0.3s ease;
     overflow:hidden;
   }
-  
+
   .box-icon{
     position:absolute;
     right:5px;
     top:0px;
   }
-  
+
   .box-title{
     padding:5px 15px;
     border-bottom: 1px solid #17191B;
   }
-  
+
   .box-title i{
     margin-right:5px;
   }
-  
+
   .box-content{
     padding:5px 15px;
     background-color:#17191B;
   }
-  
+
   .box-content strong{
     color:#666;
     font-style:italic;
     margin-right:5px;
   }
-  
+
   .box-item{
     margin-bottom:5px;
   }
-  
+
   .box-footer{
    padding:5px 15px;
     border-top: 1px solid #17191B;
@@ -2043,7 +2063,7 @@ text-align: center;
     text-align:right;
     font-style:italic;
   }
-  
+
 
 .close-event-button{
     background-image: linear-gradient(45deg, #603072, #7c111b);
