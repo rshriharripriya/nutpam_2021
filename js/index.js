@@ -193,7 +193,7 @@ gsap.to('#navigation-content',0,{display:'flex',delay:2});
 })
 
 
-var countDownDate = new Date("Nov 24, 2021 12:00:00").getTime();
+var countDownDate = new Date("Dec 02, 2021 12:00:00").getTime();
 // Demo date in a month
 var date = new Date();
 
