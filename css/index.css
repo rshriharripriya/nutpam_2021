@@ -762,13 +762,18 @@ canvas {
 
 .containerSponsor .cardSponsor .faceSponsor{
 
-    height: 200px;
+    height: 300px;
     width: 300px;
     transition: 0.5s;
     margin: 20px;
     /*padding: 100px;*/
 }
-
+.containerSponsor .cardSponsor .faceSponsor img{
+        width: 200px !important;
+    }
+.containerSponsor .cardSponsor .faceSponsor .contentSponsor .whitebg{
+        background-color: white !important;
+    }
 .box {
   transition: box-shadow .3s;
   /*border: 1px solid #ccc;*/
@@ -1006,7 +1011,7 @@ For devices with smaller width like mobile phone
 
 @media only screen and (max-width: 550px){
 
-    .containerSponsor .cardSponsor .faceSponsor{
+    .containerSponsor .cardSponsor .faceSponsor img{
         width: 200px !important;
     }
 

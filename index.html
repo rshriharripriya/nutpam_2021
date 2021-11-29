@@ -1199,15 +1199,35 @@
 					<div class="cardSponsor col-sm-12 col-md-4  ">
 
 						<div class="faceSponsor face1Sponsor box ">
-							<div class="contentSponsor">
-							<a class="face1Sponsorimg" href="https://we.tl/t-ASPlYGYa8z" target="_blank" >
+							<div class="contentSponsor whitebg">
+							<a class="face1Sponsorimg " href="#"  data-toggle="modal" data-target="#health_basket_Modal">
 								<img class="face1Sponsorimg"
-									src="images/logos/wetransfer.png">
+									src="images/logos/HB%20Registered%20Logo%20-%20New-01-white.png">
 							</a>
 							</div>
+					    </div>
+						<div class="modal fade" id="health_basket_Modal" tabindex="-1" role="dialog" aria-labelledby="health_basket_ModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="health_basket_ModalLabel">Health Basket</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
 						</div>
-
+						<div class="modal-body">
+							<div class="embed-responsive embed-responsive-16by9" >
+								<iframe class="embed-responsive-item"  src="" ></iframe>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<h5 class="modal-title text-right" > <a href="https://healthbasketonline.com/www.example.com/page-url-key"  target="_blank" style="color:#60c90a;">Visit the website</a></h5>
+						  </div>
+					  </div>
 					</div>
+				  </div>
+
+				</div>
 
 <!--					<div class="cardSponsor col-sm-12 col-md-4 ">-->
 <!--						<div class="faceSponsor face1Sponsor ">-->
@@ -1591,25 +1611,7 @@
 	<!--End of all the divisions-->
 	<!-- JQuery -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script>
-$(document).ready(function(){
-    /* Get iframe src attribute value i.e. YouTube video url
-    and store it in a variable */
-    var url = 'video/nutpam-2k21.mp4';
 
-    /* Assign empty url value to the iframe src attribute when
-    modal hide, which stop the video playing */
-    $("#exampleModal").on('hide.bs.modal', function(){
-        $(".embed-responsive-item").attr('src', '');
-    });
-
-    /* Assign the initially stored url back to the iframe src
-    attribute when modal is displayed again */
-    $("#exampleModal").on('show.bs.modal', function(){
-        $(".embed-responsive-item").attr('src', url);
-    });
-});
-			</script>
 	<!-- Bootstrap tooltips -->
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
