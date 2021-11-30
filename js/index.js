@@ -306,3 +306,38 @@ function topFunction() {
         scrollTop : 0
     }, 900);
 }
+
+$(document).ready(function(){
+    /* Get iframe src attribute value i.e. YouTube video url
+    and store it in a variable */
+    var url = 'video/HEALTH BASKET PRODUCTS New.mp4';
+
+    /* Assign empty url value to the iframe src attribute when
+    modal hide, which stop the video playing */
+    $("#health_basket_Modal").on('hide.bs.modal', function(){
+        $(".embed-responsive-item-health").attr('src', '');
+    });
+
+    /* Assign the initially stored url back to the iframe src
+    attribute when modal is displayed again */
+    $("#health_basket_Modal").on('show.bs.modal', function(){
+        $(".embed-responsive-item-health").attr('src', url);
+    });
+});
+$(document).ready(function(){
+    /* Get iframe src attribute value i.e. YouTube video url
+    and store it in a variable */
+    var url = 'video/nutpam-2k21.mp4';
+
+    /* Assign empty url value to the iframe src attribute when
+    modal hide, which stop the video playing */
+    $("#exampleModal").on('hide.bs.modal', function(){
+        $(".embed-responsive-item").attr('src', '');
+    });
+
+    /* Assign the initially stored url back to the iframe src
+    attribute when modal is displayed again */
+    $("#exampleModal").on('show.bs.modal', function(){
+        $(".embed-responsive-item").attr('src', url);
+    });
+});
