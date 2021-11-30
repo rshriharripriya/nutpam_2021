@@ -315,13 +315,13 @@ $(document).ready(function(){
     /* Assign empty url value to the iframe src attribute when
     modal hide, which stop the video playing */
     $("#health_basket_Modal").on('hide.bs.modal', function(){
-        $(".embed-responsive-item").attr('src', '');
+        $(".embed-responsive-item-health").attr('src', '');
     });
 
     /* Assign the initially stored url back to the iframe src
     attribute when modal is displayed again */
     $("#health_basket_Modal").on('show.bs.modal', function(){
-        $(".embed-responsive-item").attr('src', url);
+        $(".embed-responsive-item-health").attr('src', url);
     });
 });
 $(document).ready(function(){
