@@ -691,7 +691,10 @@ height: 600px;
     box-shadow:0px 0px 0px 400px #79fe0c;
 }
 
-
+.font_poppins{
+    font-family: Poppins !important;
+    font-weight:100 !important ;
+}
  .header {
 	 width: 100%;
 	 text-align: center;
