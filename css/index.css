@@ -1014,6 +1014,10 @@ For devices with smaller width like mobile phone
 
 @media only screen and (max-width: 550px){
 
+    .registrations_closed{
+        font-size: 12px;
+    }
+
     .containerSponsor .cardSponsor .faceSponsor img{
         width: 200px !important;
     }
