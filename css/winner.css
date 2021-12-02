@@ -33,14 +33,14 @@ body {
  , #030508 0%, #010428 74%);
 
 }
-.heading {
+.heading-gold {
 	 height: 100%;
 	 width: 100%;
 	 display: flex;
 	 align-items: center;
 	 justify-content: center;
 }
- .heading h1 {
+ .heading-gold h1 {
 	background-image: linear-gradient( to bottom, rgb(255 248 158) 0, rgb(140 117 66) 22%, rgb(227 208 108) 45%, rgb(253 244 126) 50%, rgb(246 226 122) 55%, rgb(102 87 49) 78%, rgb(255 248 158) 100% );
 	 -webkit-background-clip: text;
 	 -webkit-text-fill-color: transparent;
@@ -48,12 +48,43 @@ body {
 	 font-family: 'Playfair Display', serif;
 	 position: relative;
 	 text-transform: uppercase;
-	 font-size: 10vw;
+	 font-size: 8vw;
 	 margin: 0;
 	 font-weight: 400;
 }
 
- .heading h1:after {
+ .heading-gold h1:after {
+	 background: none;
+	 content: attr(data-heading);
+	 left: 0;
+	 top: 0;
+	 z-index: -1;
+	 position: absolute;
+	 text-shadow: -1px 0 1px #c6bb9f, 0 1px 1px #c6bb9f, 5px 5px 10px rgba(0, 0, 0, 0.4), -5px -5px 10px rgba(0, 0, 0, 0.4);
+}
+
+ .heading-silver {
+	 height: 100%;
+	 width: 100%;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+ .heading-silver h1 {
+background-color: #d7d7d7;
+background-image: linear-gradient(to bottom, rgb(112 112 111) 0, rgb(122 122 122) 22%, rgb(222 222 220) 45%, rgb(216 216 214) 50%, rgb(216 216 214) 55%, rgb(105 105 103) 78%, rgb(53 53 53) 100%);
+	 -webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
+	 color: gold;
+	 font-family: 'Playfair Display', serif;
+	 position: relative;
+	 text-transform: uppercase;
+	 font-size: 8vw;
+	 margin: 0;
+	 font-weight: 400;
+}
+
+ .heading-silver h1:after {
 	 background: none;
 	 content: attr(data-heading);
 	 left: 0;
@@ -99,15 +130,40 @@ background-image: linear-gradient( rgb(150 129 64) 0, rgb(150 129 64) 22%, rgb(2
   font-size: 43px;
 }
 
+.team-name-silver p {
+ background-image: repeating-linear-gradient(to right, rgb(112 112 111) 0, rgb(122 122 122) 22%, rgb(222 222 220) 45%, rgb(216 216 214) 50%, rgb(216 216 214) 55%, rgb(105 105 103) 78%, rgb(53 53 53) 100%);
+  background-size: 150%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4vw !important;
+  font-weight: 200;
+  font-family: "Poppins";
+  filter: drop-shadow(0 0 1px rgba(129, 129, 128, 0.3));
+  animation: MoveBackgroundPosition 6s ease-in-out infinite;
+}
+
+@keyframes MoveBackgroundPosition {
+  0% {
+      background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
 
 
 
-.team-name p {
+.team-name-gold p {
    background-image: repeating-linear-gradient(to right, #a2682a 0%, #be8c3c 8%, #be8c3c 18%, #d3b15f 27%, #faf0a0 35%, #ffffc2 40%, #faf0a0 50%, #d3b15f 58%, #be8c3c 67%, #b17b32 77%, #bb8332 83%, #d4a245 88%, #e1b453 93%, #a4692a 100%);
   background-size: 150%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 5vm;
+  font-size: 4vw !important;
   font-weight: 200;
   font-family: "Poppins";
   filter: drop-shadow(0 0 1px rgba(255, 200, 0, .3));
@@ -233,7 +289,7 @@ background-image: linear-gradient( rgb(150 129 64) 0, rgb(150 129 64) 22%, rgb(2
 
 /*Style for circular cards */
 
-.card {
+.card-gold {
   padding: 1.5em 0.5em 0.5em;
   border-radius: 2em;
   text-align: center;
@@ -245,7 +301,23 @@ background-image: linear-gradient( rgb(150 129 64) 0, rgb(150 129 64) 22%, rgb(2
   border: none !important;
   font-size: 18px;
 }
-.card img {
+
+.card-silver {
+  padding: 1.5em 0.5em 0.5em;
+  border-radius: 2em;
+  text-align: center;
+  -webkit-box-shadow:inset 0px 0px 8px 2px #d7d7d7, 0px 0px 8px 2px #353535;
+  -moz-box-shadow: inset 0px 0px 8px 2px #d7d7d7, 0px 0px 8px 2px #353535;
+  box-shadow:inset 0px 0px 8px 2px #353535, 0px 0px 8px 2px #ffffff;
+  background: transparent !important;
+  background-color: #d7d7d7;
+background-image: linear-gradient(147deg, #d7d7d7 0%, #353535 74%);
+
+    color: #ffffff;
+  border: none !important;
+  font-size: 18px;
+}
+.card-gold img {
   /*width:calc(100vw / 6);
    height:calc(100vw / 6);*/
 
@@ -258,15 +330,48 @@ background-image: linear-gradient( rgb(150 129 64) 0, rgb(150 129 64) 22%, rgb(2
    margin: 0 auto;
   /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
 }
-.card .card-title {
+
+.card-silver img {
+  /*width:calc(100vw / 6);
+   height:calc(100vw / 6);*/
+
+   width: 200px;
+  height: 200px;
+  object-fit: cover;
+
+   background:transparent;
+   border-radius:51%;
+   margin: 0 auto;
+  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
+}
+.card-gold .card-title {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  /*font-size:2vw;*/
+}
+.card-silver .card-title {
   font-weight: 700;
   font-size: 18px;
   text-align: center;
   /*font-size:2vw;*/
 }
 
-.card .card-text{
+
+.card-gold .card-text{
+  font-size: 18px;
+}
+.card-silver .card-text{
   font-size: 18px;
 }
 
 
+@media only screen and (max-width: 550px) {
+
+    .heading-gold{
+        font-size: 50px !important;
+    }
+    .heading-silver{
+        font-size: 50px !important;
+    }
+}
