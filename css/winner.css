@@ -135,7 +135,7 @@ background-image: linear-gradient( rgb(150 129 64) 0, rgb(150 129 64) 22%, rgb(2
   background-size: 150%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 4vw !important;
+  font-size: 4vw;
   font-weight: 200;
   font-family: "Poppins";
   filter: drop-shadow(0 0 1px rgba(129, 129, 128, 0.3));
@@ -163,7 +163,7 @@ background-image: linear-gradient( rgb(150 129 64) 0, rgb(150 129 64) 22%, rgb(2
   background-size: 150%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 4vw !important;
+  font-size: 4vw ;
   font-weight: 200;
   font-family: "Poppins";
   filter: drop-shadow(0 0 1px rgba(255, 200, 0, .3));
@@ -274,7 +274,21 @@ background-image: linear-gradient( rgb(150 129 64) 0, rgb(150 129 64) 22%, rgb(2
   color: white;
   font-size: 24px;
 }
+@media only screen and (max-width: 550px) {
 
+    .heading-gold h1{
+        font-size: 50px !important;
+    }
+    .heading-silver h1{
+        font-size: 50px !important;
+    }
+    .team-name-gold p{
+         font-size: 30px !important;
+    }
+    .team-name-silver p {
+         font-size: 30px !important;
+    }
+}
 
 @media only screen and (max-width: 454px) {
   .topic-container h2{
@@ -366,12 +380,4 @@ background-image: linear-gradient(147deg, #d7d7d7 0%, #353535 74%);
 }
 
 
-@media only screen and (max-width: 550px) {
 
-    .heading-gold{
-        font-size: 50px !important;
-    }
-    .heading-silver{
-        font-size: 50px !important;
-    }
-}
