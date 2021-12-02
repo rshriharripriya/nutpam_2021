@@ -28,9 +28,9 @@ html{
 }
 
 body {
- background-image: linear-gradient(
-315deg
- , #030508 0%, #010428 74%);
+ background-image: radial-gradient(
+circle
+ , #030508 , #010428);
 
 }
 .heading-gold {
